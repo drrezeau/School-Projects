@@ -1,0 +1,54 @@
+<performanceType>Solo</performanceType>
+<student1FirstName>David</student1FirstName>
+<student1LastName>Lambertson</student1LastName>
+<skill>Beginner</skill>
+<instrument>Piano</instrument>
+<location>Manwaring Center</location>
+<room>308</room>
+<time>9:00am</time>
+
+<performanceType>Solo</performanceType>
+<student1FirstName>Jane</student1FirstName>
+<student1LastName>Doe</student1LastName>
+<skill>Pre-advanced</skill>
+<instrument>Vocals</instrument>
+<location>Austin</location>
+<room>174</room>
+<time>10:00am</time>
+
+<performanceType>Solo</performanceType>
+<student1FirstName>Jane</student1FirstName>
+<student1LastName>Doe</student1LastName>
+<skill>Beginner</skill>
+<instrument>Piano</instrument>
+<location>Manwaring Center</location>
+<room>308</room>
+<time>9:00am</time>
+
+<performanceType>Solo</performanceType>
+<student1FirstName>Jane</student1FirstName>
+<student1LastName>Doe</student1LastName>
+<skill>Pre-advanced</skill>
+<instrument>Vocals</instrument>
+<location>Austin</location>
+<room>174</room>
+<time>10:00am</time>
+
+<performanceType>Solo</performanceType>
+<student1FirstName>Jane</student1FirstName>
+<student1LastName>Doe</student1LastName>
+<skill>Beginner</skill>
+<instrument>Piano</instrument>
+<location>Manwaring Center</location>
+<room>308</room>
+<time>9:00am</time>
+
+<performanceType>Solo</performanceType>
+<student1FirstName>Kevin</student1FirstName>
+<student1LastName>Smith</student1LastName>
+<skill>Beginner</skill>
+<instrument>Piano</instrument>
+<location>Manwaring Center</location>
+<room>308</room>
+<time>9:00am</time>
+

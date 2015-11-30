@@ -1,0 +1,68 @@
+<html>
+    <head>
+       <title>Add New Game</title>
+        <link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="Layout.css" />
+  		  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        
+         <script>
+				var taken = false;
+				var checked = false;
+				$(document).ready(function(){
+				$("button").click(function() {
+					$.post("checkGame.php",
+							 {
+								game: $("#name").val()
+							 },
+							 function(data) {
+//						alert(data);
+						checked = true;
+						if(data == "true")
+						{
+							alert("Game has not been added");
+							taken = false;
+						}
+						else {
+							alert("Game has been added");
+							taken = true;
+						}
+					});
+				});
+			});
+				
+				function validate() {
+					if(!checked)
+						return false;
+					if(taken)
+					{
+						alert("Game has already been added");
+						return false;
+					}
+				}
+       </script>
+    </head>
+    <body>
+        <header>
+            <h1>Adding a Game</h1>
+            <div><a href="userHomepage.php">Back</a></div>
+        </header>
+        
+           <form action="addNewGame.php" onsubmit="return validate()" method="POST" name="game" >
+              <div ><input type="text" id="name" name="name" placeholder="Game Name" required/>
+              <span><button type="button">Check</button></span></div> <br />
+              <div ><input type="number" id="players" name="players" placeholder="# of Players" min="0" required/>
+              </div><br />               
+				  <div ><textarea rows="4" cols="40" placeholder="Description of Game" name="description" required></textarea></div> <br />
+              <div >Rating:<input type="number" name="rating" max="10" min="0" required/></div> <br />
+              <div>Category<select style="font-size:125%" name="category">
+              	<option value="1">Card</option>
+              	<option value="2">Board</option>
+              	<option value="3">Video</option>
+              	<option value="4">Party</option>
+					  </select> </div>
+              <input type="submit" value = "Submit" name="submit"  /><span style="margin-left:20px">
+              <input type="reset" value="Reset" /></span>
+        </form>
+    </body>
+</html>

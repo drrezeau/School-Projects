@@ -1,0 +1,331 @@
+<?xml version = "1.0"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title> David Lambertson's Assignment #6 </title>
+    <link rel="stylesheet" href="Business Layout.css" />
+
+    <script>
+      function firstName()
+      {
+        var firstName = document.getElementById("firstname").value;
+        return firstName;
+      }
+      
+      function lastName()
+      {
+        var lastName = document.getElementById("lastname").value;
+        return lastName;
+      }
+      
+
+       function validState()
+      {
+        var state = document.getElementById("state").value;
+        if (state.length == 2)
+        {
+          document.getElementById("addressError").innerHTML = "";
+          return state;
+        }
+        else
+        {
+          var x = "Invalid State";
+          document.getElementById("addressError").innerHTML = x.italics();
+        }
+     }
+
+     function address()
+     {
+       var street = document.getElementById("street").value;
+       var city = document.getElementById("city").value;
+       var state = validState();
+       var zip = document.getElementById("zip").value;
+       return street + ' ' + city + ' ' + state + ' ' + zip;
+     }
+      
+     function Phone()
+     {
+       var phone = document.getElementById("phone").value;
+      
+       if (phone.length != 12)
+       {
+         var x = "Invalid Phone Number. xxx-xxx-xxxx";
+         document.getElementById("phoneError").innerHTML = x.italics();
+         document.getElementById("phone").focus();
+       }
+       else
+       {
+       var x = "";
+       document.getElementById("phoneError").innerHTML = x;
+       }
+
+       return phone;
+     }
+      
+     function Checked()
+     {
+       var y = 0;
+       for (var x = 0; x < document.myForm.item.length; x++)
+       {
+         if (document.myForm.item[x].checked == false)
+	 {
+           y++;
+         }
+       }
+	          
+       if (y == document.myForm.item.length)
+	{
+	  return false;
+	}
+		          
+	return true;
+      }
+
+     
+	                  
+      function validate()
+      {
+        var firstname = firstName();
+        var lastname = lastName();
+        var Address = address();
+        var phone = Phone();
+        var credit = getCard();
+		          
+        if (phone.length != 12)
+        {
+          document.getElementById("phone").focus();
+          return false;
+        }
+		          
+        if(Checked() == false)
+        {
+          var x =  "Must Check at least one item.";
+	  document.getElementById("unchecked").innerHTML = x.italics();
+	  return false;
+        }
+		          
+        if(credit.length != 16)
+        {
+	  document.getElementById("card#").focus();
+	  return false;
+        }
+
+      }
+                 
+      function focus()
+      {
+        document.getElementById("firstname").focus();
+      }
+	                  
+      function Price()
+      {
+      
+		          
+	var total = 0;
+        if (document.myForm.item1.checked)
+         var x = + document.myForm.item1.value;
+        else
+          var x = 0;
+        if (document.myForm.item2.checked)
+          var y = + document.myForm.item2.value;
+        else
+          var y = 0;
+        if (document.myForm.item3.checked)
+          var z = + document.myForm.item3.value;
+        else
+          var z = 0;
+        if (document.myForm.item4.checked)
+         var a = + document.myForm.item4.value;
+        else
+          var a = 0;
+        if (document.myForm.item5.checked)
+          var b = + document.myForm.item5.value;
+        else 
+          var b = 0;
+        total = x + y + z + a + b;
+	total = total.toFixed(2);
+	document.getElementById("total").value = total;
+      }
+	                  
+      function getCard()
+      {
+        var credit = document.getElementById("card#").value;
+		          
+        if (credit.length != 16)
+        {
+          var x = "Invalid Card Number.";
+	  document.getElementById("cardError").innerHTML = x.italics();
+	  document.getElementById("card#").focus();
+        }
+        else
+        {
+          document.getElementById("cardError").innerHTML = "";
+        }
+      }
+	                  
+      function Reset()
+      {
+        document.getElementById("cardError").innerHTML = "";
+        document.getElementById("phoneError").innerHTML = "";
+      }
+    </script>
+    
+    <style>
+      .center
+      {
+        text-align:center;
+      }
+      
+      .size100
+      {
+        font-size:100%;
+      }
+      
+      table
+      {
+        border:1px solid black;
+        border-collapse: collapse;
+        margin:auto;
+        text-align:center;
+      }
+      
+      td
+      {
+        padding:5px;
+        font-size:125%;
+      }
+    </style>
+    
+  </head>
+
+  <body onload="focus()">
+    
+    <header>
+      <h1> Kanga's Australian Goods</h1>
+      <h3> G'day Mates!</h3>
+    </header>
+    
+    <div>
+      <form name="myForm" onsubmit="return validate()" onreset="Reset()" action="http://157.201.194.254/~drrezeau/assign11.php">
+        
+        <p>
+          *First name: <input type="text" name="firstname" id="firstname" class="size100" required/> 
+          *Last name: <input type="text" name="lastname" id="lastname" class="size100" required/> 
+        </p>
+        
+        <p> *Street Address <input type="text" name="street" size="50" id="street" class="size100" required/>
+        </p>
+        <p> *City: <input type="text" name="city" id="city" class="size100" required/> 
+          *State(eg. CA): <input type="text" size="2" name="state" id="state" class="size100" onchange="validState()" required/>
+          *Zip: <input type="text" id="zip" size="5" name="zip" class="size100" required/>
+        </p>
+
+        <p id="addressError"></p>
+        
+        <p>
+          *Phone( xxx-xxx-xxxx): <input type="text" name="phone" id="phone" class="size100" onchange="Phone()" required/>
+          <span id="phoneError"> </span>
+        </p>
+        
+        <table border="1px solid" class="center">
+      	  <tr>
+      	    <td>Item</td>
+      	    <td>Price</td>
+          </tr>
+      	  <tr>
+      	    <td><input type="checkbox" id="gum" name="item1" onchange="Price()" value="7.25" />Tim Tams</td>
+      	    <td>$7.25</td>
+          </tr>
+      	  <tr>
+      	    <td><input type="checkbox" id="friend" name="item2" onchange="Price()" value="42.50" />
+                An Australian<br /> Friend</td>
+      	    <td>$42.50</td>
+          </tr>
+      	  <tr>
+      	    <td><input type="checkbox" id="ak-47" name="item3" onchange="Price()" value="236.13" />Ginger Beer</td>
+      	    <td>$236.13</td>
+          </tr>
+      	  <tr>
+      	    <td><input type="checkbox" id="assassin" name="item4" onchange="Price()" value="3456.76" />
+                A Kangaroo</td>
+      	    <td>$3456.76</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="koala" name="item5" onchange="Price()" value="94568.61" />A Koala</td>
+            <td>$94,568.61</td>
+          </tr>
+      	  <tr>
+            <td colspan="2"> Total Price: <input type="text" id="total" size="10" 
+                class="size100" readonly="readonly" value= "0.00 " /> </td>
+          </tr>
+        </table>
+        <p id="unchecked"></p>
+        <p>
+          <input type="radio" value="master" id="master" name="card" required/> Master
+          <input type="radio" value="visa" id="visa" name="card" /> Visa
+          <input type="radio" value="american express" id="express" name="card" /> American Express
+        </p>
+        
+        <p>
+    	  <input type="text" id="card#" name="card#" class="size100" onchange="getCard()" required />
+    	  Credit Card # (16 digits)
+    	  <span id="cardError"></span>
+        </p>
+        <p>
+    	  Card Expiration Date 
+    	  <select class="size100" name="expMonth">
+    	    <option value="January" name="january" >January</option>
+    	    <option value="February" name="febraury">February</option>
+    	    <option value="March" name="march">March</option>
+    	    <option value="April" name="april">April</option>
+    	    <option value="May" name="may">May</option>
+    	    <option value="June" name="june">June</option>
+    	    <option value="July" name="july">July</option>
+    	    <option value="August" name="august">August</option>
+    	    <option value="September" name="september">September</option>
+    	    <option value="October" name="october">October</option>
+    	    <option value="November" name="november">November</option>
+    	    <option value="December" name="december">December</option>
+    	  </select>
+    	  <select class="size100" name="expYear">
+    	    <option value="2015" name="2015">2015</option>
+    	    <option value="2016" name="2016">2016</option>
+    	    <option value="2017" name="2017">2017</option>
+    	    <option value="2018" name="2018">2018</option>
+    	    <option value="2019" name="2019">2019</option>
+    	    <option value="2020" name="2020">2020</option>
+    	    <option value="2021" name="2021">2021</option>
+    	    <option value="2022" name="2022">2022</option>
+    	    <option value="2023" name="2023">2023</option>
+    	    <option value="2024" name="2024">2024</option>
+    	    <option value="2025" name="2025">2025</option>
+    	    <option value="2026" name="2026">2026</option>
+    	    <option value="2027" name="2027">2027</option>
+    	    <option value="2028" name="2028">2028</option>
+    	    <option value="2029" name="2029">2029</option>
+    	    <option value="2030" name="2030">2030</option>
+    	  </select>
+        </p>
+        
+        <p> <input type="submit" value="Submit" /> 
+          <input type="reset" value="Reset" /> </p> 
+      </form>
+      
+    </div>
+    
+
+    <footer>
+      <div style="text-align:right"><a href="../assign02.html" style="color:white" > Back </a></div>
+    </footer>
+
+
+  </body>
+
+</html>
+

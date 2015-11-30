@@ -1,0 +1,28 @@
+INSERT INTO user (userName, password, firstName, lastName, email) VALUES ("boss1337", "qwerty", "David", "Lambertson", "lam10006@byui.edu");
+
+INSERT INTO user (userName, password, firstName, lastName, email) VALUES ("littlePony1", "123456789", "John", "Doe", "person123@gmail.com");
+
+INSERT INTO category (name, id) VALUES ("card", 1);
+
+INSERT INTO category (name, id) VALUES ("board", 2);
+
+INSERT INTO category (name, id) VALUES ("video", 3);
+
+INSERT INTO game (name, numOfPlayers, description, rating, categoryId) VALUES ("Settlers of Catan", 4, "Build your own empire and rule the world.", 8, 2);
+
+INSERT INTO ownership (userId, gameId) VALUES (1, 1);
+
+INSERT INTO category (name, id) VALUES ("party", 4);
+
+INSERT INTO game (name, numOfPlayers, description, rating, categoryId) VALUES ("Liar's Dice", 8, "Lie your way to winning and see if you can outwit your opponents", 9, 4);
+
+INSERT INTO ownership (userId, gameId) VALUES (1, 2);
+
+INSERT INTO user (userName, password, firstName, lastName, email) VALUES ("kpwahn", "password", "Kendall", "Wahnschaffe", "wah12345@byui.edu");
+
+INSERT INTO ownership (userId, gameId) VALUES (3, 1);
+
+INSERT INTO game (name, numOfPlayers, description, rating, categoryId) VALUES ("Munchkin", 8, "Go on an adeventure with your friends, fight monsters while backstabbing them for the treasure!", 10, 1);
+
+INSERT INTO ownership (userId, gameId) VALUES (3, 3); 
+

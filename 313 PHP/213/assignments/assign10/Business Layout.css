@@ -1,0 +1,63 @@
+	header
+	{
+	background-color:black;
+	color:gold;
+	padding:5px;
+	text-align:center;
+	}
+	
+	#nav 
+	{
+    line-height:30px;
+    background-color:lightsteelblue;
+    height:auto;
+    width:150px;
+    float:left;
+    padding:5px;	      
+	}
+
+	footer 
+	{
+    background-color:black;
+    color:gold;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+	}
+	
+	body
+	{
+	background-color:goldenrod;
+	}
+	
+	a:link
+	{
+	 color:black;
+	 text-decoration:none;
+	 }
+	 
+	a:visited
+	{
+	 color:black;
+	 text-decoration:none;
+	 }
+	 
+	a:hover
+	{
+	 color:hotpink;
+	 text-decoration:underline;
+	 }
+	 
+	p
+	{
+	font-size:125%;
+	color:;
+	margin:5px;
+	text-align:center;
+	}
+	
+	#maroon
+	{
+	color:maroon;
+	}
+	 

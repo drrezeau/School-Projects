@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>David Lambertson's Homepage</title>
+		<link rel="stylesheet" href="Layout.css" />
+		
+		<script>
+			
+			function assignments()
+			{
+				var value = document.getElementById("assigns").value;
+				switch(value)
+				{
+						case "assign01":
+						window.location.replace("http://php-drrezeau.rhcloud.com/Survey/surveyForm.php");
+						break;
+						case 'gameControl':
+						window.location.replace("http://php-drrezeau.rhcloud.com/gameControl/homepage.php");
+						break;
+						case '213':
+						window.location.replace("http://php-drrezeau.rhcloud.com/213/index.html");
+						break;
+				}
+				
+			}
+			
+			function changePic()
+			{
+				if (document.getElementById("pic1").value == "family") {
+					document.getElementById("pic1").src = "temple.JPG";
+					document.getElementById("pic1").value = "temple";
+				}
+				else {
+					document.getElementById("pic1").src = "family.jpeg";
+					document.getElementById("pic1").value = "family";
+				}
+			}
+			
+			function changePic1()
+			{
+				if (document.getElementById("pic2").value == "family2") {
+					document.getElementById("pic2").src = "winter.jpg";
+					document.getElementById("pic2").value = "winter";
+					document.getElementById("pic2").width = 400;
+					document.getElementById("pic2").height = 600;
+				}
+				else {
+					document.getElementById("pic2").src = "Familypic.jpeg";
+					document.getElementById("pic2").value = "family2";
+					document.getElementById("pic2").width = 600;
+					document.getElementById("pic2").height = 400;
+				}
+			}
+				
+		
+		</script>
+	</head>
+	
+	<body style="background-image: url('http://i.ytimg.com/vi/vS_ollpIxK4/maxresdefault.jpg'); background-size:100%; background-attachment:fixed">
+		<header>
+			<h1>David Lambertson</h1>
+		</header>
+		
+		<div id="nav">
+				<select id="assigns" onchange="assignments()">
+					<option value="">Assignments</option>
+					<option value="assign01">Survey</option>
+					<option value="gameControl">Game Collections</option>
+					<option value="213">213 Assignments</option>
+				</select>
+
+			<a href="resources.html">Resources</a> <br />
+			<a href="https://byui.brainhoney.com/Frame/Component/StudentHome" target="_blank">ILearn</a> <br />
+			<a href="http://www.byui.edu/timeclock">Time Clock</a><br />
+			<a href="https://order.dominos.com/en/" target="_blank">Domino's</a>
+		</div>
+		
+		<h3 class="center" style="color:white">About Me</h3>
+		<p class="center" style="color:white">I am a computer science major. I am studying at Brigham Young University-Idaho. I am a junior and am expecting to graduate in fall of 2016. I work as a Teacher's Assistant for Brother Barzee of the CIT department. I help him with the foundations robotics class, also known as FDSCI 208. I have an internship in the spring working for Family Search doing web development. </p>
+
+		<br />
+		<br />
+		<br />
+	
+		<p>
+			<img class="right" onmouseover="changePic()" id="pic1" src="family.jpeg" value="family" alt="My Family" width="600" height="400" />
+			<img class="left" onclick="changePic1()" id="pic2" src="Familypic.jpeg" value="family2" alt="My whole family" width="600" height="400" />	
+		</p>
+		
+		
+		<iframe src="https://www.google.com/calendar/embed?title=David%20Lambertson&#39;s%20Calender&amp;height=600&amp;wkst=1&amp;bgcolor=%23cc0000&amp;src=p2pt207q8huou5p3hmkotalrrk%40group.calendar.google.com&amp;color=%23711616&amp;src=david.r.lambertson%40gmail.com&amp;color=%232952A3&amp;src=en.australian%23holiday%40group.v.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FDenver" style=" border-width:0 " width="1300" height="600" frameborder="0" scrolling="no"></iframe>
+		
+		<footer>Visit us Again!</footer>
+	
+	</body>
+</html>

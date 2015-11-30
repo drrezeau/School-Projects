@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.davidlambertson.com/bsaschema"
+xmlns="http://www.davidlambertson.com.bsaschema">
+
+<xs:element name="firstname" type="xs:string" />
+<xs:element name="lastname" type="xs:string" />
+<xs:element name="phone" type="xs:string" />
+<xs:element name="street" type="xs:string" />
+<xs:element name="city" type="xs:string" />
+<xs:element name="state" type="xs:string" />
+<xs:element name="rank" type="xs:string" />
+<xs:element name="meritbadges"  type="xs:string" />
+
+
+<xs:element name="address">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="street" />
+			<xs:element ref="city" />
+			<xs:element ref="state" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="scout">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="firstname" />
+			<xs:element ref="lastname" />
+			<xs:element ref="phone" />
+			<xs:element ref="address" />
+			<xs:element ref="rank" maxOccurs="unbounded" />
+			<xs:element ref="meritbadges" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required" />
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="troop">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="scout" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string"  use="required" />
+		<xs:attribute name="number" type="xs:string" use="required" />
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="council">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="troop" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required" />
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="bsa">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="council" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>

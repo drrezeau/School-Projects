@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!DOCTYPE bsa SYSTEM "bsa1.dtd">
+
+<?xml-stylesheet type = "text/xsl" href = "assign08.xsl" ?> 
+
+<bsa>
+	<council name="Mt. Diablo Silverado Council">
+		<troop name="Wolverines" number="247">
+			<scout name="Josh Fisher">
+				<firstname>Josh</firstname>
+				<lastname>Fisher</lastname>
+				<phone> 456-238-9678</phone>
+				<address>
+					<street> 4567 Stillwater Ct</street>
+					<city> Concord </city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot [1/1/11]</rank>
+				<rank>Second Class [2/2/11]</rank>
+				<rank>First Class [3/4/11]</rank>
+				<meritbadges> swimming [3/12/11]</meritbadges>
+			</scout>
+			<scout name="Paul Troy">
+				<firstname>Paul</firstname>
+				<lastname>Troy</lastname>
+				<phone> 456-123-4567</phone>
+				<address>
+					<street> 9876 Fake Way</street>
+					<city>Walnut Creek</city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot [6/22/09]</rank>
+				<rank>Second Class [4/10/10]</rank>
+				<rank>First Class [5/21/10]</rank>
+				<rank>Star [2/14/11]</rank>
+				<rank>Life [9/21/11]</rank>
+				<meritbadges> swimming [7/24/10]</meritbadges>
+				<meritbadges>Wilderness Survival [4/5/11]</meritbadges>
+				<meritbadges>first aid[5/25/10]</meritbadges>
+				<meritbadges>emergency preparedness [6/21/11</meritbadges>
+			</scout>
+			<scout name="Daniel Troy">
+				<firstname>Daniel</firstname>
+				<lastname>Troy</lastname>
+				<phone> 456-123-4567</phone>
+				<address>
+					<street> 9876 Fake Way</street>
+					<city>Walnut Creek</city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot [1/1/11]</rank>
+				<rank>Second Class [1/11/11]</rank>
+				<meritbadges> swimming[1/12/11]</meritbadges>
+			</scout>
+			<scout name="Jeremy Lambert">
+				<firstname>Jeremy</firstname>
+				<lastname>Lambert</lastname>
+				<phone> 456-728-9302</phone>
+				<address>
+					<street> 9876 Deadend Way</street>
+					<city>Concord</city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot[1/24/22]</rank>
+				<rank>Second Class[1/24/22]</rank>
+				<rank>First Class[1/24/22]</rank>
+				<rank>Star[1/24/22]</rank>
+				<meritbadges> swimming[2/23/23]</meritbadges>
+				<meritbadges>Wilderness Survival[2/23/23]</meritbadges>
+				<meritbadges>first aid[2/23/23]</meritbadges>
+				<meritbadges>emergency preparedness[2/23/23]</meritbadges>
+				<meritbadges>rifle shooting[2/23/23]</meritbadges>
+				<meritbadges>Citizenship in the community[2/23/23]</meritbadges>
+				<meritbadges>Citizenship in the nation[2/23/23]</meritbadges>
+				<meritbadges>cooking[2/23/23]</meritbadges>
+				<meritbadges>hiking[2/23/23]</meritbadges>
+				<meritbadges>Personal Management [2/23/23]</meritbadges>
+		
+			</scout>
+			<scout name="Robert Baker">
+				<firstname>Robert</firstname>
+				<lastname>Baker</lastname>
+				<phone> 456-358-2938</phone>
+				<address>
+					<street> 9457 Fake Way</street>
+					<city>Walnut Creek</city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot[2/23/24]</rank>
+				<meritbadges></meritbadges>
+			</scout>
+		</troop>
+		<troop name="Nobodies" number="367">
+			<scout name="Trent Wright">
+				<firstname>Trent</firstname>
+				<lastname>Wright</lastname>
+				<phone> 925-738-9012</phone>
+				<address>
+					<street> 727 Short Lane</street>
+					<city> Concord </city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot[2/23/24]</rank>
+				<rank>Second Class[2/23/24]</rank>
+				<rank>First Class[2/23/24]</rank>
+				<rank>Star[2/23/24]</rank>
+				<rank>Life[2/23/24]</rank>
+				<rank>Eagle[2/24/24]</rank>
+				<meritbadges> swimming [2/23/24]</meritbadges>
+				<meritbadges>Family Life [2/23/24]</meritbadges>
+				<meritbadges>citizenship in the community [2/23/24]</meritbadges>
+				<meritbadges>citizenship in the nation [2/23/24]</meritbadges>
+				<meritbadges>citizenship in the world [2/23/24]</meritbadges>
+				<meritbadges>environmental Science [2/23/24]</meritbadges>
+				<meritbadges>Emergency Preparedness [2/23/24]</meritbadges>
+				<meritbadges>first aid [2/23/24]</meritbadges>
+				<meritbadges>camping [2/23/24]</meritbadges>
+				<meritbadges>Communications [2/23/24]</meritbadges>
+				<meritbadges>Cooking [2/23/24]</meritbadges>
+				<meritbadges>Personal Fitness [2/23/24]</meritbadges>
+				<meritbadges>Personal Management [2/23/24]</meritbadges>
+				<meritbadges>archery [2/23/24]</meritbadges>
+			</scout>
+			<scout name="Ryasti Triax">
+				<firstname>Ryasti</firstname>
+				<lastname>Triax</lastname>
+				<phone> 925-734-2358</phone>
+				<address>
+					<street> 830 Forman Way</street>
+					<city>Concord</city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot[2/23/24]</rank>
+				<meritbadges></meritbadges>
+			</scout>
+			<scout name="Haela Monasin">
+				<firstname>Haela</firstname>
+				<lastname>Monasin</lastname>
+				<phone> 925-734-2358</phone>
+				<address>
+					<street> 830 Forman Way</street>
+					<city>Concord</city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank> 
+				<rank>Second Class [2/23/24]</rank>
+				<meritbadges> swimming [2/23/24]</meritbadges>
+				<meritbadges>first aid [2/23/24]</meritbadges>
+				<meritbadges>cooking [2/23/24]</meritbadges>
+			</scout>
+			<scout name="Ari Triax">
+				<firstname>Ari</firstname>
+				<lastname>triax</lastname>
+				<phone> 925-734-2358</phone>
+				<address>
+					<street> 830 Forman Way</street>
+					<city>Concord</city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank>
+				<rank> Second Class [2/23/24]</rank>
+				<rank> First Class [2/23/24]</rank>
+				<meritbadges> swimming [2/23/24]</meritbadges>
+				<meritbadges>Wilderness Survival [2/23/24]</meritbadges>
+				<meritbadges>first aid [2/23/24]</meritbadges>
+				<meritbadges>emergency preparedness [2/23/24]</meritbadges>
+				<meritbadges>rifle shooting [2/23/24]</meritbadges>
+				<meritbadges>hiking [2/23/24]</meritbadges>
+				<meritbadges>Personal Management [2/23/24]</meritbadges>
+			</scout>
+			<scout name="Lomax Triax">
+				<firstname>Lomax</firstname>
+				<lastname>Triax</lastname>
+				<phone> 925-734-2358</phone>
+				<address>
+					<street> 830 Forman Way</street>
+					<city>Concord</city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank>
+				<meritbadges></meritbadges>
+			</scout>
+		</troop>
+	</council>
+	<council name="Iron Horse Council">
+		<troop name="Bunnies" number="743">
+			<scout name="Jake Strong">
+				<firstname>Jake</firstname>
+				<lastname>Strong</lastname>
+				<phone> 925-158-4837</phone>
+				<address>
+					<street> 7489 Bounding Court</street>
+					<city> Sacramento </city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank>
+				<rank> Second Class [2/23/24]</rank>
+				<rank> First Class [2/23/24]</rank>
+				<meritbadges> swimming [2/23/24]</meritbadges> 
+				<meritbadges>first aid [2/23/24]</meritbadges>
+			</scout>
+			<scout name="Seth johnson">
+				<firstname>Seth</firstname>
+				<lastname>johnson</lastname>
+				<phone> 235-235-6727</phone>
+				<address>
+					<street> 2567 Drowning Street</street>
+					<city>Sacramento</city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank>
+				<rank>Second Class [2/23/24]</rank>
+				<rank>First Class [2/23/24]</rank>
+				<meritbadges> swimming [2/23/24]</meritbadges>
+				<meritbadges>Wilderness Survival [2/23/24]</meritbadges>
+				<meritbadges>first aid [2/23/24]</meritbadges>
+				<meritbadges>emergency preparedness [2/23/24]</meritbadges>
+			</scout>
+			<scout name="Cecil Williams">
+				<firstname>Cecil</firstname>
+				<lastname>Williams</lastname>
+				<phone> 638-737-2358</phone>
+				<address>
+					<street> 379 Tourning Way</street>
+					<city>Sacramento</city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank>
+				<rank>Second Class [2/23/24]</rank>
+				<meritbadges> swimming [2/23/24]</meritbadges>
+				<meritbadges>robotics [2/23/24]</meritbadges>
+				<meritbadges>fishing [2/23/24]</meritbadges>
+				<meritbadges>first aid [2/23/24]</meritbadges>
+				<meritbadges>camping [2/23/24]</meritbadges>
+				<meritbadges>hiking [2/23/24]</meritbadges>
+				<meritbadges>wilderness Survival [2/23/24]</meritbadges>
+			</scout>
+			<scout name="jared Green">
+				<firstname>Jared</firstname>
+				<lastname>Green</lastname>
+				<phone> 485-438-34756</phone>
+				<address>
+					<street> 5739 Trying alley</street>
+					<city>Sacramento</city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank>
+				<rank>Second Class [2/23/24]</rank>
+				<rank>First Class [2/23/24]</rank>
+				<rank>Star [2/23/24]</rank>
+				<meritbadges> swimming [2/23/24]</meritbadges>
+				<meritbadges>Wilderness Survival [2/23/24]</meritbadges>
+				<meritbadges>rifle shooting [2/23/24]</meritbadges>
+				<meritbadges>Citizenship in the community [2/23/24]</meritbadges>
+				<meritbadges>Citizenship in the nation [2/23/24]</meritbadges>
+				<meritbadges>cooking [2/23/24]</meritbadges>
+				<meritbadges>hiking [2/23/24]</meritbadges>
+				<meritbadges>Personal Management [2/23/24]</meritbadges>
+			</scout>
+			<scout name="Troy Farthing">
+				<firstname>Troy</firstname>
+				<lastname>Farthing</lastname>
+				<phone> 762-235-2357</phone>
+				<address>
+					<street> 8267 Going Way</street>
+					<city>Sacramento</city>
+					<state> California</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank>
+				<meritbadges></meritbadges>
+			</scout>
+		</troop>
+		<troop name="Hobbits" number="916">
+			<scout name="Frodo Baggins">
+				<firstname>Frodo</firstname>
+				<lastname>Baggins</lastname>
+				<phone> 235-623-6723</phone>
+				<address>
+					<street> 72 Green way</street>
+					<city> Hobbiton </city>
+					<state> Shire</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank>
+				<rank>Second Class [2/23/24]</rank>
+				<rank>First Class [2/23/24]</rank>
+				<meritbadges> swimming [2/23/24]</meritbadges>
+			</scout>
+			<scout name="Biblo Baggins">
+				<firstname>bilbo</firstname>
+				<lastname>Baggins</lastname>
+				<phone> 762-157-2356</phone>
+				<address>
+					<street> 72 Green Way</street>
+					<city>Hobbiton</city>
+					<state>Shire</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank>
+				<rank>Second Class [2/23/24]</rank>
+				<rank>First Class [2/23/24]</rank>
+				<rank>Star [2/23/24]</rank>
+				<rank>Life [2/23/24]</rank>
+				<meritbadges> swimming [2/23/24]</meritbadges>
+				<meritbadges>Wilderness Survival [2/23/24]</meritbadges>
+				<meritbadges>first aid [2/23/24]</meritbadges>
+				<meritbadges>emergency preparedness [2/23/24]</meritbadges>
+			</scout>
+			<scout name="Samwise Gamgee">
+				<firstname>Samwise</firstname>
+				<lastname>Gamgee</lastname>
+				<phone> 727-672-7235</phone>
+				<address>
+					<street> 12 Green Way</street>
+					<city>Hobbiton</city>
+					<state> Shire</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank>
+				<rank>Second Class [2/23/24]</rank>
+				<meritbadges> swimming [2/23/24]</meritbadges>
+			</scout>
+			<scout name="Peregrin Took">
+				<firstname>Peregrin</firstname>
+				<lastname>Took</lastname>
+				<phone> 456-728-9302</phone>
+				<address>
+					<street> 96 Green Way</street>
+					<city>Hobbiton</city>
+					<state>Shire</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank>
+				<rank>Second Class [2/23/24]</rank>
+				<rank>First Class [2/23/24]</rank>
+				<rank>Star [2/23/24]</rank>
+				<meritbadges> swimming [2/23/24]</meritbadges>
+				<meritbadges>Wilderness Survival [2/23/24]</meritbadges>
+				<meritbadges>first aid [2/23/24]</meritbadges>
+				<meritbadges>emergency preparedness [2/23/24]</meritbadges>
+				<meritbadges>rifle shooting [2/23/24]</meritbadges>
+				<meritbadges>Citizenship in the community [2/23/24]</meritbadges>
+				<meritbadges>Citizenship in the nation [2/23/24]</meritbadges>
+				<meritbadges>cooking [2/23/24]</meritbadges>
+				<meritbadges>hiking [2/23/24]</meritbadges>
+				<meritbadges>Personal Management [2/23/24]</meritbadges>
+		
+			</scout>
+			<scout name="Meriadoc Brandybuck">
+				<firstname>Meriadoc</firstname>
+				<lastname>Brandybuck</lastname>
+				<phone> 623-236-2246</phone>
+				<address>
+					<street> 94 Green Way</street>
+					<city>Hobbiton</city>
+					<state>Shire</state>
+				</address>
+				<rank> Tenderfoot [2/23/24]</rank>
+				<meritbadges></meritbadges>
+			</scout>
+		</troop>
+	</council>	
+</bsa>

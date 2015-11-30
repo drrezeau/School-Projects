@@ -1,0 +1,146 @@
+<?xml version = "1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title> David Lambertson's Assignment #4 </title>
+    <link rel="stylesheet" href="../Business Layout.css" />
+    <style>
+      p
+      {
+      font-size:125%;
+      color:;
+      margin:5px;
+      text-align:center;
+      }
+      .right150
+      {
+      text-align:right;
+      font-size:150%;
+      }	
+      form
+      {
+      text-align:center;
+      margin:5px;
+      border:solid;
+      border-color:black;
+      float: left;
+      width:590px;
+      background-color:cornflowerblue;
+      }
+      .left
+      {
+      float: left;
+      width:48%;
+      display: inline-block;
+      }
+      .packages
+      {
+      background-color:bisque;
+      text-align:center;
+      margin:5px;
+      display: inline-block; 
+      float:right;
+      border:solid;
+      border-color:blueviolet;
+      width: 48%;
+      height: 500;
+      padding:5px;
+      }
+      #right
+      {
+      text-align:right;
+      }
+      h2
+      {
+      font-family: "Times New Roman", Times, serif;
+      font-style:italic;
+      }
+      span
+      {
+      text-align:center;
+      }
+    </style>
+    
+  </head>
+  
+  
+  <body>
+    <header>
+      <h1> Request a Quote </h1>
+      <div class="right150"> <a href="../assign04.html" style="color:white"> Home </a> </div>
+    </header>
+    
+    <div class="left">
+      <form> 
+	<h2> Custom Package </h2>
+	<p>
+          First name: <input type="text" name="firstname" /> 
+          Last name: <input type="text" name="lastname" /> </p>
+        <p > Details of Event </p>
+        <textarea rows="4" cols="50" style="background-color:snow"></textarea>
+        <p>How long do you want us to stay around? <br />
+          <input type="radio" name="distance" value="0-50"/> 0-3 hrs
+          <input type="radio" name="distance" value="51-500" /> 3.1-6 
+          <input type="radio" name="distance" value="500+" /> 6+ </p>
+        <p> How many photographers do you desire? <br />
+          <input type="radio" name="photographers" value="1" /> 1
+	  <input type="radio" name="photographers" value="2" /> 2
+          <input type="radio" name="photographers" value="3" /> 3
+          <input type="radio" name="photographers" value="4"> 4 
+          </p>
+        <p> what extra material would you like after? <br />
+          <input type="checkbox" name="material" value="CD" /> CD
+          <input type="checkbox" name="material" value="DVD" /> DVD
+          <input type="checkbox" name="material" value="Photo Book" /> Photo Book
+        </p>
+        <p> What photographer would you prefer the most? </p>
+        <select>
+          <option value="none"> None </option>
+          <option value="stacy"> Stacy </option>
+          <option value="voldemort"> Voldemort </option>
+          <option value="henry"> Henry </option>
+          <option value="jennifer"> Jennifer </option>
+          <option value="tommy"> Tommy </option>
+          <option value="avery"> Avery </option>
+          <option value="the king"> The King </option>
+        </select> <br />
+        <button type="submit" value="Submit">Submit </button>
+        <button type="reset" value="Reset"> Reset </button>
+	</form>
+      </div>
+      <div class="packages">
+	<h1 id="maroon"> Packages </h1>
+	<h2> Basic Package</h2>
+	<p> The Basic Package is the simplest package. It includes 2 hours of taking photography.
+	  Only one photographer will be present for taking photos with limited gear. We will give
+	  around 75 photos back which have been edited. You choose which photos we will edit. <br />
+	  <span> Price: $150 </span>
+	</p>
+	
+	<h2> Premium Package </h2>
+	<p>The Premium Package includes all the basic packages does plus another 1.5 hours. We add
+	  another 175 photos to the package. We will include a disc of the photos we edit. <br />
+	  <span> Price: $300 </span>
+	</p>
+	<h2> Ultimate Package </h2>
+	<p>This package includes everything of the previous two, plus we will edit and give back a copy of
+	  all photos. We will make a slide show DVD and a photo book for your keepsake. <br />
+	  <span> Price: $550 </span>
+	</p>
+	
+      </div>
+      
+      
+      <footer>
+ 	<p> Contact: (123) 456-7890 kingphotography@gmail.com </p>
+      </footer>
+      
+    </body>
+    
+  </html>

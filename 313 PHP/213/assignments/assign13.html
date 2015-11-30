@@ -1,0 +1,198 @@
+<?xml version = ″1.0″?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title> David Lambertson's Assignment #13 </title>
+    <link rel="stylesheet" href="Business Layout.css" />
+
+
+    <script>
+
+      function button()
+      {
+        Performance();
+        display();
+      }
+
+
+      function performance()
+      {
+        if (document.performanceForm.performanceType.value == "Duet")
+        {
+          document.getElementById("student2Title").style.display = "inline";
+          document.getElementById("student2").style.display = "inline";
+        }
+        else
+        {
+          document.getElementById("student2Title").style.display = "none";
+          document.getElementById("student2").style.display = "none";
+        }
+      }
+
+
+
+
+
+      function getString()
+      {
+        var performance = document.performanceForm.performanceType.value;
+        var s1FirstName = document.performanceForm.student1FirstName.value;
+        var s1LastName = document.performanceForm.student1LastName.value;
+        var s2FirstName, s2LastName;
+        if (performance == "Duet")
+        {
+          s2FirstName = document.performanceForm.student2FirstName.value;
+          s2LastName = document.performanceForm.student2LastName.value;
+        }
+        var skill = document.performanceForm.skill.value;
+        var instrument = document.performanceForm.instrument.value;
+        var location = document.performanceForm.location.value;
+        var room = document.performanceForm.room.value;
+        var time = document.performanceForm.time.value;
+
+        if (performance != "Duet")
+          var queryString = "performanceType=" + performance + "&student1FirstName=" + s1FirstName + "&student1LastName=" 
+                             + s1LastName + "&skill=" + skill + "&instrument=" + instrument+ "&location=" + location 
+                             + "&room=" + room + "&time=" + time;
+        else
+          var queryString = "performanceType=" + performance + "&student1FirstName=" + s1FirstName + "&student1LastName=" 
+                             + s1LastName + "&student2FirstName=" + s2FirstName + "&student2LastName=" + s2LastName 
+                             + "&skill=" + skill + "&instrument=" + instrument+ "&location=" + location 
+                             + "&room=" + room + "&time=" + time;
+
+
+        return queryString;
+      }
+
+      function Performance()
+      {
+
+        var queryString = getString();
+        var xmlhttp;
+        xmlhttp=new XMLHttpRequest();
+        xmlhttp.onreadystatechange=function()
+        {
+      if (xmlhttp.readyState==4 && xmlhttp.status==200)
+          { 
+            document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+          }
+        }
+        xmlhttp.open("GET", "http://157.201.194.254/~drrezeau/assign13.php?" + queryString, true);
+        xmlhttp.send();
+        
+      }
+ 
+      function display()
+      {
+        var xmlhttp;
+      
+        var txt;
+        xmlhttp=new XMLHttpRequest();
+        xmlhttp.onreadystatechange=function()
+        {
+
+          if (xmlhttp.readyState==4 && xmlhttp.status==200)
+          { 
+            document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+          }
+        }
+        xmlhttp.open("GET", "../assign13.txt", true);
+        xmlhttp.send();
+        
+      }
+
+    </script>
+
+    <style>
+      .hidden { display:none; }
+    </style>
+  </head>
+
+  <body onload="display()">
+    <header>
+      <h1> Piano Recital Registration</h1>
+      <p style="float:right"> <h2><a style="color:white" href="../index.html"> Home </a></h2></p>
+    </header>
+
+    <p>
+      <br /> <br />
+      <form name="performanceForm">
+        <p>
+          Performance Type:<select name="performanceType" onchange="performance()" style="font-size:100%">
+            <option value="Solo" >Solo</option>
+            <option value="Duet" >Duet</option>
+            <option value="Concerto" >Concerto</option>
+          </select>
+        </p> 
+        
+        <h3 style="text-align:center"> Student 1 </h3>
+        <p style="">First Name: <input type="text" name="student1FirstName" id="student1FirstName" required/> <br />
+          Last Name: <input type="text" name="student1LastName" id="student1LastName" required/> <br />
+          Student ID: <input type="text" name="student1ID" id="student1ID" required /> <br />
+        </p>
+        
+        <h3 id="student2Title" class="hidden" style="text-align:center"> Student 2</h3> <br />
+        <p id="student2" class="hidden" style="text-align:center">
+          First Name:<input type="text" name="student2FirstName" value="" id="student2FirstName" /> <br /> 
+          Last Name:<input type="text" name="student2LastName" id="student2LastName" /> <br />
+          Student ID:<input type="text" name="student2ID" id="student2ID" /> <br />
+        </p>
+        <p>Skill:<select name="skill" id="skill" style="font-size:100%" required>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Pre-advanced">Pre-Advanced</option>
+            <option value="Advanced">Advanced</option>
+          </select> </p>
+         <p>Instrument:<select name="instrument" id="instrument" style="font-size:100%" required>
+            <option value="Piano">Piano</option>
+            <option value="Vocals">Vocals</option>
+            <option value="String">String</option>
+            <option value="Organ">Organ</option>
+            <option value="Other">Other</option>
+          </select> </p>
+          <p>Location:<select name="location" id="location" style="font-size:100%" required>
+            <option value="Manwaring Center">Manwaring Center</option>
+            <option value="Taylor">Taylor</option>
+            <option value="Austin">Austin</option>
+            <option value="Snow">Snow</option>
+          </select> </p>
+          <p>Room:<select name="room" id="room" style="font-size:100%" required>
+            <option value="308">308</option>
+            <option value="174">174</option>
+            <option value="208">208</option>
+            <option value="212">212</option>
+          </select> </p>
+          <p>Time:<select name="time" id="time" style="font-size:100%" required>
+            <option value="9:00am">9:00AM</option>
+            <option value="9:30am">9:30AM</option>
+            <option value="10:00am">10:00AM</option>
+            <option value="10:30am">10:30AM</option>
+            <option value="11:00am">11:00AM</option>
+            <option value="11:30am">11:30AM</option>
+            <option value="12:00pm">12:00PM</option>
+            <option value="12:30pm">12:30PM</option>
+            <option value="1:00pm">1:00PM</option>
+            <option value="1:30pm">1:30PM</option>
+            <option value="2:00pm">2:00PM</option>
+            <option value="2:30pm">2:30PM</option>
+          </select>
+        </p>
+        <p><input type="button" value="Submit" style="font-size:100%" onclick="button()" />
+        <input type="reset" value="Reset" style="font-size:100%"  /></p>
+      </form>
+    </p>
+    
+    <p id="myDiv"></p>
+  </body>
+  
+</html>
+
+
+
+

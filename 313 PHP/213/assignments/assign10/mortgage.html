@@ -1,0 +1,146 @@
+<?xml version = "1.0" encoding ="utf-8" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title> David Lambertson's Assignment #5 </title>
+    <link rel="stylesheet" href="Business Layout.css" />
+
+    <script>
+
+      function getAPR()
+      {
+      var APR = + document.getElementById("APR").value / 100;
+      return APR;
+      }
+
+      function getYears()
+      {
+      var years = + document.getElementById("years").value;
+      return years;
+      }
+
+      function getLoan()
+      {
+      var loan = + document.getElementById("amount").value;
+      return loan;
+      }
+     
+      
+      function monthly()
+      {
+      
+      var APR = getAPR();
+      var years = getYears();
+      var loan = getLoan();
+      
+      if (APR <= 0)
+         {
+            alert("No APR has been entered.");
+	    document.getElementById("APR").focus();
+            return 0;
+         }
+     else if(years <= 0)
+         {
+            alert("NO number of years has been entered");
+	    document.getElementById("years").focus();
+            return 0;
+         }
+     else if (loan <= 0)
+         {
+            alert("No loan amount was entered.");
+	    document.getElementById("amount").focus();
+	    return 0;
+         }
+    var month = years * 12;
+    var monthly;
+		      
+    var i = APR / 12;
+    monthly = (loan * i) / (1 - Math.pow(1 + i, -month));
+    return monthly.toFixed(2);
+    }
+	                               
+    function calculate()
+    {
+    var operator = document.getElementById("operator").value;
+    switch(operator)
+       {
+          case "monthly":
+	       var number =  monthly();
+	       document.getElementById("pay").value = number;
+	       break;
+          case "yearly":
+               var number = monthly() * 12;
+	       document.getElementById("pay").value = number.toFixed(2);
+	       break;
+      }
+    }
+	              
+    function focus()
+    {
+    document.getElementById("APR").focus();
+    }
+    </script>
+    
+    <style>
+      table
+      {
+      border:1px solid black;
+      border-collapse: collapse;
+      margin:auto;
+      text-align:center;
+      }
+      td
+      {
+      padding:5px;
+      }
+      
+      form
+      {
+      font-size:125%;
+      }
+      
+    </style>
+  </head>
+
+  <body onload=focus()>
+
+    <header>
+      <h1> David's Mortgage Calculator </h1>
+      <div style="text-align:right"><h2> <a href="../../assign02.html" style="color:white"> Back </a> </h2> </div>
+    </header>
+    
+    <form action="http://157.201.194.254/cgi-bin/lam10006/mortgage" >
+      <table border="1">
+	<tr> 
+	  <td>Annual Percentage Rate: </td> <td> <input name="APR" id="APR" type="text" onchange="getAPR()" required/> </td> 
+	</tr>
+	<tr>
+	  <td>Loan Term(years): </td> <td> <input name="years" id="years" type="text"  onchange="getYears()" required/> </td> 
+	</tr>
+	<tr>
+	  <td>Loan Amount(dollars): </td> <td> <input name="amount" id="amount" type="text" onchange="getLoan()" required/> </td>
+	</tr>
+	<tr>
+	  <td colspan="2"><select name="operator" id="operator" style="font-size:100%" onchange="calculate()">
+	      <option value="monthly"> Monthly </option>
+	      <option value="yearly"> Yearly </option>
+	  </select></td>
+	</tr>
+	<tr>
+	  <td><button type="submit" style="font-size:100%">Calculate </button> </td>
+	  <td><button type="reset" style="font-size:100%">Reset</button> </td>
+	</tr>
+	<tr>
+	  <td >Payment: </td> <td> <input id="pay" type="text" readonly="readonly" value=" ">  </input> </td>
+	</tr>
+	
+      </form>
+      
+    </body>
+  </html> 

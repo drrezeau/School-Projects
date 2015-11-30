@@ -1,0 +1,96 @@
+<?xml version = ″1.0″? encoding="utf-8">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title> David Lambertson's Assignment #9 </title>
+
+    <script>
+      function showCountry(country)
+      {
+      var xmlhttp;
+
+      if (country == "")
+      {
+      document.getElementById("myDiv").innerHTML="";
+      return;
+      }
+      
+      xmlhttp=new XMLHttpRequest();
+      xmlhttp.onreadystatechange=function()
+      {
+      if (xmlhttp.readyState==4 && xmlhttp.status==200)
+      {
+      document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+      }
+      }
+      xmlhttp.open("GET", "http://157.201.194.254/~ercanbracks/"+country+".txt", true);
+      xmlhttp.send();
+      }
+
+
+      function showPage()
+      {
+      var xmlhttp;
+      var webPage = document.form2.page.value;
+      if (webPage == "")
+      {
+      document.getElementById("myDiv2").innerHTML="";
+      return;
+      }
+      
+      xmlhttp=new XMLHttpRequest();
+      xmlhttp.onreadystatechange=function()
+      {
+      if (xmlhttp.readyState==4 && xmlhttp.status==200)
+      {
+      document.getElementById("myDiv2").innerHTML=xmlhttp.responseText;
+      }
+      else
+      {
+      document.getElementById("myDiv2").innerHTML="Page Not Found.";
+      }
+      }
+      xmlhttp.open("GET", webPage, true);
+      xmlhttp.send();
+      
+      }
+
+    </script>
+    
+  </head>
+
+  <body>
+
+    <div style="text-align:right"> <h2><a href="../index.html"> Home </a></h2></div>
+    <h1> This will be assignment #9</h1>
+
+    <form name="myForm">
+    <select name = "country" onchange="showCountry(this.value)">
+      <option value ="">Select a Country:</option>
+      <option value="usa">USA</option>
+      <option value="mexico">Mexico</option>
+      <option value="russia">Russia</option>
+      <option value="canada">Canada</option>
+    </select>
+    </form>
+    <div id="myDiv" style="text-align:center"></div> <br />
+    <br /> <br />
+    <form name="form2">
+    Enter Page:<input type="text" name="page" value="" />
+    <button type="button" onclick="showPage()">Request data</button>
+    </form>
+
+    <hr />
+
+    <div id="myDiv2" ></div>
+
+  </body>
+
+</html>
+

@@ -1,0 +1,138 @@
+<?xml version = ″1.0″?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title> David Lambertson's Assignment #12 </title>
+    <link rel="stylesheet" href="Business Layout.css" />
+
+    <script>
+      function getString()
+      {
+      var sCity = document.myForm.startCity.value;
+      var eCity = document.myForm.endCity.value;
+      var sState = document.myForm.startState.value;
+      var eState = document.myForm.endState.value;
+
+      var queryString = "startCity=" + sCity + "&startState=" + sState + "&endCity=" + eCity + "&endState=" + eState;
+      return queryString;
+      }
+
+      function Mileage()
+      {
+
+        var queryString = getString();
+        var txt, x, i;
+        var xmlhttp;
+
+        xmlhttp=new XMLHttpRequest();
+        xmlhttp.onreadystatechange=function()
+        {
+          if (xmlhttp.readyState==4 && xmlhttp.status==200)
+          { 
+            xmlDoc=xmlhttp.responseXML;
+            txt="";
+            x=xmlDoc.getElementsByTagName("startcity");
+            for (i=0; i<x.length;i++)
+            {
+              txt=txt + x[i].childNodes[0].nodeValue + "<br>";
+            }
+            document.getElementById("sCity").innerHTML=txt;
+
+            txt="";
+            x=xmlDoc.getElementsByTagName("startstate");
+                          for(i=0; i<x.length;i++)
+            {
+              txt=txt + x[i].childNodes[0].nodeValue + "<br>";
+            }
+            document.getElementById("sState").innerHTML=txt;
+
+            txt="";
+            x=xmlDoc.getElementsByTagName("endcity");
+                                       for(i=0; i<x.length;i++)
+            {
+              txt=txt + x[i].childNodes[0].nodeValue + "<br>";
+            }
+            document.getElementById("eCity").innerHTML=txt;
+
+            txt="";
+            x=xmlDoc.getElementsByTagName("endstate");
+            for(i=0; i<x.length;i++)
+            {
+              txt=txt + x[i].childNodes[0].nodeValue + "<br>";
+            }
+            document.getElementById("eState").innerHTML=txt;
+
+            txt="";
+            x=xmlDoc.getElementsByTagName("miles");
+            for(i=0; i<x.length;i++)
+            {
+              txt=txt + x[i].childNodes[0].nodeValue + "<br>";
+            }
+            document.getElementById("miles").innerHTML=txt;
+
+            txt="";
+            x=xmlDoc.getElementsByTagName("tmode");
+            for(i=0; i<x.length;i++)
+            {
+              txt=txt + x[i].childNodes[0].nodeValue + "<br>";
+            }
+            document.getElementById("tmode").innerHTML=txt;
+          }
+        }
+
+      xmlhttp.open("GET", "http://157.201.194.254/cgi-bin/ercanbracks/mileage/mileageAjaxXML?" + queryString, true);
+      xmlhttp.send();
+      
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <div style="text-align:right"> <h2><a href="../index.html"> Home </a></h2></div>
+    <h1> This will be assignment #12</h1>
+
+
+    <form name="myForm" style="text-align:center" >
+      <p>Start City: <input type="text" name="startCity" id="startcity" /> </p>
+      <p>State State: <input type="text" name="startState" maxlength="2" size="2" id="startstate" /> </p>
+      <p>End City: <input type="text" name="endCity" id="endcity" /> </p>
+      <p>End State: <input type="text" name="endState" maxlength="2"size="2" id="endstate" /> </p>
+
+      <input type="button" value="Submit" name="submit" onclick="Mileage()" />
+    </form>
+      <table border=solid style="margin:auto; text-align:center">
+        <tr>
+          <td><p>Start City:</p></td>
+          <td><p id="sCity"></p></td>
+        </tr>
+        <tr>
+          <td><p> Start State:</p></td>
+          <td><p id="sState"></p></td>
+        </tr>
+        <tr>
+          <td><p>End City:</p></td>
+          <td><p id="eCity"></p></td>
+        </tr>
+        <tr>
+          <td><p>End State:</p></td>
+          <td><p id="eState"></p></td>
+        </tr>
+        <tr>
+          <td><p>Miles: </p></td>
+          <td><p id="miles"></p></td>
+        </tr>
+        <tr>
+          <td><p>Travel Modes:</p></td>
+          <td><p id="tmode"></p></td>
+        </tr>
+      </table>
+  </body>
+
+</html>

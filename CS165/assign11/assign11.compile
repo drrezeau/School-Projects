@@ -1,0 +1,132 @@
+
+# mkdir assign11.tar.dir 2>> assign11.compile 
+
+# cp assign11.tar assign11.tar.dir/tar.tar 2>> assign11.compile 
+
+# tar -xf  assign11.tar.dir/tar.tar -C assign11.tar.dir 2>> assign11.compile >> assign11.compile 
+
+# make a.out -C assign11.tar.dir 2>> assign11.compile >> assign11.compile 
+make: Entering directory `/home/lam10006/assign11/assign11.tar.dir'
+g++ -c driver.cpp
+g++ -c leg.cpp
+g++ -c date.cpp
+g++ -c time.cpp
+g++ driver.o leg.o node.o date.o time.o
+g++: node.o: No such file or directory
+make: *** [a.out] Error 1
+make: Leaving directory `/home/lam10006/assign11/assign11.tar.dir'
+
+# mv assign11.tar.dir/a.out /tmp/testbed/compileDir02d252d9-c66f-4a70-b278-c9541ed19f46/assign11 2>> assign11.compile >> assign11.compile 
+mv: cannot stat `assign11.tar.dir/a.out': No such file or directory
+
+# rm -rf assign11.tar.dir 2>> assign11.compile 
+
+# mkdir assign11.tar.dir 2>> assign11.compile 
+
+# cp assign11.tar assign11.tar.dir/tar.tar 2>> assign11.compile 
+
+# tar -xf  assign11.tar.dir/tar.tar -C assign11.tar.dir 2>> assign11.compile >> assign11.compile 
+
+# make a.out -C assign11.tar.dir 2>> assign11.compile >> assign11.compile 
+make: Entering directory `/home/lam10006/assign11/assign11.tar.dir'
+g++ -c driver.cpp
+g++ -c leg.cpp
+g++ -c date.cpp
+g++ -c time.cpp
+g++ driver.o leg.o node.o date.o time.o
+g++: node.o: No such file or directory
+make: *** [a.out] Error 1
+make: Leaving directory `/home/lam10006/assign11/assign11.tar.dir'
+
+# mv assign11.tar.dir/a.out /tmp/testbed/compileDireeff8a04-9015-409d-9dc5-b903bf3049a6/assign11 2>> assign11.compile >> assign11.compile 
+mv: cannot stat `assign11.tar.dir/a.out': No such file or directory
+
+# rm -rf assign11.tar.dir 2>> assign11.compile 
+
+# mkdir assign11.tar.dir 2>> assign11.compile 
+
+# cp assign11.tar assign11.tar.dir/tar.tar 2>> assign11.compile 
+
+# tar -xf  assign11.tar.dir/tar.tar -C assign11.tar.dir 2>> assign11.compile >> assign11.compile 
+
+# make a.out -C assign11.tar.dir 2>> assign11.compile >> assign11.compile 
+make: Entering directory `/home/lam10006/assign11/assign11.tar.dir'
+g++ -c driver.cpp
+g++ -c leg.cpp
+g++ -c date.cpp
+g++ -c time.cpp
+g++ driver.o leg.o node.o date.o time.o
+g++: node.o: No such file or directory
+make: *** [a.out] Error 1
+make: Leaving directory `/home/lam10006/assign11/assign11.tar.dir'
+
+# mv assign11.tar.dir/a.out /tmp/testbed/compileDir6cd7c880-8db7-4ef8-a722-b817aabc299d/assign11 2>> assign11.compile >> assign11.compile 
+mv: cannot stat `assign11.tar.dir/a.out': No such file or directory
+
+# rm -rf assign11.tar.dir 2>> assign11.compile 
+
+# mkdir assign11.tar.dir 2>> assign11.compile 
+
+# cp assign11.tar assign11.tar.dir/tar.tar 2>> assign11.compile 
+
+# tar -xf  assign11.tar.dir/tar.tar -C assign11.tar.dir 2>> assign11.compile >> assign11.compile 
+
+# make a.out -C assign11.tar.dir 2>> assign11.compile >> assign11.compile 
+make: Entering directory `/home/lam10006/assign11/assign11.tar.dir'
+g++ -c driver.cpp
+g++ -c leg.cpp
+g++ -c date.cpp
+g++ -c time.cpp
+g++ driver.o leg.o node.o date.o time.o
+g++: node.o: No such file or directory
+make: *** [a.out] Error 1
+make: Leaving directory `/home/lam10006/assign11/assign11.tar.dir'
+
+# mv assign11.tar.dir/a.out /tmp/testbed/compileDir45e44b02-e7ff-4f11-bc29-4cf3e5b26483/assign11 2>> assign11.compile >> assign11.compile 
+mv: cannot stat `assign11.tar.dir/a.out': No such file or directory
+
+# rm -rf assign11.tar.dir 2>> assign11.compile 
+
+# mkdir assign11.tar.dir 2>> assign11.compile 
+
+# cp assign11.tar assign11.tar.dir/tar.tar 2>> assign11.compile 
+
+# tar -xf  assign11.tar.dir/tar.tar -C assign11.tar.dir 2>> assign11.compile >> assign11.compile 
+
+# make a.out -C assign11.tar.dir 2>> assign11.compile >> assign11.compile 
+make: Entering directory `/home/lam10006/assign11/assign11.tar.dir'
+g++ -c driver.cpp
+g++ -c leg.cpp
+g++ -c date.cpp
+g++ -c time.cpp
+g++ driver.o leg.o node.o date.o time.o
+g++: node.o: No such file or directory
+make: *** [a.out] Error 1
+make: Leaving directory `/home/lam10006/assign11/assign11.tar.dir'
+
+# mv assign11.tar.dir/a.out /tmp/testbed/compileDir2d763256-aadc-41a7-a37c-91ab4e91f33c/assign11 2>> assign11.compile >> assign11.compile 
+mv: cannot stat `assign11.tar.dir/a.out': No such file or directory
+
+# rm -rf assign11.tar.dir 2>> assign11.compile 
+
+# mkdir assign11.tar.dir 2>> assign11.compile 
+
+# cp assign11.tar assign11.tar.dir/tar.tar 2>> assign11.compile 
+
+# tar -xf  assign11.tar.dir/tar.tar -C assign11.tar.dir 2>> assign11.compile >> assign11.compile 
+
+# make a.out -C assign11.tar.dir 2>> assign11.compile >> assign11.compile 
+make: Entering directory `/home/lam10006/assign11/assign11.tar.dir'
+g++ -c driver.cpp
+g++ -c leg.cpp
+g++ -c date.cpp
+g++ -c time.cpp
+g++ driver.o leg.o node.o date.o time.o
+g++: node.o: No such file or directory
+make: *** [a.out] Error 1
+make: Leaving directory `/home/lam10006/assign11/assign11.tar.dir'
+
+# mv assign11.tar.dir/a.out /tmp/testbed/compileDir192bc11f-c6ea-4c5e-a70d-2b4b64b3951a/assign11 2>> assign11.compile >> assign11.compile 
+mv: cannot stat `assign11.tar.dir/a.out': No such file or directory
+
+# rm -rf assign11.tar.dir 2>> assign11.compile 

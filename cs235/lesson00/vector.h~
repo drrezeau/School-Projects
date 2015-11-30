@@ -1,0 +1,215 @@
+/******************
+ *
+ *
+ ******************/
+
+#ifndef VECTOR_H
+#define VECTOR_H
+
+#include <cassert>
+#include <iostream>
+using namespace std;
+
+template<class T>
+class VectorIterator;
+
+template <class T>
+class Vector
+{
+  public:
+   // default constructor
+  Vector() : myCapacity(0), numItems(0), data(0x00000000) {}
+   
+   // non-default contsructor
+   Vector(int capacity) throw (const char *);
+   
+   // copy constructor
+   Vector(const Vector & rhs) throw (const char *) { *this = rhs; }
+
+   // destructor
+   ~Vector() { if (myCapacity) delete [] data; }
+
+   // is the container empty
+   bool empty() const { return numItems == 0; }
+
+   //return how many items are in the Vector
+   int size() const { return numItems; }
+
+   //how big is the Vector
+   int capacity() const { return myCapacity; }
+
+   //clears the Vector
+   void clear() { numItems = 0; }
+
+   void push_back(T newValue);
+
+   const T operator [](int item) const;
+
+   Vector<T> operator () (int item);
+
+   Vector<T> & operator = (const Vector<T>& rhs);
+   
+   // sets an iterator to the first item of data
+   VectorIterator<T> begin() { return VectorIterator<T>(data); }
+
+   // sets an iterator to the last item of data
+   VectorIterator<T> end() {return VectorIterator<T>(data +numItems); }
+   
+  private:
+   int myCapacity;
+   int numItems;
+   T * data;
+   
+};
+
+
+template <class T>
+class VectorIterator
+{
+  public:
+  VectorIterator() : p(0x00000000) {}
+   
+  VectorIterator(T * p) : p(p) {}
+
+   VectorIterator(const VectorIterator & rhs) { *this = rhs; }
+
+   VectorIterator & operator = (const VectorIterator & rhs)
+   {
+      this->p = rhs.p;
+      return *this;
+   }
+
+   bool operator != (const VectorIterator & rhs) const
+   {
+      return rhs.p != this->p;
+   }
+
+   T & operator * ()
+   {
+      return *p;
+   }
+   VectorIterator <T> & operator ++ ()
+   {
+      p++;
+      return *this;
+   }
+
+   VectorIterator <T> operator++ (int postfix)
+   {
+      VectorIterator tmp(*this);
+      p++;
+      return tmp;
+   }
+
+  private:
+   T * p;
+
+};
+
+
+
+
+template <class T>
+Vector <T> :: Vector (int capacity) throw (const char *)
+{
+   assert(capacity >= 0);
+
+   if (capacity == 0)
+   {
+      this->myCapacity = this->numItems = 0;
+      this->data = 0x00000000;
+      return;
+   }
+
+   try
+   {
+      data = new T[capacity];
+   }
+   catch (std::bad_alloc)
+   {
+      throw "ERROR: Unable to allocate a new buffer for Vector";
+   }
+
+
+   this->myCapacity = capacity;
+   this->numItems = 0;
+}
+
+
+template<class T>
+void Vector <T> :: push_back(T newValue)
+{
+   T * newData;
+   if (myCapacity == 0)
+   {
+      myCapacity += 1;
+      data = new T[myCapacity];
+   }
+   
+   if (myCapacity == numItems)
+   {
+      myCapacity *= 2;
+      
+      try
+      {  
+         newData = new T[myCapacity];
+      }
+      
+      catch(...)
+      {
+         cout << "Unable to allocate a buffer for Vector";
+         myCapacity /= 2;
+      }
+      
+      int i;
+      for (i = 0; i < numItems; i++)
+      {
+         newData[i] = data[i];
+      }
+      newData[i] = '\0';
+      
+      delete [] data;
+      data = newData;
+      
+   }
+   
+   data[numItems] = newValue;
+   numItems++;
+}
+
+template <class T>
+const T Vector<T> :: operator [] (int item) const
+{
+   return this->data[item];
+}
+
+template<class T>
+Vector<T> & Vector<T> :: operator = (const Vector<T>& rhs)
+{
+   assert(rhs.myCapacity >= 0);
+   
+   if (rhs.myCapacity == 0)
+   {
+      this->myCapacity = this->numItems = 0;
+      this->data = 0x00000000;
+      return *this;
+   }
+   
+   try
+   {
+      this->data = new T[rhs.myCapacity];
+   }
+   catch(std:: bad_alloc)
+   {
+      throw "ERROR: Unable to allocate buffer";
+   }
+   
+   //  assert(rhs.numItems >= 0 && rhs.numItems <= rhs.myCapacity);
+   this->myCapacity = rhs.myCapacity;
+   this->numItems = rhs.numItems;
+   for (int i = 0; i < numItems; i++)
+   {
+      this->data[i] = rhs.data[i];
+   }
+}
+#endif

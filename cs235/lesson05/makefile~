@@ -1,0 +1,24 @@
+###############################################################
+# Program:
+#     Lesson 05, NODE
+#     Brother Helfrich, CS235
+# Author:
+#     <your name here>
+# Summary:
+#     <put a description here>
+###############################################################
+
+##############################################################
+# The main rule
+##############################################################
+a.out: node.h lesson05.o 
+	g++ -g -o a.out lesson05.o 
+	tar  -cf lesson05.tar *.h *.cpp makefile
+
+##############################################################
+# The individual components
+#      lesson05.o      : the driver program
+#      <anything else?>
+##############################################################
+lesson05.o: node.h lesson05.cpp sortInsertion.h
+	g++ -g -c lesson05.cpp

@@ -1,0 +1,174 @@
+
+# mkdir assign06.tar.dir 2>> assign06.compile 
+
+# cp assign06.tar assign06.tar.dir/tar.tar 2>> assign06.compile 
+
+# tar -xf  assign06.tar.dir/tar.tar -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+
+# make a.out -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+make: Entering directory `/home/lam10006/assign06/assign06.tar.dir'
+g++ -c time.cpp
+g++ -c driver.cpp
+g++ time.o driver.o
+make: Leaving directory `/home/lam10006/assign06/assign06.tar.dir'
+
+# mv assign06.tar.dir/a.out /tmp/testbed/compileDir13cfe04b-061e-4a97-b800-698f9b6f372b/assign06 2>> assign06.compile >> assign06.compile 
+
+# rm -rf assign06.tar.dir 2>> assign06.compile 
+
+# mkdir assign06.tar.dir 2>> assign06.compile 
+
+# cp assign06.tar assign06.tar.dir/tar.tar 2>> assign06.compile 
+
+# tar -xf  assign06.tar.dir/tar.tar -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+
+# make a.out -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+make: Entering directory `/home/lam10006/assign06/assign06.tar.dir'
+g++ -c time.cpp
+g++ -c driver.cpp
+g++ time.o driver.o
+make: Leaving directory `/home/lam10006/assign06/assign06.tar.dir'
+
+# mv assign06.tar.dir/a.out /tmp/testbed/compileDir964a3319-918c-4824-b9c9-16e663c3b001/assign06 2>> assign06.compile >> assign06.compile 
+
+# rm -rf assign06.tar.dir 2>> assign06.compile 
+
+# mkdir assign06.tar.dir 2>> assign06.compile 
+
+# cp assign06.tar assign06.tar.dir/tar.tar 2>> assign06.compile 
+
+# tar -xf  assign06.tar.dir/tar.tar -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+
+# make a.out -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+make: Entering directory `/home/lam10006/assign06/assign06.tar.dir'
+g++ -c time.cpp
+g++ -c driver.cpp
+g++ time.o driver.o
+make: Leaving directory `/home/lam10006/assign06/assign06.tar.dir'
+
+# mv assign06.tar.dir/a.out /tmp/testbed/compileDir91e3d616-7d4d-454c-acae-f4ad65468bb2/assign06 2>> assign06.compile >> assign06.compile 
+
+# rm -rf assign06.tar.dir 2>> assign06.compile 
+
+# mkdir assign06.tar.dir 2>> assign06.compile 
+
+# cp assign06.tar assign06.tar.dir/tar.tar 2>> assign06.compile 
+
+# tar -xf  assign06.tar.dir/tar.tar -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+
+# make a.out -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+make: Entering directory `/home/lam10006/assign06/assign06.tar.dir'
+g++ -c time.cpp
+time.cpp: In member function ‘void Time::displayMilitary()’:
+time.cpp:89: error: ‘hours’ was not declared in this scope
+time.cpp:90: error: ‘minutes’ was not declared in this scope
+time.cpp:95: error: ‘seconds’ was not declared in this scope
+make: *** [time.o] Error 1
+make: Leaving directory `/home/lam10006/assign06/assign06.tar.dir'
+
+# mv assign06.tar.dir/a.out /tmp/testbed/compileDir8ca15e32-1372-4b85-8486-d5e9dcb4e377/assign06 2>> assign06.compile >> assign06.compile 
+mv: cannot stat `assign06.tar.dir/a.out': No such file or directory
+
+# rm -rf assign06.tar.dir 2>> assign06.compile 
+
+# mkdir assign06.tar.dir 2>> assign06.compile 
+
+# cp assign06.tar assign06.tar.dir/tar.tar 2>> assign06.compile 
+
+# tar -xf  assign06.tar.dir/tar.tar -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+
+# make a.out -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+make: Entering directory `/home/lam10006/assign06/assign06.tar.dir'
+g++ -c time.cpp
+g++ -c driver.cpp
+g++ time.o driver.o
+make: Leaving directory `/home/lam10006/assign06/assign06.tar.dir'
+
+# mv assign06.tar.dir/a.out /tmp/testbed/compileDir9e6ac958-5c51-4c9a-90b6-bb62117d3bf7/assign06 2>> assign06.compile >> assign06.compile 
+
+# rm -rf assign06.tar.dir 2>> assign06.compile 
+
+# mkdir assign06.tar.dir 2>> assign06.compile 
+
+# cp assign06.tar assign06.tar.dir/tar.tar 2>> assign06.compile 
+
+# tar -xf  assign06.tar.dir/tar.tar -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+
+# make a.out -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+make: Entering directory `/home/lam10006/assign06/assign06.tar.dir'
+g++ -c time.cpp
+g++ -c driver.cpp
+g++ time.o driver.o
+make: Leaving directory `/home/lam10006/assign06/assign06.tar.dir'
+
+# mv assign06.tar.dir/a.out /tmp/testbed/compileDir6317ab8d-47b2-4fbe-8f4d-f899ba36a790/assign06 2>> assign06.compile >> assign06.compile 
+
+# rm -rf assign06.tar.dir 2>> assign06.compile 
+
+# mkdir assign06.tar.dir 2>> assign06.compile 
+
+# cp assign06.tar assign06.tar.dir/tar.tar 2>> assign06.compile 
+
+# tar -xf  assign06.tar.dir/tar.tar -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+
+# make a.out -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+make: Entering directory `/home/lam10006/assign06/assign06.tar.dir'
+g++ -c time.cpp
+g++ -c driver.cpp
+g++ time.o driver.o
+make: Leaving directory `/home/lam10006/assign06/assign06.tar.dir'
+
+# mv assign06.tar.dir/a.out /tmp/testbed/compileDir5b668722-8350-4c86-b00f-036dcc637262/assign06 2>> assign06.compile >> assign06.compile 
+
+# rm -rf assign06.tar.dir 2>> assign06.compile 
+
+# mkdir assign06.tar.dir 2>> assign06.compile 
+
+# cp assign06.tar assign06.tar.dir/tar.tar 2>> assign06.compile 
+
+# tar -xf  assign06.tar.dir/tar.tar -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+
+# make a.out -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+make: Entering directory `/home/lam10006/assign06/assign06.tar.dir'
+g++ -c time.cpp
+g++ -c driver.cpp
+g++ time.o driver.o
+make: Leaving directory `/home/lam10006/assign06/assign06.tar.dir'
+
+# mv assign06.tar.dir/a.out /tmp/testbed/compileDirda45dd32-47ef-4e73-b228-522481a813df/assign06 2>> assign06.compile >> assign06.compile 
+
+# rm -rf assign06.tar.dir 2>> assign06.compile 
+
+# mkdir assign06.tar.dir 2>> assign06.compile 
+
+# cp assign06.tar assign06.tar.dir/tar.tar 2>> assign06.compile 
+
+# tar -xf  assign06.tar.dir/tar.tar -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+
+# make a.out -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+make: Entering directory `/home/lam10006/assign06/assign06.tar.dir'
+g++ -c time.cpp
+g++ -c driver.cpp
+g++ time.o driver.o
+make: Leaving directory `/home/lam10006/assign06/assign06.tar.dir'
+
+# mv assign06.tar.dir/a.out /tmp/testbed/compileDir91be4617-d884-46d5-8bf5-da33f1ee8cb7/assign06 2>> assign06.compile >> assign06.compile 
+
+# rm -rf assign06.tar.dir 2>> assign06.compile 
+
+# mkdir assign06.tar.dir 2>> assign06.compile 
+
+# cp assign06.tar assign06.tar.dir/tar.tar 2>> assign06.compile 
+
+# tar -xf  assign06.tar.dir/tar.tar -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+
+# make a.out -C assign06.tar.dir 2>> assign06.compile >> assign06.compile 
+make: Entering directory `/home/lam10006/assign06/assign06.tar.dir'
+g++ -c time.cpp
+g++ -c driver.cpp
+g++ time.o driver.o
+make: Leaving directory `/home/lam10006/assign06/assign06.tar.dir'
+
+# mv assign06.tar.dir/a.out /tmp/testbed/compileDir800d1df4-ab6d-46d8-ab3d-71d8c3aef7e4/assign06 2>> assign06.compile >> assign06.compile 
+
+# rm -rf assign06.tar.dir 2>> assign06.compile 

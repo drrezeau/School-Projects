@@ -1,0 +1,44 @@
+/***********************************************************************
+* Header:
+*    WORD COUNT
+* Summary:
+*    This will contain just the prototype for the wordCount()
+*    function
+* Author
+*    Derek Calkins
+************************************************************************/
+
+#ifndef WORD_COUNT_H
+#define WORD_COUNT_H
+
+class Count
+{
+  public:
+  Count(): count(0) {}
+  Count(const int & count) : count(count) {}
+   int getCount() const { return count; }
+   Count operator ++ ()
+   {
+      ++count;
+      return *this;
+   }
+   Count operator = (const int & rhs)
+   {
+      count = rhs;
+      return *this;
+   }
+   
+  private:
+   int count;
+   
+};
+
+/*****************************************************
+ * WORD COUNT
+ * Prompt the user for a file to read, then prompt the
+ * user for words to get the count from
+ *****************************************************/
+void wordCount();
+
+#endif // WORD_COUNT_H
+

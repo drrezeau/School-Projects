@@ -1,0 +1,21 @@
+#inlcude <iostream>
+#include <string>
+#include "mileageClass.h"
+
+using namespace std;
+
+int main()
+{
+   string startCity;
+   string endCity;
+
+   cout << "Start City: ";
+   cin >> startCity;
+
+   cout << "Destination City: ";
+   cin >> endCity;
+
+   cout startCity << endCity << endl;
+
+   return 0;
+}

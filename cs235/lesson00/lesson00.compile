@@ -1,0 +1,68 @@
+
+# mkdir lesson00.tar.dir 2>> lesson00.compile 
+
+# cp lesson00.tar lesson00.tar.dir/tar.tar 2>> lesson00.compile 
+
+# tar -xf  lesson00.tar.dir/tar.tar -C lesson00.tar.dir 2>> lesson00.compile >> lesson00.compile 
+
+# make a.out -C lesson00.tar.dir 2>> lesson00.compile >> lesson00.compile 
+make: Entering directory `/home/lam10006/cs235/lesson00/lesson00.tar.dir'
+g++ -c lesson00.cpp
+g++ -o a.out lesson00.o 
+tar -cf lesson00.tar vector.h lesson00.cpp makefile
+make: Leaving directory `/home/lam10006/cs235/lesson00/lesson00.tar.dir'
+
+# mv lesson00.tar.dir/a.out /tmp/testbed/compileDir8500b945-6ae1-48a1-af54-721500201b5c/lesson00 2>> lesson00.compile >> lesson00.compile 
+
+# rm -rf lesson00.tar.dir 2>> lesson00.compile 
+
+# mkdir lesson00.tar.dir 2>> lesson00.compile 
+
+# cp lesson00.tar lesson00.tar.dir/tar.tar 2>> lesson00.compile 
+
+# tar -xf  lesson00.tar.dir/tar.tar -C lesson00.tar.dir 2>> lesson00.compile >> lesson00.compile 
+
+# make a.out -C lesson00.tar.dir 2>> lesson00.compile >> lesson00.compile 
+make: Entering directory `/home/lam10006/cs235/lesson00/lesson00.tar.dir'
+g++ -c lesson00.cpp
+g++ -o a.out lesson00.o 
+tar -cf lesson00.tar vector.h lesson00.cpp makefile
+make: Leaving directory `/home/lam10006/cs235/lesson00/lesson00.tar.dir'
+
+# mv lesson00.tar.dir/a.out /tmp/testbed/compileDir3ab9f4b7-a8b3-47f0-8fe5-2ebb90d348e4/lesson00 2>> lesson00.compile >> lesson00.compile 
+
+# rm -rf lesson00.tar.dir 2>> lesson00.compile 
+
+# mkdir lesson00.tar.dir 2>> lesson00.compile 
+
+# cp lesson00.tar lesson00.tar.dir/tar.tar 2>> lesson00.compile 
+
+# tar -xf  lesson00.tar.dir/tar.tar -C lesson00.tar.dir 2>> lesson00.compile >> lesson00.compile 
+
+# make a.out -C lesson00.tar.dir 2>> lesson00.compile >> lesson00.compile 
+make: Entering directory `/home/lam10006/cs235/lesson00/lesson00.tar.dir'
+g++ -c lesson00.cpp
+g++ -o a.out lesson00.o 
+tar -cf lesson00.tar vector.h lesson00.cpp makefile
+make: Leaving directory `/home/lam10006/cs235/lesson00/lesson00.tar.dir'
+
+# mv lesson00.tar.dir/a.out /tmp/testbed/compileDir76d15de0-2fba-46f5-8b1c-84ece9b34e4b/lesson00 2>> lesson00.compile >> lesson00.compile 
+
+# rm -rf lesson00.tar.dir 2>> lesson00.compile 
+
+# mkdir lesson00.tar.dir 2>> lesson00.compile 
+
+# cp lesson00.tar lesson00.tar.dir/tar.tar 2>> lesson00.compile 
+
+# tar -xf  lesson00.tar.dir/tar.tar -C lesson00.tar.dir 2>> lesson00.compile >> lesson00.compile 
+
+# make a.out -C lesson00.tar.dir 2>> lesson00.compile >> lesson00.compile 
+make: Entering directory `/home/lam10006/cs235/lesson00/lesson00.tar.dir'
+g++ -c lesson00.cpp
+g++ -o a.out lesson00.o 
+tar -cf lesson00.tar vector.h lesson00.cpp makefile
+make: Leaving directory `/home/lam10006/cs235/lesson00/lesson00.tar.dir'
+
+# mv lesson00.tar.dir/a.out /tmp/testbed/compileDir321c9c76-4306-4abf-812c-ea5d31d5b9b0/lesson00 2>> lesson00.compile >> lesson00.compile 
+
+# rm -rf lesson00.tar.dir 2>> lesson00.compile 

@@ -1,0 +1,49 @@
+#include <iostream>
+#include <NTL/ZZ.h>
+
+using namespace std;
+
+NTL_CLIENT
+
+double squareRootTwo(int number)
+{
+   double num1;
+   num1 = number * sqrt(2);
+   return floor(num1);
+}
+
+double squareRootPlusTwo(int number)
+{
+   double num2;
+   num2 = number * (sqrt(2) + 2);
+   return floor(num2);
+}
+
+int main()
+{
+
+   double number = 0;
+
+   cout << "What is your number?\n";
+   cin >> number;
+   double num;
+   double num3;
+   cout << "Square Root of Two\n";
+   for (double i = 1; i < number; i++)
+   {
+      num = squareRootTwo(i);
+      cout << num << " ";
+   }
+   
+   cout << endl << "Square Root of two plus two\n";
+   
+
+   for ( double i = 1; i < number; i++)
+   {
+      num3 = squareRootPlusTwo(i);
+      cout << num3 << " ";
+   }
+   cout << endl;
+   
+   return 0;
+}

@@ -1,0 +1,33 @@
+/***********************************************************************
+ * Module:
+ *    Lesson 08, Sort Binary
+ *    Brother Helfrich, CS 235
+ * Author:
+ *    David Lambertson
+ * Summary:
+ *    This program will implement the Binary Tree Sort
+ ************************************************************************/
+
+#ifndef SORT_BINARY_H
+#define SORT_BINARY_H
+
+#include "bst.h"
+
+/*****************************************************
+ * SORT BINARY
+ * Perform the binary tree sort
+ ****************************************************/
+template <class T>
+void sortBinary(T array[], int size)
+{
+   BST<T> tree;
+   for (int i = 0; i < size; i++) //creates the tree
+      tree.insert(array[i]);
+
+   int i = 0;//save it back into the array
+   for (BSTIterator<T> it = tree.begin(); it != tree.end(); ++it, i++)
+      array[i] = *it;   
+}
+
+
+#endif // SORT_BINARY_H

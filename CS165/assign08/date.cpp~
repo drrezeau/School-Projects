@@ -1,0 +1,113 @@
+#include "time.h"
+#include "date.h"
+#include <iostream>
+
+using namespace std;
+
+Date :: Date(int month, int day, int year, int hours, int minutes, int seconds)
+{
+   this->month = month;
+   this->day = day;
+   this->year = year;
+   setHours(hours);
+   setMinutes(minutes);
+   setSeconds(seconds);
+}
+
+void Date :: promptForDate()
+{
+   int month;
+   int day;
+   int year;
+
+   cout << "Enter month: ";
+   cin >> month;
+
+   cout << "Enter day: ";
+   cin >> day;
+
+   cout << "Enter year: ";
+   cin >> year;
+
+   setDate(month, day, year);
+}
+
+Date & Date :: operator = (const Date & rhs)
+{
+   this->month = rhs.month;
+   this->day = rhs.day;
+   this->year = rhs.year;
+   setHours(rhs.getHours());
+   setMinutes(rhs.getMinutes());
+   setSeconds(rhs.getSeconds());
+
+   return *this;
+}
+void Date :: addMonths(int monthsAdd)
+{
+   
+   int newMonth = getMonths();
+   newMonth += monthsAdd;
+   if (newMonth > 12)
+   {
+      newMonth -= 12;
+      year++;
+   }
+   addYears(0);
+   setMonth(newMonth);
+}
+
+void Date :: addDays(int daysAdd)
+{
+   int newDay = getDays();
+   int daysMonth = getDaysinMonth(month, year);
+   newDay += daysAdd;
+   if (newDay > daysMonth)
+   {
+      newDay -= daysMonth;
+      month++;
+   }
+   addMonths(0);
+   setDay(newDay);
+}
+
+void Date :: addYears(int yearsAdd)
+{
+   int newYear = getYears();
+   newYear += yearsAdd;
+   setYear(newYear);
+}
+
+void Date :: addHours(int hoursAdd)
+{
+   int newHour = getHours();
+   newHour += hoursAdd;
+   if (newHour >= 24)
+   {
+      newHour -= 24;
+      day++;
+   }
+   addDays(0);
+   setHours(newHour);
+   
+}
+
+
+ostream & operator << (ostream & out, const Date & rhs)
+{
+   out << rhs.getMonths() << "/" << rhs.getDays() << "/" << rhs.getYears();
+   
+   out << " " << rhs.getHours();
+   if (rhs.getMinutes() < 10)
+      out << ":0";
+   else
+      out << ":";
+   out <<  rhs.getMinutes();
+   if (rhs.getSeconds() < 10)
+      out << ":0";
+   else
+      out << ":";
+   out << rhs.getSeconds();
+   return out;
+}
+

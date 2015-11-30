@@ -1,0 +1,608 @@
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir6e57e43c-81ac-46ce-a355-48ac6ffc3690/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDird2fbe825-e2f2-4e82-b3bc-5354340b1fdd/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir52f65ffc-0b04-4c51-94df-9d1715b2de5c/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir0a0d4109-5386-4acf-adec-b9447c2d277e/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDirad255919-21a1-4407-b3cd-b85ea4d05f78/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir39546d0b-cc4b-44c8-a930-ebc19df64d21/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDirb7942537-5a6e-4888-aa46-6ee77b9a16a0/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir61f656f0-87f1-4cde-9603-6ee3df47a12a/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir61d91270-656c-4539-acd2-96a8978e6f4d/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDirb00590ba-3d69-4282-9217-e6940d9481be/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir99e46414-7d0c-4771-8094-629622813b91/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir9b216df4-4c0f-4d02-a9bc-9ad454f3f8ae/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDirc84050bc-2335-427e-ae87-b362784bac95/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir30709691-88ea-4bc5-bce3-b6bd271bd10a/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir19701c1f-f93e-4442-82c7-34b6e6da91b7/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDiraec97999-ee1a-4138-9a0f-08ed4323fd20/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir252aa0bf-1007-4bc8-8823-11e749ee3341/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir3db24181-cfd2-443c-acfc-1abbb26fe2ae/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir4a66aacb-599f-4ff8-8fad-9133fbf57125/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir06cf4b44-6320-4034-81a4-891b80138453/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir67c11342-612e-46b0-9f2c-4fc7d4924685/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir155195c2-00ae-425a-b547-cf7b26caf6d5/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDirb5f02fc0-e370-4a1c-8e90-b6dd09fb2c6b/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir45eff243-116e-479c-b305-34211d79081e/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir475c26b5-f3a1-412b-8319-6637c6e327ac/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDird268f92c-dbc6-46b1-b823-18a13ae6bd12/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDire77b3d09-fbe0-462f-b176-5e2d349adbb2/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir4f5b1f0e-51f3-4601-a046-f87eaa7035cc/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDirdc951dc0-6ce2-403c-a9d5-83b4013f60cb/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDireeb65bd5-47a8-4f99-95c4-038078c9a208/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDir76e0d342-cfc8-4721-b675-ba0f19b46766/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 
+
+# mkdir lesson12.tar.dir 2>> lesson12.compile 
+
+# cp lesson12.tar lesson12.tar.dir/tar.tar 2>> lesson12.compile 
+
+# tar -xf  lesson12.tar.dir/tar.tar -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+
+# make a.out -C lesson12.tar.dir 2>> lesson12.compile >> lesson12.compile 
+make: Entering directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+g++ -g -c lesson12.cpp 
+g++ -g -c graph.cpp
+g++ -g -c maze.cpp
+g++ -g -o a.out lesson12.o graph.o maze.o
+tar -cf lesson12.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson12/lesson12.tar.dir'
+
+# mv lesson12.tar.dir/a.out /tmp/testbed/compileDirf7379f40-8739-47c7-90d3-0808ca2eecc2/lesson12 2>> lesson12.compile >> lesson12.compile 
+
+# rm -rf lesson12.tar.dir 2>> lesson12.compile 

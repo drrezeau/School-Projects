@@ -1,0 +1,16 @@
+The graph specified in /home/cs237/files/graph2.in
+does contain a clique of size 3 with vertices
+251 417 517 
+
+The graph specified in /home/cs237/files/graph2.in
+does contain a clique of size 3 with vertices
+414 587 588 
+
+The graph specified in /home/cs237/files/graph2.in
+does contain an anti-clique of size 77 with vertices
+8 10 14 17 20 49 51 66 74 80 84 109 124 127 129 132 139 141 143 150 154 161 168 177 192 196 200 203 207 215 218 239 259 261 272 278 285 292 298 302 309 312 315 320 338 343 356 368 372 380 391 395 397 402 407 415 418 427 429 434 441 448 458 461 465 470 475 480 482 494 498 512 516 549 560 570 582 
+
+The graph specified in /home/cs237/files/graph2.in
+does contain an anti-clique of size 12 with vertices
+17 290 129 212 354 794 192 381 389 112 864 341 
+

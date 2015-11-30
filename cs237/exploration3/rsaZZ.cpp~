@@ -1,0 +1,87 @@
+#include <cstdlib>
+#include <NTL/ZZ.h>
+#include <cmath>
+#include <iostream>
+#include <iomanip>
+#include <cstring>
+#include <string>
+
+NTL_CLIENT
+
+/******************************************************************************
+ * Find b^n % m.
+m ******************************************************************************/
+ZZ modExp(ZZ b, ZZ n, ZZ m)
+{
+   return to_ZZ(PowerMod(b, n, m));
+}
+
+/******************************************************************************
+ * Find i such that a * i is congruent to 1 (mod m).
+ ******************************************************************************/
+ZZ findInverse(ZZ a, ZZ m)
+{
+   return to_ZZ(InvMod(a, m));
+}
+
+/******************************************************************************
+ * Convert from a text message representing a base 27 number to a ZZ number.
+ ******************************************************************************/
+ZZ fromBase27(string message)
+{
+   ZZ number = to_ZZ(0);
+
+   for (long i = message.length() - 1; i >=0; i--)
+   {
+      number += to_ZZ((message[i] - '@') * power(to_ZZ(27), i));
+   }
+      return number;
+}
+
+/******************************************************************************
+ * Convert from a ZZ number to a base 27 number represented by a text message.
+ ******************************************************************************/
+string toBase27(ZZ n)
+{
+   string decrypted;
+   /*
+   for ( long i = 100; n > 0; i--)
+   {
+      long newV = n % 27;
+      n /= 27;
+       decrypted += char(newV+64);
+       cerr << decrypted;
+       }*/
+  
+
+   while (n > 0)
+   {
+      decrypted += (n%27) + 64;
+      n /= 27;
+   }
+   return decrypted;
+   
+}
+
+/******************************************************************************
+ * Find a suitable e for a ZZ number that is the "totient" of two primes.
+ ******************************************************************************/
+ZZ findE(ZZ t)
+{
+   ZZ num = to_ZZ(100);
+   for (ZZ i = to_ZZ(2); i < num; i++ )
+      if ( GCD(i, t) == 1)
+         return i;
+   
+}
+
+/******************************************************************************
+ * Find suitable primes p and q for encrypting a ZZ number that is the message.
+ ******************************************************************************/
+void findPandQ(ZZ m, ZZ& p, ZZ& q)
+{
+   p = GenPrime_ZZ(4000);
+
+   q = GenPrime_ZZ(4000);
+
+}

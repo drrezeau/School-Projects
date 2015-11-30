@@ -1,0 +1,90 @@
+/***********************************************************************
+* Program:
+*    Lesson 11, Hash
+*    Brother Helfrich, CS 235
+* Author:
+*    David Lambertson and Derek Calkins
+* Summary: 
+*    This is the class structure and functions for our hash abstract class.
+*    It then is used in creating another class that is-a hash.
+************************************************************************/
+#include "list.h"
+#include <iostream>
+using namespace std;
+
+/*************************************************************
+ * Abstract Hash class to be used when creating other hash classes.
+ ***********************************************************/
+template< class T>
+class Hash
+{
+  public:
+   //Non-default constructor
+  Hash(int num) throw (const char *)
+   {
+      buckets = num;
+      try
+      {
+         array = new List<T>[buckets];
+      }
+      catch(...)
+      {
+         throw "Error: Unable to allocate a new buffer.";
+      }
+      numItems = 0;
+   }
+
+   //Copy Constructor
+   Hash(const Hash & rhs)
+   {
+      array = rhs.array;
+      numItems = rhs.numItems;
+      buckets = rhs.buckets;
+   }
+
+   //Destructor
+   ~Hash() {}
+
+   
+   // Assignment operator overloaded
+   Hash & operator =(const Hash & rhs)
+   {
+      array = rhs.array;
+      numItems = rhs.numItems;
+      buckets = rhs.buckets;
+      return *this;
+
+   }
+   
+   //simple functions to check if hash is empty, the size of hash and
+   //the capacity of hash
+   bool empty() { return numItems == 0; }
+   int size() const { return numItems; }
+   int capacity() const { return buckets; }
+
+   //checks to see if the passed in value is in the hash
+   //if so, returns true else return false.
+   bool find(const T & value)
+   {
+      for (ListIterator<T> it = array[hash(value)].begin();
+           it != array[hash(value)].end(); ++it)
+         if (*it == value)
+            return true;
+      return false;
+   }
+
+   //inserts the passed in value into the hash
+   void insert(const T & value)
+   {
+      array[hash(value)].push_back(value);
+      ++numItems;
+   }
+
+   //pure virtual function for the hash algorithm
+   virtual int hash (const T & value) const = 0 ;
+   
+  private:
+   int numItems;
+   int buckets;
+   List<T> *array;
+};

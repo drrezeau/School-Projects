@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+
+#include "loan.h"
+
+using namespace std;
+
+void Loan :: transaction(double amount)
+{
+   cout << getName() << " (loan):  $" << amount << " applied to account"
+        << endl;
+   
+   double newBal = getBalance() - amount;
+
+   setBalance(newBal);
+}
+
+void Loan :: update()
+{
+   double amount = getBalance() * interest;
+
+   cout << getName() << " (loan):  $" << (-1 * amount) << " applied to account"
+        << endl;
+   setBalance(getBalance() + amount);
+}
+
+void Loan :: display()
+{
+   cout.setf(ios::fixed);
+   cout.setf(ios::showpoint);
+   cout.precision(2);
+   
+   cout << getName() << " (loan):  balance is $" << (-1 * getBalance()) << endl;
+}
+

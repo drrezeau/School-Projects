@@ -1,0 +1,83 @@
+/***********************************************************************
+ * Module:
+ *    Lesson 09, WORD COUNT
+ *    Brother Helfrich, CS 235
+ * Author:
+ *    Derek Calkins and David Lambertson
+ * Summary:
+ *    This program will implement the wordCount() function
+ ************************************************************************/
+#include "map.h"       // for MAP
+#include "wordCount.h" // for wordCount() prototype
+#include <fstream>
+using namespace std;
+void readFile(Map <string, Count> & counts, const string & fileName);
+
+/*****************************************************
+ * WORD COUNT
+ * Prompt the user for a file to read, then prompt the
+ * user for words to get the count from
+ *****************************************************/
+void wordCount()
+{
+   string fileName;
+   string word;
+   Map<string, Count> occur;
+   
+   cout << "What is the filename to be counted? ";
+   cin  >> fileName;
+
+   cout << "What word whose frequency is to be found. Type ! when done\n";
+
+   readFile(occur, fileName);
+   do
+   {
+      cout << "> ";
+      cin  >> word;
+      
+      cout << "\t" << word << " : " << (occur[word]).getCount() << endl;
+   }
+   while(word != "!");
+   
+}
+
+/****************************************
+ * this function reads in the words of the file
+ * and if finds a repeat, just increments Count
+ ***************************************/
+void readFile(Map <string, Count> & counts, const string & fileName)
+{  
+   ifstream fin(fileName.c_str());
+   if(fin.fail())
+      cout << "FAIL";
+
+   Count num;
+   string word;
+   fin >> word;
+   while(!fin.eof())
+   {
+      MapIterator<string, Count> it; //NULL check
+      
+      if(it == counts.find(word))
+      {
+         num = 1;
+
+         counts[string(word)] = num;
+         //cout << word << endl;
+      }
+      else
+      {
+         
+         num = *(counts.find(word));
+         ++num;
+         counts[word] = num;
+         //cout << num.getCount() << endl;
+      }
+      fin >> word;
+      
+   }
+   
+   fin.close();
+}
+
+

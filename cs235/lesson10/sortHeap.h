@@ -1,0 +1,136 @@
+/***********************************************************************
+ * Module:
+ *    Lesson 10, Sort Heap
+ *    Brother Helfrich, CS 235
+ * Author:
+ *    David Lambertson and Derek Calkins
+ * Summary:
+ *    This program will implement the Heap Sort
+ ************************************************************************/
+
+#ifndef SORT_HEAP_H
+#define SORT_HEAP_H
+
+#include <iostream>
+
+template <class T>
+class Heap
+{
+  public:
+   //default constructor
+  Heap() :num(0) {}
+   
+   //non-default constructor
+  Heap(T array[], int num) : array(array), num(num) {}
+
+   //destructor
+   ~Heap() {}
+
+   /*********************************************
+    *heapifies the array and turns it into a proper heap
+    *starting at the last parent node
+    ********************************************/
+   void heapify()
+   {
+      array--;
+      for (int i = num/2; i > 0 ; --i)
+          percolateDown(i);
+   }
+
+   //prototype for percolateDown function
+   void percolateDown(int spot);
+
+   //returns what our max number is
+   T getMax() { return array[1]; }
+
+   /********************************************
+    *swaps the max(first item) with the item last in the array
+    * getting the max in its proper place, then places a wall
+    * after the last item.
+    *****************************************/
+   void deleteMax()
+   {
+      swap(1, num);
+      num--;
+   }
+
+   /****************************************
+    *calls the deleteMax function, then percolates Down
+    * on the root to make a proper heap again.
+    * Repeats this until we have finished the whole heap.
+    *************************************/
+   void sort()
+   {
+      while (num > 0)
+      {
+         deleteMax();
+         percolateDown(1);
+      }
+   }
+   
+  private:
+   T * array;
+   int num;
+
+   //swaps the two items at spots passed in.
+   void swap(int spot1, int spot2)
+   {
+      T temp = array[spot2];
+      array[spot2] = array[spot1];
+      array[spot1] = temp;
+   }
+         
+
+};
+
+/*****************************************
+ *takes a spot as a parameter and from that given spot,
+ *heapifies the subtree.
+ *************************************/
+template <class T>
+void Heap<T>:: percolateDown(int spot)
+{
+   int iLeft = spot * 2;
+   int iRight = iLeft + 1;
+
+   //if our iLeft is on the right side of the wall, just finish.
+   if (iLeft > (num-1))
+      return;
+
+   //if spot is less than either child
+   if (array[iLeft] > array[spot] || array[iRight] > array[spot]) 
+   {
+      //if its left is greater than right
+      if (array[iLeft] > array[iRight])
+      {
+         swap(spot, iLeft);
+         percolateDown(iLeft);
+      }
+      else
+      {
+         swap(spot, iRight);
+         percolateDown(iRight);
+      }
+   }
+      
+
+}
+
+
+
+
+/*****************************************************
+ * SORT HEAP
+ * Perform the heap sort
+ ****************************************************/
+template <class T>
+void sortHeap(T array[], int num)
+{
+   Heap<T> heap(array, num); //create the heap
+   heap.heapify();           //heapify the heap
+   heap.sort();              //sort the heap
+
+}
+
+
+#endif // SORT_HEAP_H

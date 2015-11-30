@@ -1,0 +1,263 @@
+/***********************************************************************
+ * Module:
+ *    Lesson 07, Huffman
+ *    Brother Helfrich, CS 235
+ * Author:
+ *    Derek Calkins
+ * Summary:
+ *    This program will implement the huffman() function
+ ************************************************************************/
+
+#include "huffman.h"       // for HUFFMAN() prototype
+//#include "pair.h"
+#include <fstream>
+#include <iostream>
+#include "vector.h"
+using namespace std;
+
+/*******************************************
+ * HUFFMAN
+ * Driver program to exercise the huffman generation code
+ *******************************************/
+
+/***************************
+ * Gets the filename
+ **************************/
+string getFilename(string fileName)
+{
+   cout << "Enter the filename containing the value frequencies: ";
+   cin  >> fileName;
+   return fileName;
+}
+
+/***************************************
+ * To display the results of the code
+ ****************************************/
+void display(BinaryNode <Pair<float, string> > * pHead, int num)
+{
+   //to hold the codes to display
+   Vector <string> data;
+
+   int numItems = num;
+   //loop through every node in the tree and add a 0 if we go the the left
+   //or a 1 if we go to the right
+   for (int i = 0; i < numItems; i++)
+   {
+      string chars; //to combine both the character and huffman code
+      if(pHead->pLeft != NULL)
+      {
+         pHead = pHead->pLeft;
+         chars = (pHead->data.second + pHead->pParent->data.second + "0");
+         data.push_back(chars); //adds character and code to vector
+         
+      }
+      else if(pHead->pRight != NULL) 
+      {
+         pHead = pHead->pRight;
+         chars = (pHead->data.second + pHead->pParent->data.second + "1");
+         data.push_back(chars); //adds character and code to vector
+      }
+      else //if we don't find a right or left node go back up the tree
+      {
+         pHead = pHead->pParent; //go back to parent
+         if(pHead->pRight != NULL)
+         {
+            pHead->pLeft = NULL; //delete node we were just at
+         }
+         else if(pHead->pLeft != NULL)
+         {
+            pHead->pRight = NULL; //delete node we were just at
+         }
+         else
+         {
+            pHead->pLeft = NULL; //delete both nodes
+            pHead->pRight = NULL;
+         }
+      }
+   }
+
+   //supposed to be for displaying the data 
+   for(int j = 0; j < numItems; j++)
+   {
+      cout << data[j] << endl;
+   }
+   //cout << pHead->pLeft->data.second << endl;
+   
+}
+
+/******************************
+ * Reads in the data from the file.
+ ****************************/
+void readFile(string fileName)
+{
+   //tries to open file
+   ifstream fin(fileName.c_str());
+   if(fin.fail())
+   {
+      cout << "Failed to open file.\n";
+      return;
+   }
+
+   //create a vector of pairs to hold the data
+   Vector <Pair<float, string> > data;
+   int numItems = 0; //for the number of items in the vector
+   int num = 0;      //for the number of items in the tree
+   Pair<float, string> frequency; //create a pair to hold the frequency
+
+   fin >> frequency.second;
+   fin >> frequency.first;
+   while(!fin.eof())
+   {
+      data.push_back(frequency);
+      numItems++;
+      fin >> frequency.second;
+      fin >> frequency.first;
+   }
+
+/******************************
+ *need to make a new tree here
+ * which will allow us to save our nodes,
+ * create our paths and then display them again.
+ *****************************/
+
+   //two nodes to be able to hold two subtrees
+   BinaryNode<Pair<float, string> > * pHead;
+   BinaryNode<Pair<float, string> > * pNew;
+   do
+   {
+      //three iterators to find where we are, and the two least nodes
+      VectorIterator<Pair<float, string> > it = data.begin();
+      VectorIterator<Pair<float, string> > pLeast2 = it;
+      VectorIterator<Pair<float, string> > pLeast1 = it;
+
+      //two pairs to hold the data of least 1 and least 2
+      Pair<float, string> least1 = *it;
+      Pair<float, string> least2 = *it;
+      
+      //finds the least two digits
+      for (int i = 0; i < numItems; i++, it++)
+      {
+         if (*it < least1)
+         {
+            least2 = least1;
+            least1 = *it;
+            pLeast1 = pLeast2;
+            pLeast2 = it;
+         }
+         else if (*it == least1)
+         {
+            Pair<float, string> temp = *it;
+            if (temp.second != " ")
+            {
+               least2 = least1;
+               least1 = *it;
+               pLeast1 = pLeast2;
+               pLeast2 = it;
+            }  
+         }
+      }
+      
+      --it; //goes back to the last pLeast2
+      
+      //swap if they are equal to get right order
+      if (least1 == least2)
+      {
+         Pair<float, string> tmp5 = least2;
+         least2 = least1;
+         least1 = tmp5;
+      }
+      
+      Pair<float, string> end = *it; // so we can move the last node
+      Pair<float, string> hold;
+      float total = least1.first + least2.first;
+      hold.first = total;            // the root node having the sum of the
+      hold.second = " ";             // of the frequencies
+      *pLeast1 = hold;
+      *pLeast2 = end;
+      
+      //creates the subtree for us
+      BinaryNode<Pair<float, string> > * parent =
+         new BinaryNode<Pair<float, string> >(hold);
+
+      bool change = false; //see if one of the subtrees in the least
+      //adds the appropriate node to the left
+      if (least1.second == " " && least1 == pHead->data)
+      {
+         parent->addLeft(pHead);
+         num++;
+         change = true;
+      }
+      else if(least1.second == " " && least1 == pNew->data)
+      {
+         num++;
+         parent->addLeft(pNew);
+         change = true;
+      }
+      else
+      {
+         num++;
+         parent->addLeft(least1);
+         change = false;
+      }
+
+
+      
+      bool change2 = false; //to see if one of the subtrees was the least
+
+      //adds the appropriate node to the right
+      if (least2.second == " " && least2 == pHead->data)
+      {
+         parent->addRight(pHead);
+         num++;
+         change = true;
+      }
+      else if(least2.second == " " && least2 == pNew->data)
+      {
+         parent->addRight(pNew);
+         change = true;
+         num++;
+      }
+      else
+      {
+         parent->addRight(least2);
+         change2 = false;
+         num++;
+      }
+
+      //if both were subtrees point both to parent
+      if (change && change2)
+      {
+         pHead = parent;
+         pNew = parent;
+      }
+      //alternate between which node will change parent
+      else if (numItems%2)
+      {
+         pHead = parent;
+      }
+      else
+      {
+         pNew = parent;
+      }
+
+      //decrement number of items in the vector
+      numItems--;
+   }
+   while (numItems-1);
+  
+   cout << pNew << endl; //displays the tree
+
+   fin.close();
+
+   //display(pNew, num); //should display the data
+}
+
+void huffman()
+{
+   string fileName;
+   fileName = getFilename(fileName);
+   readFile(fileName);
+   
+   return;
+}
+

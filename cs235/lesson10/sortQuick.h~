@@ -1,0 +1,76 @@
+/***********************************************************************
+ * Module:
+ *    Lesson 10, Sort Quick
+ *    Brother Helfrich, CS 235
+ * Author:
+ *    Derek Calkins (using code from textbook)
+ * Summary:
+ *    This program will implement the Quick Sort
+ ************************************************************************/
+
+#ifndef SORT_QUICK_H
+#define SORT_QUICK_H
+
+/*****************************************************
+ * SORT QUICK
+ * Perform the quick sort
+ ****************************************************/
+template <class T>
+void sortQuick(T array[], int num)
+{
+   quickSort(array, 0, num - 1);
+}
+
+template <class T>
+int split(T array[], const int & iLeft, const int & iRight)
+{
+   //set pivot to value of iLeft
+   T pivot = array[iLeft];
+   
+   int left = iLeft + 1;
+   int right = iRight;
+
+   while(right > left)
+   {
+      //
+      while(array[right] > pivot)
+         right--;
+
+      while((right > left) &&
+            (pivot > array[left] || pivot == array[left]))
+         left++;
+
+      if(right > left)
+      {
+         //swap left and right values compared to pivot
+         T data = array[left];
+         array[left] = array[right];
+         array[right] = data;
+      }
+   }
+   int position = right;
+   array[iLeft] = array[position];
+   array[position] = pivot;
+   return position;
+}
+
+/*******************************************
+ * Recursive Quick Sort
+ * This function sets the position as the new pivot
+ * and changes the range of values we compare by one
+ * for each recursive function call.
+ *******************************************/
+template <class T>
+void quickSort(T array[], const int & iLeft, const int & iRight)
+{
+   int position;
+   if(iRight > iLeft)
+   {
+      //set position as new pivot
+      position = split(array, iLeft, iRight);
+      //moves the pivot as the 
+      quickSort(array, iLeft, position - 1);
+      quickSort(array, position + 1, iRight);
+   }
+}
+#endif // SORT_QUICK_H

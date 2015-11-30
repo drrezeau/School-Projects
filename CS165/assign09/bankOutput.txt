@@ -1,0 +1,120 @@
+new account...
+Peter (savings):  balance is $1000.00
+
+new account...
+James (checking):  balance is $400.00
+
+new account...
+John (loan):  balance is $-800.00
+
+transaction...
+James (checking):  $-200.00 applied to account
+James (checking):  balance is $200.00
+
+transaction...
+James (checking):  $642.00 applied to account
+James (checking):  balance is $842.00
+
+transaction...
+John (loan):  $200.00 applied to account
+John (loan):  balance is $-600.00
+
+transaction...
+Peter (savings):  $2000.00 applied to account
+Peter (savings):  balance is $3000.00
+
+transaction...
+James (checking):  $-300.00 applied to account
+James (checking):  balance is $542.00
+
+update...
+Peter (savings):  $150.00 applied to account
+Peter (savings):  balance is $3150.00
+
+update...
+John (loan):  $-60.00 applied to account
+John (loan):  balance is $-660.00
+
+transaction...
+James (checking):  $-100.00 applied to account
+James (checking):  balance is $442.00
+
+transaction...
+James (checking):  $-400.00 applied to account
+James (checking):  balance is $42.00
+
+update...
+Peter (savings):  $157.50 applied to account
+Peter (savings):  balance is $3307.50
+
+new account...
+Scott (savings):  balance is $2000.00
+
+new account...
+Susan (checking):  balance is $500.00
+
+transaction...
+Scott (savings):  $500.00 applied to account
+Scott (savings):  balance is $2500.00
+
+transaction...
+Scott (savings):  $-250.00 applied to account
+Scott (savings):  balance is $2250.00
+
+transaction...
+Susan (checking):  $-150.00 applied to account
+Susan (checking):  balance is $350.00
+
+transaction...
+Susan (checking):  $-50.00 applied to account
+Susan (checking):  balance is $300.00
+
+transaction...
+Susan (checking):  $-25.00 applied to account
+Susan (checking):  balance is $275.00
+
+update...
+Susan (checking):  $-0.45 applied to account
+Susan (checking):  balance is $274.55
+
+update...
+Scott (savings):  $106.88 applied to account
+Scott (savings):  balance is $2356.88
+
+transaction...
+Peter (savings):  $3000.00 applied to account
+Peter (savings):  balance is $6307.50
+
+update...
+James (checking):  $-1.00 applied to account
+James (checking):  balance is $41.00
+
+transaction...
+John (loan):  $400.00 applied to account
+John (loan):  balance is $-260.00
+
+transaction...
+James (checking):  $-500.00 rejected (insufficient funds)
+James (checking):  $-25.00 applied to account
+James (checking):  balance is $16.00
+
+update...
+Peter (savings):  $315.38 applied to account
+Peter (savings):  balance is $6622.88
+
+update...
+James (checking):  $-0.25 applied to account
+James (checking):  balance is $15.75
+
+update...
+John (loan):  $-26.00 applied to account
+John (loan):  balance is $-286.00
+
+transaction...
+John (loan):  $-50.00 applied to account
+John (loan):  balance is $-336.00
+
+update...
+John (loan):  $-33.60 applied to account
+John (loan):  balance is $-369.60
+

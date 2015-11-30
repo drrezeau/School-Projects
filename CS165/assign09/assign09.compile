@@ -1,0 +1,114 @@
+
+# mkdir assign09.tar.dir 2>> assign09.compile 
+
+# cp assign09.tar assign09.tar.dir/tar.tar 2>> assign09.compile 
+
+# tar -xf  assign09.tar.dir/tar.tar -C assign09.tar.dir 2>> assign09.compile >> assign09.compile 
+
+# make a.out -C assign09.tar.dir 2>> assign09.compile >> assign09.compile 
+make: Entering directory `/home/lam10006/assign09/assign09.tar.dir'
+g++ -c driver.cpp
+g++ -c checking.cpp
+g++ -c savings.cpp
+g++ -c loan.cpp
+g++ driver.o checking.o savings.o loan.o
+make: Leaving directory `/home/lam10006/assign09/assign09.tar.dir'
+
+# mv assign09.tar.dir/a.out /tmp/testbed/compileDirb86a6c98-5d5c-46a3-bd7c-c1c2a9e2ac15/assign09 2>> assign09.compile >> assign09.compile 
+
+# rm -rf assign09.tar.dir 2>> assign09.compile 
+
+# mkdir assign09.tar.dir 2>> assign09.compile 
+
+# cp assign09.tar assign09.tar.dir/tar.tar 2>> assign09.compile 
+
+# tar -xf  assign09.tar.dir/tar.tar -C assign09.tar.dir 2>> assign09.compile >> assign09.compile 
+
+# make a.out -C assign09.tar.dir 2>> assign09.compile >> assign09.compile 
+make: Entering directory `/home/lam10006/assign09/assign09.tar.dir'
+g++ -c driver.cpp
+g++ -c checking.cpp
+g++ -c savings.cpp
+g++ -c loan.cpp
+g++ driver.o checking.o savings.o loan.o
+make: Leaving directory `/home/lam10006/assign09/assign09.tar.dir'
+
+# mv assign09.tar.dir/a.out /tmp/testbed/compileDire35bcaac-4105-43d5-8f36-0062f1ac7270/assign09 2>> assign09.compile >> assign09.compile 
+
+# rm -rf assign09.tar.dir 2>> assign09.compile 
+
+# mkdir assign09.tar.dir 2>> assign09.compile 
+
+# cp assign09.tar assign09.tar.dir/tar.tar 2>> assign09.compile 
+
+# tar -xf  assign09.tar.dir/tar.tar -C assign09.tar.dir 2>> assign09.compile >> assign09.compile 
+
+# make a.out -C assign09.tar.dir 2>> assign09.compile >> assign09.compile 
+make: Entering directory `/home/lam10006/assign09/assign09.tar.dir'
+g++ -c driver.cpp
+g++ -c checking.cpp
+g++ -c savings.cpp
+g++ -c loan.cpp
+g++ driver.o checking.o savings.o loan.o
+make: Leaving directory `/home/lam10006/assign09/assign09.tar.dir'
+
+# mv assign09.tar.dir/a.out /tmp/testbed/compileDir78bc0fef-e6a6-40e1-9129-579a50534c20/assign09 2>> assign09.compile >> assign09.compile 
+
+# rm -rf assign09.tar.dir 2>> assign09.compile 
+
+# mkdir assign09.tar.dir 2>> assign09.compile 
+
+# cp assign09.tar assign09.tar.dir/tar.tar 2>> assign09.compile 
+
+# tar -xf  assign09.tar.dir/tar.tar -C assign09.tar.dir 2>> assign09.compile >> assign09.compile 
+
+# make a.out -C assign09.tar.dir 2>> assign09.compile >> assign09.compile 
+make: Entering directory `/home/lam10006/assign09/assign09.tar.dir'
+g++ -c driver.cpp
+g++ -c checking.cpp
+g++ -c savings.cpp
+g++ -c loan.cpp
+g++ driver.o checking.o savings.o loan.o
+make: Leaving directory `/home/lam10006/assign09/assign09.tar.dir'
+
+# mv assign09.tar.dir/a.out /tmp/testbed/compileDira3f12976-0ee9-4501-906a-86ed27f109ba/assign09 2>> assign09.compile >> assign09.compile 
+
+# rm -rf assign09.tar.dir 2>> assign09.compile 
+
+# mkdir assign09.tar.dir 2>> assign09.compile 
+
+# cp assign09.tar assign09.tar.dir/tar.tar 2>> assign09.compile 
+
+# tar -xf  assign09.tar.dir/tar.tar -C assign09.tar.dir 2>> assign09.compile >> assign09.compile 
+
+# make a.out -C assign09.tar.dir 2>> assign09.compile >> assign09.compile 
+make: Entering directory `/home/lam10006/assign09/assign09.tar.dir'
+g++ -c driver.cpp
+g++ -c checking.cpp
+g++ -c savings.cpp
+g++ -c loan.cpp
+g++ driver.o checking.o savings.o loan.o
+make: Leaving directory `/home/lam10006/assign09/assign09.tar.dir'
+
+# mv assign09.tar.dir/a.out /tmp/testbed/compileDirda4c3c44-b347-4edd-9265-61b0ecbc3aa5/assign09 2>> assign09.compile >> assign09.compile 
+
+# rm -rf assign09.tar.dir 2>> assign09.compile 
+
+# mkdir assign09.tar.dir 2>> assign09.compile 
+
+# cp assign09.tar assign09.tar.dir/tar.tar 2>> assign09.compile 
+
+# tar -xf  assign09.tar.dir/tar.tar -C assign09.tar.dir 2>> assign09.compile >> assign09.compile 
+
+# make a.out -C assign09.tar.dir 2>> assign09.compile >> assign09.compile 
+make: Entering directory `/home/lam10006/assign09/assign09.tar.dir'
+g++ -c driver.cpp
+g++ -c checking.cpp
+g++ -c savings.cpp
+g++ -c loan.cpp
+g++ driver.o checking.o savings.o loan.o
+make: Leaving directory `/home/lam10006/assign09/assign09.tar.dir'
+
+# mv assign09.tar.dir/a.out /tmp/testbed/compileDir432bbe6d-a5cc-42c4-84ff-03579ef6a16e/assign09 2>> assign09.compile >> assign09.compile 
+
+# rm -rf assign09.tar.dir 2>> assign09.compile 

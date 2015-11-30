@@ -1,0 +1,21 @@
+(a^(3+5*4) / banana) + chicken
+
++
+a 3 5 4 * + ^ banana / chicken +
+load 5
+mult 4
+store v1
+load 3
+add v1
+store v2
+load a
+exp v2
+store v3
+load v3
+divide banana
+store v4
+load v4 
+add chicken
+store v5
+
+

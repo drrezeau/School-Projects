@@ -1,0 +1,14 @@
+a.out : driver.o leg.o date.o time.o
+	g++ driver.o leg.o node.o date.o time.o
+
+driver.o : driver.cpp leg.h node.h date.h
+	g++ -c driver.cpp
+
+leg.o : leg.cpp leg.h node.h date.h
+	g++ -c leg.cpp
+
+date.o : date.cpp date.h time.h
+	g++ -c date.cpp
+
+time.o : time.cpp time.h
+	g++ -c time.cpp

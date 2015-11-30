@@ -1,0 +1,41 @@
+/***********************************************************************
+ * Module:
+ *    Lesson 10, Sort Select
+ *    Brother Helfrich, CS 235
+ * Author:
+ *    David Lambertson
+ * Summary:
+ *    This program will implement the Selection Sort
+ ************************************************************************/
+
+#ifndef SORT_SELECTION_H
+#define SORT_SELECTION_H
+
+/*****************************************************
+ * SORT SELECTION
+ * Perform the selection sort
+ ****************************************************/
+template <class T>
+void sortSelection(T array[], int num)
+{
+   for (int i = 0; i < num-1; i++)
+   {
+      int smallPost = i;
+      T smallest = array[i];
+      for (int j = i + 1; j < num; j++)
+      {
+         if (!(array[j] > smallest))
+         {
+            smallPost = j;
+            smallest = array[j];
+         }
+      }
+      
+      T temp = array[i];
+      array[i] = smallest;
+      array[smallPost] = temp;
+   }
+}
+
+
+#endif // SORT_SELECTION_H

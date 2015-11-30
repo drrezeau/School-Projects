@@ -1,0 +1,126 @@
+
+# mkdir assign08.tar.dir 2>> assign08.compile 
+
+# cp assign08.tar assign08.tar.dir/tar.tar 2>> assign08.compile 
+
+# tar -xf  assign08.tar.dir/tar.tar -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+
+# make a.out -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+make: Entering directory `/home/lam10006/assign08/assign08.tar.dir'
+g++ -c driver.cpp
+g++ -c time.cpp
+g++ -c date.cpp
+g++ driver.o time.o date.o
+make: Leaving directory `/home/lam10006/assign08/assign08.tar.dir'
+
+# mv assign08.tar.dir/a.out /tmp/testbed/compileDir28dfd5b2-add0-46ac-a8be-8e2f05b1bbcd/assign08 2>> assign08.compile >> assign08.compile 
+
+# rm -rf assign08.tar.dir 2>> assign08.compile 
+
+# mkdir assign08.tar.dir 2>> assign08.compile 
+
+# cp assign08.tar assign08.tar.dir/tar.tar 2>> assign08.compile 
+
+# tar -xf  assign08.tar.dir/tar.tar -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+
+# make a.out -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+make: Entering directory `/home/lam10006/assign08/assign08.tar.dir'
+g++ -c driver.cpp
+g++ -c time.cpp
+g++ -c date.cpp
+g++ driver.o time.o date.o
+make: Leaving directory `/home/lam10006/assign08/assign08.tar.dir'
+
+# mv assign08.tar.dir/a.out /tmp/testbed/compileDir04019e19-c6c2-4d44-80ae-0e6bcbc76da9/assign08 2>> assign08.compile >> assign08.compile 
+
+# rm -rf assign08.tar.dir 2>> assign08.compile 
+
+# mkdir assign08.tar.dir 2>> assign08.compile 
+
+# cp assign08.tar assign08.tar.dir/tar.tar 2>> assign08.compile 
+
+# tar -xf  assign08.tar.dir/tar.tar -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+
+# make a.out -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+make: Entering directory `/home/lam10006/assign08/assign08.tar.dir'
+g++ -c driver.cpp
+g++ -c time.cpp
+g++ -c date.cpp
+g++ driver.o time.o date.o
+make: Leaving directory `/home/lam10006/assign08/assign08.tar.dir'
+
+# mv assign08.tar.dir/a.out /tmp/testbed/compileDirfaf966f8-8235-4565-9cbb-3b514b19b5cf/assign08 2>> assign08.compile >> assign08.compile 
+
+# rm -rf assign08.tar.dir 2>> assign08.compile 
+
+# mkdir assign08.tar.dir 2>> assign08.compile 
+
+# cp assign08.tar assign08.tar.dir/tar.tar 2>> assign08.compile 
+
+# tar -xf  assign08.tar.dir/tar.tar -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+
+# make a.out -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+make: Entering directory `/home/lam10006/assign08/assign08.tar.dir'
+g++ -c driver.cpp
+g++ -c time.cpp
+g++ -c date.cpp
+g++ driver.o time.o date.o
+make: Leaving directory `/home/lam10006/assign08/assign08.tar.dir'
+
+# mv assign08.tar.dir/a.out /tmp/testbed/compileDirbe94cc8b-00d9-42c7-aee8-e64db88d9fe1/assign08 2>> assign08.compile >> assign08.compile 
+
+# rm -rf assign08.tar.dir 2>> assign08.compile 
+
+# mkdir assign08.tar.dir 2>> assign08.compile 
+
+# cp assign08.tar assign08.tar.dir/tar.tar 2>> assign08.compile 
+
+# tar -xf  assign08.tar.dir/tar.tar -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+
+# make a.out -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+make: Entering directory `/home/lam10006/assign08/assign08.tar.dir'
+g++ -c driver.cpp
+g++ -c time.cpp
+g++ -c date.cpp
+g++ driver.o time.o date.o
+make: Leaving directory `/home/lam10006/assign08/assign08.tar.dir'
+
+# mv assign08.tar.dir/a.out /tmp/testbed/compileDir01d5eaf8-db26-4606-a355-cff3fc3d3826/assign08 2>> assign08.compile >> assign08.compile 
+
+# rm -rf assign08.tar.dir 2>> assign08.compile 
+
+# mkdir assign08.tar.dir 2>> assign08.compile 
+
+# cp assign08.tar assign08.tar.dir/tar.tar 2>> assign08.compile 
+
+# tar -xf  assign08.tar.dir/tar.tar -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+
+# make a.out -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+make: Entering directory `/home/lam10006/assign08/assign08.tar.dir'
+g++ -c driver.cpp
+g++ -c time.cpp
+g++ -c date.cpp
+g++ driver.o time.o date.o
+make: Leaving directory `/home/lam10006/assign08/assign08.tar.dir'
+
+# mv assign08.tar.dir/a.out /tmp/testbed/compileDire8448df3-4fb1-4dd4-905a-4f69b27f801f/assign08 2>> assign08.compile >> assign08.compile 
+
+# rm -rf assign08.tar.dir 2>> assign08.compile 
+
+# mkdir assign08.tar.dir 2>> assign08.compile 
+
+# cp assign08.tar assign08.tar.dir/tar.tar 2>> assign08.compile 
+
+# tar -xf  assign08.tar.dir/tar.tar -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+
+# make a.out -C assign08.tar.dir 2>> assign08.compile >> assign08.compile 
+make: Entering directory `/home/lam10006/assign08/assign08.tar.dir'
+g++ -c driver.cpp
+g++ -c time.cpp
+g++ -c date.cpp
+g++ driver.o time.o date.o
+make: Leaving directory `/home/lam10006/assign08/assign08.tar.dir'
+
+# mv assign08.tar.dir/a.out /tmp/testbed/compileDirc3de4a7b-1086-4dd7-8093-05eefbed952c/assign08 2>> assign08.compile >> assign08.compile 
+
+# rm -rf assign08.tar.dir 2>> assign08.compile 

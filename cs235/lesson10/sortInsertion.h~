@@ -1,0 +1,56 @@
+/***********************************************************************
+ * Module:
+ *    Lesson 10, Sort Insertion
+ *    Brother Helfrich, CS 235
+ * Author:
+ *    <your name>
+ * Summary:
+ *    This program will implement the Insertion Sort
+ ************************************************************************/
+
+#ifndef SORT_INSERTION_H
+#define SORT_INSERTION_H
+
+#include <cassert>
+
+/*****************************************************
+ * SORT INSERTION
+ * Perform the insertion sort
+ ****************************************************/
+template <class T>
+void sortInsertion(T array[], int num)
+{
+
+   int iWall = 1;
+   for(iWall; iWall < num; iWall++)
+   {
+      T data = array[iWall];
+      int spot = binarySearch(array, iWall, data);
+      int i;
+      for(i = iWall; i > spot; --i)
+         array[i] = array[i - 1];
+      array[i] = data; 
+   }
+}
+
+template <class T>
+int binarySearch(const T array[], int size, const T & data)
+{
+   int iFirst = 0;
+   int iLast = size - 1;
+   int iMiddle;
+  
+   while(iLast >= iFirst)
+   {
+      iMiddle = (iLast + iFirst) / 2;
+
+      if(array[iMiddle] > data)
+         iLast = iMiddle - 1;
+      else
+         iFirst = iMiddle + 1;
+   }
+   return iFirst;
+}
+
+
+#endif // SORT_INSERTION_H

@@ -1,0 +1,83 @@
+/*
+   Stack<T> display;
+   BinaryNode<T> * tmp = root;
+   do
+   {
+      bool visited = false;
+      if (tmp->pRight != NULL)
+      {
+         out << tmp->pRight->data;
+         display.push(tmp->pRight->data);
+         visited = false;
+      }
+      
+      out << display.top();
+      
+      if (tmp != NULL)
+      {
+         out << tmp->data;
+         display.push(tmp->data);
+         visited = true;
+      }
+      
+      out << display.top();
+      
+      if (tmp->pLeft != NULL)
+      {
+         out << tmp->pLeft->data;
+         display.push(tmp->pLeft->data);
+         visited = false;
+      }
+      
+      if (visited)
+      {
+         out << display.top();
+         //display.pop();
+      }
+      
+      //display.pop();
+      if (tmp->pLeft == NULL && tmp->pRight == NULL)
+      {
+         tmp = tmp->pParent;
+      }
+      else if (tmp->pLeft == NULL)
+         tmp = tmp->pRight;
+      else
+         tmp = tmp->pLeft;
+   }
+   while (display.size());
+   
+   //out << root->pRight->data << std::endl;
+
+//   if (root->pLeft != NULL)
+   //    out << root->pLeft;
+   
+   for (BinaryNode<T> * tmp; tmp != NULL; tmp = tmp->pLeft)
+   {
+      out << tmp->data << std::endl;
+   }
+
+   for (BinaryNode<T> * tmp; tmp !=NULL; tmp = tmp->pRight)
+   out << tmp->data << std::endl;*/
+
+
+
+
+
+   /*
+   bool left = false;
+   bool right = false;
+
+   if (tmp->pLeft != NULL)
+   {
+      std::cout << tmp->pLeft;
+      left = true;
+   }
+   if ((tmp->pLeft == NULL && tmp->pRight == NULL) || (left))
+      out << tmp->data << ' ';
+   if (tmp->pRight != NULL)
+   {
+      right = true;
+      std::cout << tmp->pRight;
+   }
+   */

@@ -1,0 +1,896 @@
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir0ce94566-604e-4718-afc9-912d3d5e6262/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirbe523637-7c66-46e1-a77f-4e787e01c0d4/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirf7399dfc-f3db-41eb-bdf5-0ef55c77002f/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir489fd1f4-5a69-438c-a5eb-b4ba9f1d781a/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDird7fe4093-ee11-49f4-b13b-be920e5977e4/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir26103e93-6cac-4e20-b75f-5bb8f8652d57/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirc66decde-21b5-47e7-8f83-1cb15ad9f18d/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir4851f9d4-be4f-40f6-beea-44623ebdb157/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir5ac6154d-cba2-4e05-96df-77b90b59bd58/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir70d4fb2e-f271-435e-af0e-1c5031f633f4/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir3b5255be-c1b5-4b95-8f75-7b39b1cf4df3/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirf1f2ef5a-9d54-4db1-bd82-726b173a924f/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDira9035966-d21e-49aa-b27e-56cddafa65b8/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir64a1e441-d873-48f4-8acb-d117c8f5d155/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir9776258d-2ace-40fd-89e1-27213cc3dc76/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirba3b4230-e054-415d-b532-fca233b1ed04/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir9660dd21-4fbb-4bf4-b99e-72d46dc198f8/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir7b9fd405-4713-4db5-b8b8-714ed98d4990/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir60441cff-6334-415b-9604-846771d22bc4/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirdc6d7371-e806-4af2-87bc-b8c8c17c0d6d/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirf92887ae-1fcb-42cb-946c-1e9edb2e28cd/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirabf9518d-e976-4b61-850d-20b9da74845c/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirb93439af-08e2-474a-aec3-aa9346afbad0/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir2aeefd7a-de6d-4bf9-a12e-0a08cc95c023/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir1fcc3ee1-c267-47cc-a450-c6ccf3a48887/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDird6ac8948-5a3f-4878-a44e-b4d8c2f9ab7f/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir551f1973-f11e-4819-8c0e-93d927fde389/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+In file included from nowServing.h:14,
+                 from nowServing.cpp:13:
+deque.h: In member function ‘void Deque<T>::push_back(const T&)’:
+deque.h:58: error: ‘cout’ is not a member of ‘std’
+deque.h:60: error: ‘cout’ is not a member of ‘std’
+deque.h: In member function ‘void Deque<T>::push_front(const T&)’:
+deque.h:66: error: ‘cout’ is not a member of ‘std’
+deque.h:68: error: ‘cout’ is not a member of ‘std’
+make: *** [nowServing.o] Error 1
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDird297a532-d262-4248-bc3b-8608cce5e4ee/lesson04 2>> lesson04.compile >> lesson04.compile 
+mv: cannot stat `lesson04.tar.dir/a.out': No such file or directory
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+In file included from nowServing.h:14,
+                 from nowServing.cpp:13:
+deque.h: In member function ‘void Deque<T>::push_back(const T&)’:
+deque.h:58: error: ‘cout’ is not a member of ‘std’
+deque.h:60: error: ‘cout’ is not a member of ‘std’
+deque.h: In member function ‘void Deque<T>::push_front(const T&)’:
+deque.h:66: error: ‘cout’ is not a member of ‘std’
+deque.h:68: error: ‘cout’ is not a member of ‘std’
+make: *** [nowServing.o] Error 1
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir1339e9bd-451f-42e4-a170-d5668ee3fe6e/lesson04 2>> lesson04.compile >> lesson04.compile 
+mv: cannot stat `lesson04.tar.dir/a.out': No such file or directory
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+In file included from nowServing.h:14,
+                 from nowServing.cpp:13:
+deque.h: In member function ‘void Deque<T>::push_back(const T&)’:
+deque.h:58: error: ‘cout’ is not a member of ‘std’
+deque.h:60: error: ‘cout’ is not a member of ‘std’
+deque.h: In member function ‘void Deque<T>::push_front(const T&)’:
+deque.h:66: error: ‘cout’ is not a member of ‘std’
+deque.h:68: error: ‘cout’ is not a member of ‘std’
+make: *** [nowServing.o] Error 1
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir9e597adc-c180-4082-a9ba-eb26ba08e4d1/lesson04 2>> lesson04.compile >> lesson04.compile 
+mv: cannot stat `lesson04.tar.dir/a.out': No such file or directory
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+In file included from nowServing.h:14,
+                 from nowServing.cpp:13:
+deque.h: In member function ‘void Deque<T>::push_back(const T&)’:
+deque.h:58: error: ‘cout’ is not a member of ‘std’
+deque.h:60: error: ‘cout’ is not a member of ‘std’
+deque.h: In member function ‘void Deque<T>::push_front(const T&)’:
+deque.h:66: error: ‘cout’ is not a member of ‘std’
+deque.h:68: error: ‘cout’ is not a member of ‘std’
+make: *** [nowServing.o] Error 1
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirad3b46da-f91e-4efb-b350-3e182f84b931/lesson04 2>> lesson04.compile >> lesson04.compile 
+mv: cannot stat `lesson04.tar.dir/a.out': No such file or directory
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir24eda78f-ffbc-478a-b5b8-02373f11af69/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir9578b579-6dd6-42af-b0b3-7791c18ce827/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir0ae13929-306e-42da-8683-7e52eea3a81c/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDird7f691b3-57fb-4aaf-9855-45b1614e51b1/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir078b3582-6304-400a-8fb5-8a115b6c4179/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirfcdefc10-f920-4f95-ae04-e97e36b239e6/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDircd0cab6e-1bce-4dcc-95a5-9606a76c6507/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir9bb73dc6-8605-452d-8f4a-138d41248c4d/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirb956f3ec-ec52-47d4-8f7f-83ab8afc6241/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir86988904-a900-4556-a445-e147c9997895/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir6f48c0ad-7a66-4315-bdaa-e2138a6b296b/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirc744f4bb-3ea5-46a3-a00d-806386ab088d/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir0d331bdd-1390-4619-8bba-9134ec89a80d/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDirc3a0e3b0-2aff-40ca-9414-8ac233f8a421/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDire305bd4d-ca08-46f1-aeea-da57c7cca2fd/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir8f224bc9-e84e-42a2-9384-15dec15c6197/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 
+
+# mkdir lesson04.tar.dir 2>> lesson04.compile 
+
+# cp lesson04.tar lesson04.tar.dir/tar.tar 2>> lesson04.compile 
+
+# tar -xf  lesson04.tar.dir/tar.tar -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+
+# make a.out -C lesson04.tar.dir 2>> lesson04.compile >> lesson04.compile 
+make: Entering directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+g++ -c lesson04.cpp
+g++ -c nowServing.cpp
+g++ -o a.out lesson04.o nowServing.o
+tar -cf lesson04.tar *.h *.cpp makefile
+make: Leaving directory `/home/cs235d/cs235/lesson04/lesson04.tar.dir'
+
+# mv lesson04.tar.dir/a.out /tmp/testbed/compileDir835bbdab-cb2b-41f4-be08-88b85fa2bef4/lesson04 2>> lesson04.compile >> lesson04.compile 
+
+# rm -rf lesson04.tar.dir 2>> lesson04.compile 

@@ -1,0 +1,13 @@
+Compound interest is a truly amazing principle.
+
+What seems so simple mathematically can have almost miraculous results.
+
+If you save $1000 a year for 10 years with no interest
+you will end up with $10,000 in the bank. If that money were
+invested at 8% interest, compounded quarterly, you would have 
+$15,402.51 at the end of the time.
+
+That’s quite a difference, but now consider investing the same amount
+over a period of 40 years. With no interest you would see $40,000
+but with 8% interest, compounded quarterly, you would
+have $290,316.31 in the bank!

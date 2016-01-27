@@ -1,0 +1,2 @@
+movl $0x1415e991, %eax
+ret

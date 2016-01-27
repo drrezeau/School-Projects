@@ -1,0 +1,78 @@
+/***********************************************************************
+* Program:
+*    Lab C_lab, ECEN 324 Learning C Lab
+*    Brother Jones, ECEN 324
+* Author:
+*    David Lambertson
+* Summary:
+*    Descriptive text ...
+************************************************************************/
+
+#include <stdio.h>
+
+#define PI 3.1415926
+
+/***********************************************************************/
+/* descriptive text goes here                                          */
+/***********************************************************************/
+main() {
+   const char LETTER = 'A';
+   printf("24\n");
+   printf("%.5f\n", PI);
+   printf("%c\n", LETTER);
+
+   float payRate = 10.50;
+   int hours = 40;
+
+   printf("Users pay rate: $%.1f\n", payRate);
+   printf(" Hours worked: %d\n", hours);
+   printf("    Gross Pay: $%.0f\n", hours*payRate);
+
+   int number;
+   fprintf(stderr, "Enter number: ");
+   scanf("%d", &number);
+   printf("Twice %d is %d\n\n", number, number*2);
+
+   /*********************************************************************/
+   /*********************** Output an Integer ***************************/
+   /*********************************************************************/
+
+   int anInt = 99;
+   float aFloat = 43.2;
+
+   /* This prints an integer*/
+   printf("Integer: %d ###\n", anInt);
+   /* This prints the same integer with space for 10*/
+   printf("Integer: %10d ###\n", anInt);
+   /* This prints the same integer with space for 10 but left aligned*/
+   printf("Integer: %-10d ###\n\n", anInt);
+
+
+   /*********************************************************************/
+   /************************* Output a Float ****************************/
+   /*********************************************************************/
+
+   /* This prints a float */
+   printf("  Float: %.1f ###\n", aFloat);
+   /* This prints a float with space for 10 left aligned*/
+   printf("  Float: %-10.1f ###\n", aFloat);
+   /* This prints a float with space for 10 and to the second decimal*/
+   printf("  Float: %10.2f ###\n", aFloat);
+   /* This prints a float to the third decimal*/
+   printf("  Float: %.3f ###\n", aFloat);
+   /* This prints a float with space for 10 to the third decimal*/
+   printf("  Float: %10.3f ###\n", aFloat);
+   /* This prints a float with space for 10 left aligned to the fourth decimal*/
+   printf("  Float: %-10.4f ###\n\n", aFloat);
+
+   /*********************************************************************/
+   /*************** Create some code to output a table ******************/
+   /*********************************************************************/
+   printf("\tOct   Dec   Hex   Char\n");
+   printf("\t----------------------\n");
+   int i;
+   for (i = 97; i < 123; i++) {
+      printf("\t%3o   %-3d   %-3x   %1c\n", i,i,i,i);
+   }
+   printf("\n");
+}

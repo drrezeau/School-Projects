@@ -1,0 +1,45 @@
+# David Lambertson 072895657
+# Execution begins at address 0
+.pos 0x100
+Stack:
+
+.pos 0
+init: irmovl Stack, %esp #Set up Stack pointer
+      irmovl Stack, %ebp #set up frame pointer
+      jmp    Main        #execute Main
+
+
+# Sample linked list 
+.align 4 
+ele1: 
+      .long 0x00a 
+      .long ele2 
+ele2: 
+      .long 0x0b0 
+      .long ele3 
+ele3: 
+      .long 0xc00 
+      .long 0 
+
+#Main -- gets the linked list and calls Sum_List
+Main: irmovl ele1, %eax
+      pushl %eax            # Puts the linked list on the stack   
+      call Sum_List         #Calls Sum_List(ele1)
+      halt                  #Halts the program
+
+#Sum_List(list-ptr list)
+#Sums all the values of a linked list
+Sum_List:  pushl %ebp             #Saves the fram pointer
+           rrmovl %esp, %ebp      #Moves out stack pointer to our frame pointer
+           mrmovl 8(%ebp), %ecx   #Grabs our linked list
+           irmovl $0, %eax        # sets eax to 0
+Loop:
+           mrmovl (%ecx), %edx    #saves the value in a register
+           addl %edx, %eax        #adds the value to eax
+           mrmovl 4(%ecx), %ecx   #moves to the next item
+           andl %ecx, %ecx        #checks if we are at the end
+           jne Loop               #If not, keep looping
+End:
+        rrmovl %ebp, %esp         #restore the stack pointer
+        popl %ebp                 #restore the frame pointer
+        ret                       #return to Main

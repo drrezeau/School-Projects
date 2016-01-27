@@ -1,0 +1,58 @@
+# David Lambertson 072895657
+# Execution begins at address 0
+.pos 0x200
+Stack:
+
+.pos 0
+init: irmovl Stack, %esp #Set up Stack pointer
+      irmovl Stack, %ebp #set up frame pointer
+      jmp    Main        #execute Main
+
+
+# Sample linked list 
+.align 4 
+ele1: 
+      .long 0x00a 
+      .long ele2 
+ele2: 
+      .long 0x0b0 
+      .long ele3 
+ele3: 
+      .long 0xc00 
+      .long 0 
+
+#Main -- gets the linked list and calls Sum_List
+Main: irmovl ele1, %eax
+      pushl %eax            # Puts the linked list on the stack   
+      call R_Sum_List         #Calls Recursive_Sum_List(ele1)
+      halt                  #Halts the program
+
+#Recursive_Sum_List(list-ptr list)
+#Recursively sums all the values of a linked list
+R_Sum_List:  
+             pushl %ebp             #Saves the frame pointer
+             rrmovl %esp, %ebp      #Moves out frame pointer to our stack pointer
+
+             pushl %ebx
+             
+             mrmovl 8(%ebp), %ecx   #Grabs our linked list
+             irmovl $0, %eax        # sets eax to 0
+             
+
+             andl %ecx, %ecx        #checks if we are at the end
+             je End
+
+             mrmovl (%ecx), %ebx       #saves the value in a register
+             mrmovl 4(%ecx), %ecx      #moves to the next item
+             
+             pushl %ecx                 #saves our next address on the Stack
+             call R_Sum_List           #Calls our function again
+             addl %ebx, %eax           #adds the value to eax
+            
+End:
+             irmovl $4, %edx           #Sets edx to 4
+             subl %edx, %ebp           #Moves our ebp down 4 to point where our ebx is
+             rrmovl %ebp, %esp         #restore the stack pointer
+             popl %ebx                 #Grabs our saved ebx
+             popl %ebp                 #restore the frame pointer
+             ret                       #return to Main

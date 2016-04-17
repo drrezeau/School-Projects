@@ -1,0 +1,57 @@
+                      | /* $begin code-yso */
+                      | /* $begin code-ysa */
+                      | # Execution begins at address 0
+  0x000:              | .pos 0
+  0x000: 308400010000 | init:	irmovl Stack, %esp	# Set up Stack pointer
+  0x006: 308500010000 | 	irmovl Stack, %ebp	# Set up base pointer
+  0x00c: 702c000000   | 	jmp    Main		# Execute main program
+                      | 
+  0x014:              | .align 4 
+                      | # Source block 
+  0x014:              | src: 
+  0x014: 0a000000     | .long 0x00a 
+  0x018: b0000000     | .long 0x0b0 
+  0x01c: 000c0000     | .long 0xc00 
+                      | # Destination block 
+  0x020:              | dest: 
+  0x020: 11010000     | .long 0x111 
+  0x024: 22020000     | .long 0x222 
+  0x028: 33030000     | .long 0x333 
+                      | 
+                      | 
+  0x02c: 308003000000 | Main:	irmovl $3,%eax
+  0x032: a008         | 	pushl  %eax		# Push 3
+  0x034: 308214000000 | 	irmovl src, %edx        #move src into edx
+  0x03a: a028         | 	pushl  %edx		# Push src
+  0x03c: 308220000000 |         irmovl dest, %edx        #move dest into edx
+  0x042: a028         |         pushl %edx              #push dest
+  0x044: 804a000000   | 	call   Copy		# Copy(src, dest,  4)
+  0x049: 10           | 	halt
+                      | 
+                      | /* $begin copy-ys 0 */
+                      | # int Copy(int *Start, int *dest, int Count)
+  0x04a: a058         | Copy:	pushl  %ebp
+  0x04c: 2045         | 	rrmovl %esp,%ebp
+  0x04e: 50150c000000 | 	mrmovl 12(%ebp),%ecx	# ecx = src
+  0x054: 503508000000 |         mrmovl 8(%ebp), %ebx    # eax = dest
+  0x05a: 502510000000 | 	mrmovl 16(%ebp),%edx	# edx = Count
+  0x060: 308000000000 |         irmovl $0, %eax         #sets eax to 0
+                      | 
+  0x066: 506100000000 | Loop:	mrmovl (%ecx),%esi	# get *Start
+  0x06c: 406300000000 |         rmmovl %esi, (%ebx)     #
+  0x072: 6060         |         addl   %esi, %eax
+  0x074: 308704000000 | 	irmovl $4,%edi		# 
+  0x07a: 6071         | 	addl   %edi,%ecx	# Start++
+  0x07c: 6073         |         addl   %edi, %ebx
+  0x07e: 3087ffffffff | 	irmovl $-1,%edi		# 
+  0x084: 6072         | 	addl   %edi,%edx	# Count--
+  0x086: 7466000000   | 	jne    Loop		# Stop when 0
+  0x08b:              | End:	
+  0x08b: b058         | 	popl   %ebp
+  0x08d: 90           | 	ret
+                      | /* $end sum-ys 0 */
+                      | 
+  0x100:              | .pos 0x100
+  0x100:              | Stack:				# The stack goes here
+                      | /* $end code-ysa */
+                      | /* $end code-yso */

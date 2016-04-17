@@ -1,0 +1,199 @@
+/***********************************************************************
+ * Program:
+ *    Exploration 1, Sweetness
+ *    Brother Neff, CS 238
+ * Author:
+ *    You
+ * Summary:
+ *    Prime Generation Program, exploring a probability connection.
+ ***********************************************************************/
+#include <cmath>
+#include <cstdlib>
+#include <fstream>
+#include <iostream>
+#include <streambuf>
+#include <iomanip>
+#include <sstream>
+#include <vector>
+using namespace std;
+
+int f(const int & x, const int & C)
+{
+   return abs((x * x) + x + C);
+}
+
+bool isPrime(const vector<bool> & n, const int& i)
+{
+   return n[i];
+}
+
+/******************
+ *
+ *
+ *******************/
+vector<bool> sieve(const int& v)
+{
+   vector<bool> is_prime(v, true);
+      
+   const int sqrt_limit = (int)(sqrt(v));
+   for (int n = 2; n <= sqrt_limit; ++n)
+   {
+      if (is_prime[n])
+      {
+         for (int k = n*n; k < v; k += n) 
+            //NOTE: "unsigned" is used to avoid an overflow in `k+=n` for `limit` near INT_MAX
+          is_prime[k] = false;
+      }
+   }
+
+   return is_prime;
+}
+
+void learned()
+{
+
+   cout << "\tI started by running the program with a set range of 0-9,999\n"
+        << "but taking the constant up one by one each loop through. I did this\n"
+        << "to figure out which constants will give us a yield of 50% or higher\nfor that one range.\n"
+        << "\tTo save all the values instead of kicking out at the first 50%, I used a vector to save\n"
+        << "the values and displayed them all at the end.\n"
+        << "\tFor all constants to 5 million, I only got one hit, being 247,757.\n"
+        << "Once I found out this, I took this constant and ran it while incrementing\n"
+        << "the range one by one on both sides (to keep it at 10,000). This gave me\nthe result that"
+        << "the best range for this constant is 1 to 10,000. This gave\nus the resulting percent of 50.28%.\n";
+}
+
+//how to use the whole program. NEED
+void usage()
+{
+   cout << "USAGE:\n"
+        << "\t 1) a.out - Display Learned and Usage.\n"
+        << "\t 2) a.out *any number* - run 1 PLUS check the primeness of the given number.\n"
+        << "\t 3) a.out *any number* yes - runs 2 PLUS displays the percent for the constant/range pair used.\n";
+}
+
+/******************************
+ FOR TESTING PURPOSES ONLY
+ * PrimePercent
+ * Keeps track of the information for those
+ * variables that gave us more than 50%
+ *  while testing
+
+struct PrimePercent
+{
+   float p; //percent
+   int m; //min 
+   int x; //max
+   int c; //constant
+};
+
+
+void checkPrimes(vector<bool> prime)
+{
+
+
+   *Code That I used to save the constants and information I wanted to know.
+   *int primes = 0;
+   *int total = 0;
+   *float percent = 0;
+   *int min = 1;
+   *int max = 10000;
+   *int constant =  247757;
+   *int temp;
+   *float highPercent = 0;
+   *
+   *vector<PrimePercent> goTeam;
+   *PrimePercent pp;
+   *
+   *while (percent < 50)
+   *{
+   *
+   * for (int x = min; x <= max; x++)
+   * {
+   *    total++;
+   *    int v = f(x, constant);
+   *    if (isPrime(v))
+   *    {
+   *       primes++;
+   *    }
+   * }
+   *
+   * percent = ((float)primes/(float)total)*100;
+   *
+   *  
+   * Would change the constant or max and min depending on the
+   * part I was working on. If it was greater than 50%, I would
+   * save it into a vector.
+   *
+   *   if(percent <50)
+   *   {
+   *      min++;
+   *      max++;
+   *      //constant++;
+   *      total = primes = 0;
+   *   }
+   *   else
+   *   {
+   *      pp.p = percent;
+   *      pp.m = min;
+   *      pp.x = max;
+   *      pp.c = constant;
+     }
+  }
+} **********************************************/
+  
+  void displayandCalcPercent(const vector<bool>& primes)
+{
+   int primes = 0;
+   int total = 0;
+   float percent = 0;
+   
+   while (percent < 50)
+   {
+      
+      for (int x = 1; x <= 10000; x++)
+      {
+         total++;
+         if (isPrime(primes, x)
+            {
+               primes++;
+            }
+            }
+         
+         percent = ((float)primes/(float)total)*100;
+         cout << "Per   cent: " << percent << '\n';
+         
+      }
+   }
+}
+   
+/****************************************************************
+ *Calling my other functions to run the code
+ ****************************************************************/
+int main(int argc, char* argv[])
+{
+   
+   learned();
+   usage();
+   
+   
+   
+   if (argc == 2)
+   {
+      int size = f(10000, 247757);
+      vector<bool> primes = sieve(size);
+      
+      int spot =atoi(argv[1]);
+
+      cout << (isPrime(primes, spot) == 1 ? "Is a Prime" : "Is not a Prime") << endl;
+      if (argc == 3)
+      {
+         displayAndCalcPercent();
+      }
+   }
+   
+
+  
+   return 0;
+}
+

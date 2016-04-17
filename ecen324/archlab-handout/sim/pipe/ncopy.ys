@@ -1,0 +1,39 @@
+#David Lambertson 072895657
+#/* $begin ncopy-ys */
+##################################################################
+# ncopy.ys - Copy a src block of len ints to dst.
+# Return the number of positive ints (>0) contained in src.
+#
+# Include your name and ID here.
+#
+# Describe how and why you modified the baseline code.
+#
+##################################################################
+	# Function prologue. Do not modify saving/setting %ebp.
+ncopy:	pushl  %ebp		# Save old frame pointer
+	rrmovl %esp,%ebp	# Set up new frame pointer
+	mrmovl 8(%ebp),%ebx	# src
+	mrmovl 12(%ebp),%ecx	# dst
+	mrmovl 16(%ebp),%edx	# len
+
+	# Loop header
+	xorl   %esi,%esi	# count = 0;
+
+	# Loop body.
+Loop:	mrmovl (%ebx), %eax	# read val from src...
+        iaddl   $4, %ebx	# src++
+	rmmovl %eax, (%ecx)	# ...and store it to dst
+	iaddl   $4, %ecx	# dst++
+	andl   %eax, %eax	# val <= 0?
+        jg     Count            #jumps to count
+	jmp    Npos		# if so, goto Npos:
+Count:	iaddl   $1, %esi	# count++
+Npos:	irmovl $1, %edi
+	subl   %edi, %edx	# len--
+	jg     Loop		# if so, goto Loop:
+
+Done:	rrmovl %esi, %eax
+	# Function epilogue. Do not modify unless you implement 'leave'.
+        leave
+        ret
+#/* $end ncopy-ys */

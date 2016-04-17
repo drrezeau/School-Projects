@@ -1,0 +1,45 @@
+                      | # David Lambertson
+                      | # Execution begins at address 0
+  0x100:              | .pos 0x100
+  0x100:              | Stack:
+                      | 
+  0x000:              | .pos 0
+  0x000: 308400010000 | init: irmovl Stack, %esp #Set up Stack pointer
+  0x006: 308500010000 |       irmovl Stack, %ebp #set up frame pointer
+  0x00c: 702c000000   |       jmp    Main        #execute Main
+                      | 
+                      | 
+                      | # Sample linked list 
+  0x014:              | .align 4 
+  0x014:              | ele1: 
+  0x014: 0a000000     |       .long 0x00a 
+  0x018: 1c000000     |       .long ele2 
+  0x01c:              | ele2: 
+  0x01c: b0000000     |       .long 0x0b0 
+  0x020: 24000000     |       .long ele3 
+  0x024:              | ele3: 
+  0x024: 000c0000     |       .long 0xc00 
+  0x028: 00000000     |       .long 0 
+                      | 
+                      | #Main -- gets the linked list and calls Sum_List
+  0x02c: 308014000000 | Main: irmovl ele1, %eax
+  0x032: a008         |       pushl %eax            # Puts the linked list on the stack   
+  0x034: 803a000000   |       call Sum_List         #Calls Sum_List(ele1)
+  0x039: 10           |       halt                  #Halts the program
+                      | 
+                      | #Sum_List(list-ptr list)
+                      | #Sums all the values of a linked list
+  0x03a: a058         | Sum_List:  pushl %ebp             #Saves the fram pointer
+  0x03c: 2045         |            rrmovl %esp, %ebp      #Moves out stack pointer to our frame pointer
+  0x03e: 501508000000 |            mrmovl 8(%ebp), %ecx   #Grabs our linked list
+  0x044: 308000000000 |            irmovl $0, %eax        # sets eax to 0
+  0x04a:              | Loop:
+  0x04a: 502100000000 |            mrmovl (%ecx), %edx    #saves the value in a register
+  0x050: 6020         |            addl %edx, %eax        #adds the value to eax
+  0x052: 501104000000 |            mrmovl 4(%ecx), %ecx   #moves to the next item
+  0x058: 6211         |            andl %ecx, %ecx        #checks if we are at the end
+  0x05a: 744a000000   |            jne Loop               #If not, keep looping
+  0x05f:              | End:
+  0x05f: 2054         |         rrmovl %ebp, %esp         #restore the stack pointer
+  0x061: b058         |         popl %ebp                 #restore the frame pointer
+  0x063: 90           |         ret                       #return to Main

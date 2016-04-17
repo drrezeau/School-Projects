@@ -1,0 +1,16 @@
+/***********************************************************************
+* Program:
+*    Lab C_lab, ECEN 324 Learning C Lab
+*    Brother Jones, ECEN 324
+* Author:
+*    David Lambertson
+* Summary:
+*    Descriptive text ...
+************************************************************************/
+
+#include <stdio.h>
+
+main() {
+   printf("This is a test");
+
+}

@@ -1,0 +1,58 @@
+# David Lambertson 072895657
+/* $begin code-yso */
+/* $begin code-ysa */
+# Execution begins at address 0
+.pos 0
+init:	irmovl Stack, %esp	# Set up Stack pointer
+	irmovl Stack, %ebp	# Set up base pointer
+	jmp    Main		# Execute main program
+
+.align 4 
+# Source block 
+src: 
+.long 0x00a 
+.long 0x0b0 
+.long 0xc00 
+# Destination block 
+dest: 
+.long 0x111 
+.long 0x222 
+.long 0x333 
+
+
+Main:	irmovl $3,%eax
+	pushl  %eax		# Push 3
+	irmovl src, %edx        #move src into edx
+	pushl  %edx		# Push src
+        irmovl dest, %edx        #move dest into edx
+        pushl %edx              #push dest
+	call   Copy		# Copy(src, dest,  4)
+	halt
+
+/* $begin copy-ys 0 */
+# int Copy(int *Start, int *dest, int Count)
+Copy:	pushl  %ebp
+	rrmovl %esp,%ebp
+	mrmovl 12(%ebp),%ecx	# ecx = src
+        mrmovl 8(%ebp), %ebx    # eax = dest
+	mrmovl 16(%ebp),%edx	# edx = Count
+        irmovl $0, %eax         #sets eax to 0
+
+Loop:	mrmovl (%ecx),%esi	# move src value to esi
+        rmmovl %esi, (%ebx)     # move esi to dest value
+        addl   %esi, %eax       #takes our values and adds to eax
+	irmovl $4,%edi		# 
+	addl   %edi,%ecx	# src++
+        addl   %edi, %ebx       # dest++
+	irmovl $-1,%edi		# 
+	addl   %edi,%edx	# Count--
+	jne    Loop		# Stop when 0
+End:	
+	popl   %ebp
+	ret
+/* $end sum-ys 0 */
+
+.pos 0x100
+Stack:				# The stack goes here
+/* $end code-ysa */
+/* $end code-yso */

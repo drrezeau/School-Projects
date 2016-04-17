@@ -1,0 +1,135 @@
+/lib/ld-linux.so.2
+__gmon_start__
+libc.so.6
+_IO_stdin_used
+socket
+cuserid
+fflush
+strcpy
+exit
+sprintf
+fopen
+__isoc99_sscanf
+connect
+signal
+puts
+stdin
+rewind
+strtol
+fgets
+tmpfile
+stdout
+fputc
+fclose
+strcasecmp
+getenv
+__ctype_b_loc
+system
+gethostbyname
+gethostname
+fwrite
+bcopy
+fprintf
+sleep
+__libc_start_main
+GLIBC_2.3
+GLIBC_2.1
+GLIBC_2.7
+GLIBC_2.0
+PTRh
+L[^_]
+0[^]
+ [^]
+[^_]
+nobof
+[^_]
+ [^]
+\[^_]
+[^_]
+%s: Error: Couldn't open %s
+Usage: %s [<input_file>]
+That's number 2.  Keep going!
+Halfway there!
+Good work!  On to the next...
+Welcome to my fiendish little bomb. You have 6 phases with
+which to blow yourself up. Have a nice day!
+Phase 1 defused. How about the next one?
+So you got that one.  Try this one.
+Wow! You've defused the secret stage!
+Why make trillions when we could make... billions?
+ERROR: dup(0) error
+ERROR: close error
+ERROR: tmpfile error
+AUS216Test.byui.edu
+bomb
+To: %s@%s
+Subject: Bomb notification
+exploded
+defused
+bomb-header:%s:%d:%s:%s:%d
+bomb-string:%s:%d:%s:%d:%s
+/usr/sbin/sendmail -bm
+%s %s@%s
+ERROR: notification error
+ERROR: fclose(tmp) error
+ERROR: dup(tmpstdin) error
+ERROR: close(tmpstdin)
+%d %s
+austinpowers
+BOOM!!!
+The bomb has blown up.
+%d %d %d %d %d %d
+Error: Premature EOF on stdin
+GRADE_BOMB
+Error: Input line too long
+Invalid phase%s
+Well...
+OK. :-)
+Bad host (1).
+Bad host (2).
+Bad host (3).
+Bad host (4)
+www.yahoo.com
+Bad host (5).
+AUS213L1.byui.edu
+AUS213L2.byui.edu
+AUS213L3.byui.edu
+AUS213L4.byui.edu
+AUS213L5.byui.edu
+AUS213L6.byui.edu
+AUS213L7.byui.edu
+AUS213L8.byui.edu
+AUS213L9.byui.edu
+AUS213L10.byui.edu
+AUS213L11.byui.edu
+AUS213L12.byui.edu
+AUS213L13.byui.edu
+AUS213L14.byui.edu
+AUS213L15.byui.edu
+AUS213L16.byui.edu
+AUS213L17.byui.edu
+AUS213L18.byui.edu
+AUS213L19.byui.edu
+AUS213L20.byui.edu
+AUS213L21.byui.edu
+AUS213L22.byui.edu
+AUS213L23.byui.edu
+AUS213L24.byui.edu
+AUS213L25.byui.edu
+AUS213L26.byui.edu
+AUS213L27.byui.edu
+AUS213L28.byui.edu
+AUS213L29.byui.edu
+AUS213L30.byui.edu
+AUS213L31.byui.edu
+AUS213L32.byui.edu
+AUS213L33.byui.edu
+AUS213L34.byui.edu
+AUS213L35.byui.edu
+Curses, you've found the secret phase!
+But finding it and solving it are quite different...
+Congratulations! You've defused the bomb!
+Your instructor has been notified and will verify your solution.
+Your instructor has been notified.
+So you think you can stop the bomb with ctrl-c, do you?
+BYUIfall2015

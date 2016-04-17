@@ -1,0 +1,42 @@
+int main()
+{
+
+   int mTermInMonths = 180;              // term in months (n)
+
+   double mPeriodicRate;           // periodic (monthly) rate (i)
+
+   double mPrincipal = 123454.66;              // principal (p)
+
+   double mMonthlyPayment = 897.79;         // monthly payment (m)
+
+   double mExtraMonthlyPayment;    // extra monthly payment (x)
+
+
+   
+   double minRate = 0;
+   double maxRate = 100;
+   double midRate;
+
+   int x = 0;
+   while (minRate < maxRate-0.0001)
+   {
+      midRate - (minRate + maxRate) /2;
+      double J = midRate / 1200;
+
+      double guessed_pmt = mPrincipal * ( J / pow((double)(1 - (1+J)), -mTermInMonths));
+      if (guessed_pmt > mMonthlyPayment)
+      {
+         maxRate = midRate;
+      }
+      else
+      {
+         minRate = midRate;
+      }
+      x++;
+   }
+
+   cout << x << endl << "\n\n\n\n\n";
+   mPeriodicRate = midRate/1200;
+
+   return 0;
+}

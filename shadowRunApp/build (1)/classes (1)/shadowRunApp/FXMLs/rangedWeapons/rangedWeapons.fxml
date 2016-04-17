@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shadowRunApp.FXMLs.rangedWeapons.RangedWeaponsController">
+   <children>
+      <Button fx:id="back" layoutX="29.0" layoutY="36.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button fx:id="add" layoutX="731.0" layoutY="282.0" mnemonicParsing="false" onAction="#addWeapon" prefHeight="100.0" prefWidth="400.0" text="Add Weapon" />
+      <Button layoutX="731.0" layoutY="441.0" mnemonicParsing="false" onAction="#editWeapon" prefHeight="75.0" prefWidth="190.0" text="Edit Weapon" />
+      <Button layoutX="941.0" layoutY="444.0" mnemonicParsing="false" onAction="#deleteWeapon" prefHeight="75.0" prefWidth="190.0" text="Delete Weapon" />
+      <TextArea fx:id="display" editable="false" layoutX="114.0" layoutY="35.0" prefHeight="740.0" prefWidth="570.0" wrapText="true" />
+   </children>
+</AnchorPane>

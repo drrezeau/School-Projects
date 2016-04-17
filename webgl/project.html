@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Battle Tanks</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <script>
+        //Map variable
+        var X_SIZE = 600; //600
+        var Z_SIZE = 600; //600
+    </script>
+
+</head>
+<body>
+    <script>
+        var pads;
+
+        var fogOn = false;
+        var fogIntensity = 0;
+        var lightIntensity = 1;
+        var healthPackOn = false;
+        var speedBoostOn = false;
+        var bulletBoostOn = false;
+        var ultPowerOn = false;
+    </script>
+    <script src="js/userSettings.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- TODO tank driving backwards, camera changing around, find new object? etc. etc -->
+    <div id="info">
+        <div class="progress" style="position: absolute; width:10%; left: 275px">
+              <div id="tank01Health" class="progress-bar progress-bar-danger" style="width:100%"></div>
+        </div>
+        <div class="progress" style="position: absolute; width:10%; right: 275px;">
+              <div id="tank02Health" class="progress-bar progress-bar-danger" style="width:100%"></div>
+        </div>
+    </div>
+
+    <div class="howToPlayHolder">
+        <div class="howToPlay">
+            <div class="keyboardControls">
+                <div id="player1">
+                    <div class="controlDiv">
+                        <p>Controls</p>
+                        <p>Forward: W</p>
+                        <p>Left: A</p>
+                        <p>Right: D</p>
+                        <p>Backwards: S</p>
+                        <p>Shoot: F</p>
+                        <p>first Person: Q</p>
+                    </div>
+                </div>
+                    <div class="controlsLeft">
+                        <p class="userInput">
+                            <span class="checkboxText">Fog On</span>
+                            <input id="FogOn" type="checkbox" value="true">
+                        </p>
+                        <p class="userInput">
+                            <span class="checkboxText">Fog Intensity</span>
+                            <input id="FogInt" type="text" value="3" min="0" max="1">
+                        </p>
+                        <p class="userInput">
+                            <span class="checkboxText">Light Intensity</span>
+                            <input id="lightInt" type="text" value="3" min="0" max="1">
+                        </p>
+                        <p class="userInput">
+                            <span class="checkboxText">Health Power Up On</span>
+                            <input id="health" type="checkbox">
+                        </p>
+                        <p class="userInput">
+                            <span class="checkboxText">Speed Power Up On</span>
+                            <input id="speed" type="checkbox">
+                        </p>
+                        <p class="userInput">
+                            <span class="checkboxText">Bullet Power Up On</span>
+                            <input id="bullet" type="checkbox">
+                        </p>
+                        <p class="userInput">
+                            <span class="checkboxText">Ultimate Power Up On</span>
+                            <input id="ult" type="checkbox">
+                        </p>
+                        <button onclick="gameSettings()" id="close">Ready!</button>
+
+                    </div>
+                <div id="player2">
+                    <div class="controlDiv">
+                        <p>Controls</p>
+                        <p>Forward: Up Arrow</p>
+                        <p>Left: Left Arrow</p>
+                        <p>Right: Right Arrow</p>
+                        <p>Backwards: Down Arrow</p>
+                        <p>Shoot: Shift</p>
+                        <p>first Person: Space Bar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="bower_components/three.js/build/three.js"></script>
+    <script src="bower_components/three.js/examples/js/loaders/OBJLoader.js"></script>
+    <script src="bower_components/three.js/examples/js/loaders/MTLLoader.js"></script>
+    <script src="bower_components/OrbitControls.js"></script>   
+    <script src="bower_components/THREEx.KeyboardState.js"></script> 
+    
+    <script src="js/loadObjects.js"></script>
+    <script src="js/keyboard.js"></script>
+    <script src="js/advance.js"></script>
+    <script src="js/bullet.js"></script>
+    <script src="js/loadBullet.js"></script>
+    <script src="js/powerUp.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/explosion.js"></script>
+    <script src="js/parkingGarage.js"></script>
+    <script src="js/brickWalls.js"></script>
+
+    <script type="x-shader/x-vertex" id="vertexShader">
+        // GLSL textureless classic 3D noise "cnoise",
+        // with an RSL-style periodic variant "pnoise".
+        // Author:  Stefan Gustavson (stefan.gustavson@liu.se)
+        // Version: 2011-10-11
+        //
+        // Many thanks to Ian McEwan of Ashima Arts for the
+        // ideas for permutation and gradient selection.
+        //
+        // Copyright (c) 2011 Stefan Gustavson. All rights reserved.
+        // Distributed under the MIT license. See LICENSE file.
+        // https://github.com/ashima/webgl-noise
+        //
+
+        vec3 mod289(vec3 x)
+        {
+        return x - floor(x * (1.0 / 289.0)) * 289.0;
+        }
+
+        vec4 mod289(vec4 x)
+        {
+        return x - floor(x * (1.0 / 289.0)) * 289.0;
+        }
+
+        vec4 permute(vec4 x)
+        {
+        return mod289(((x*34.0)+1.0)*x);
+        }
+
+        vec4 taylorInvSqrt(vec4 r)
+        {
+        return 1.79284291400159 - 0.85373472095314 * r;
+        }
+
+        vec3 fade(vec3 t) {
+        return t*t*t*(t*(t*6.0-15.0)+10.0);
+        }
+
+        // Classic Perlin noise
+        float cnoise(vec3 P)
+        {
+        vec3 Pi0 = floor(P); // Integer part for indexing
+        vec3 Pi1 = Pi0 + vec3(1.0); // Integer part + 1
+        Pi0 = mod289(Pi0);
+        Pi1 = mod289(Pi1);
+        vec3 Pf0 = fract(P); // Fractional part for interpolation
+        vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0
+        vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);
+        vec4 iy = vec4(Pi0.yy, Pi1.yy);
+        vec4 iz0 = Pi0.zzzz;
+        vec4 iz1 = Pi1.zzzz;
+
+        vec4 ixy = permute(permute(ix) + iy);
+        vec4 ixy0 = permute(ixy + iz0);
+        vec4 ixy1 = permute(ixy + iz1);
+
+        vec4 gx0 = ixy0 * (1.0 / 7.0);
+        vec4 gy0 = fract(floor(gx0) * (1.0 / 7.0)) - 0.5;
+        gx0 = fract(gx0);
+        vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);
+        vec4 sz0 = step(gz0, vec4(0.0));
+        gx0 -= sz0 * (step(0.0, gx0) - 0.5);
+        gy0 -= sz0 * (step(0.0, gy0) - 0.5);
+
+        vec4 gx1 = ixy1 * (1.0 / 7.0);
+        vec4 gy1 = fract(floor(gx1) * (1.0 / 7.0)) - 0.5;
+        gx1 = fract(gx1);
+        vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);
+        vec4 sz1 = step(gz1, vec4(0.0));
+        gx1 -= sz1 * (step(0.0, gx1) - 0.5);
+        gy1 -= sz1 * (step(0.0, gy1) - 0.5);
+
+        vec3 g000 = vec3(gx0.x,gy0.x,gz0.x);
+        vec3 g100 = vec3(gx0.y,gy0.y,gz0.y);
+        vec3 g010 = vec3(gx0.z,gy0.z,gz0.z);
+        vec3 g110 = vec3(gx0.w,gy0.w,gz0.w);
+        vec3 g001 = vec3(gx1.x,gy1.x,gz1.x);
+        vec3 g101 = vec3(gx1.y,gy1.y,gz1.y);
+        vec3 g011 = vec3(gx1.z,gy1.z,gz1.z);
+        vec3 g111 = vec3(gx1.w,gy1.w,gz1.w);
+
+        vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));
+        g000 *= norm0.x;
+        g010 *= norm0.y;
+        g100 *= norm0.z;
+        g110 *= norm0.w;
+        vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));
+        g001 *= norm1.x;
+        g011 *= norm1.y;
+        g101 *= norm1.z;
+        g111 *= norm1.w;
+
+        float n000 = dot(g000, Pf0);
+        float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));
+        float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));
+        float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));
+        float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));
+        float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));
+        float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));
+        float n111 = dot(g111, Pf1);
+
+        vec3 fade_xyz = fade(Pf0);
+        vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);
+        vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);
+        float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x);
+        return 2.2 * n_xyz;
+        }
+
+        // Classic Perlin noise, periodic variant
+        float pnoise(vec3 P, vec3 rep)
+        {
+        vec3 Pi0 = mod(floor(P), rep); // Integer part, modulo period
+        vec3 Pi1 = mod(Pi0 + vec3(1.0), rep); // Integer part + 1, mod period
+        Pi0 = mod289(Pi0);
+        Pi1 = mod289(Pi1);
+        vec3 Pf0 = fract(P); // Fractional part for interpolation
+        vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0
+        vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);
+        vec4 iy = vec4(Pi0.yy, Pi1.yy);
+        vec4 iz0 = Pi0.zzzz;
+        vec4 iz1 = Pi1.zzzz;
+
+        vec4 ixy = permute(permute(ix) + iy);
+        vec4 ixy0 = permute(ixy + iz0);
+        vec4 ixy1 = permute(ixy + iz1);
+
+        vec4 gx0 = ixy0 * (1.0 / 7.0);
+        vec4 gy0 = fract(floor(gx0) * (1.0 / 7.0)) - 0.5;
+        gx0 = fract(gx0);
+        vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);
+        vec4 sz0 = step(gz0, vec4(0.0));
+        gx0 -= sz0 * (step(0.0, gx0) - 0.5);
+        gy0 -= sz0 * (step(0.0, gy0) - 0.5);
+
+        vec4 gx1 = ixy1 * (1.0 / 7.0);
+        vec4 gy1 = fract(floor(gx1) * (1.0 / 7.0)) - 0.5;
+        gx1 = fract(gx1);
+        vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);
+        vec4 sz1 = step(gz1, vec4(0.0));
+        gx1 -= sz1 * (step(0.0, gx1) - 0.5);
+        gy1 -= sz1 * (step(0.0, gy1) - 0.5);
+
+        vec3 g000 = vec3(gx0.x,gy0.x,gz0.x);
+        vec3 g100 = vec3(gx0.y,gy0.y,gz0.y);
+        vec3 g010 = vec3(gx0.z,gy0.z,gz0.z);
+        vec3 g110 = vec3(gx0.w,gy0.w,gz0.w);
+        vec3 g001 = vec3(gx1.x,gy1.x,gz1.x);
+        vec3 g101 = vec3(gx1.y,gy1.y,gz1.y);
+        vec3 g011 = vec3(gx1.z,gy1.z,gz1.z);
+        vec3 g111 = vec3(gx1.w,gy1.w,gz1.w);
+
+        vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));
+        g000 *= norm0.x;
+        g010 *= norm0.y;
+        g100 *= norm0.z;
+        g110 *= norm0.w;
+        vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));
+        g001 *= norm1.x;
+        g011 *= norm1.y;
+        g101 *= norm1.z;
+        g111 *= norm1.w;
+
+        float n000 = dot(g000, Pf0);
+        float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));
+        float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));
+        float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));
+        float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));
+        float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));
+        float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));
+        float n111 = dot(g111, Pf1);
+
+        vec3 fade_xyz = fade(Pf0);
+        vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);
+        vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);
+        float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x);
+        return 2.2 * n_xyz;
+        }
+
+        // Include the Ashima code here!
+
+        varying vec2 vUv;
+        varying float noise;
+        uniform float time;
+
+        float turbulence( vec3 p ) {
+        float w = 100.0;
+        float t = -.5;
+        for (float f = 1.0 ; f <= 10.0 ; f++ ){
+        float power = pow( 2.0, f );
+        t += abs( pnoise( vec3( power * p ), vec3( 10.0, 10.0, 10.0 ) ) / power );
+        }
+        return t;
+        }
+
+        void main() {
+
+        vUv = uv;
+
+        // add time to the noise parameters so it's animated
+        noise = 10.0 *  -.10 * turbulence( .5 * normal + time );
+        float b = 5.0 * pnoise( 0.05 * position + vec3( 2.0 * time ), vec3( 100.0 ) );
+        float displacement = - 10. * noise + b;
+
+        vec3 newPosition = position + normal * displacement;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
+
+        }
+
+    </script>
+
+    <script type="x-shader/x-vertex" id="fragmentShader">
+        // Put the Fragment Shader code here
+        varying vec2 vUv;
+        varying float noise;
+        uniform sampler2D tExplosion;
+
+        float random( vec3 scale, float seed ){
+        return fract( sin( dot( gl_FragCoord.xyz + seed, scale ) ) * 43758.5453 + seed ) ;
+        }
+
+        void main() {
+
+        // get a random offset
+        float r = .01 * random( vec3( 12.9898, 78.233, 151.7182 ), 0.0 );
+        // lookup vertically in the texture, using noise and offset
+        // to get the right RGB colour
+        vec2 tPos = vec2( 0, 1.3 * noise + r);
+        vec4 color = texture2D( tExplosion, tPos );
+
+        gl_FragColor = vec4( color.rgb, 1.0 );
+
+        }
+    </script>
+    <script>
+    
+    //Tank01
+    var tank01;    
+    var tank01Movement = {speed: 1, turnSpeed: .02, driveAngle: 0, shootAngle: 0};
+    
+    //Tank02  
+    var tank02;    
+    var tank02Movement = {speed: 1, turnSpeed: .02, driveAngle: 0, shootAngle: 0};  
+
+    //Important stuff  
+    var scene, camera, camera2, renderer, keyboard;
+    var WIDTH, HEIGHT;
+    var theVoid;
+
+    var mainBullet = new loadBullet();
+    var bullet = null;
+    var bulletBox = null;
+    var bulletAngle = 0;
+        
+    var explosion;
+
+    var audio;
+    var pad01, pad02;
+
+    controllers();
+    window.addEventListener("gamepadconnected", function(e) {
+        console.log("Gamepad connected at index %d: %s. %d buttons, %d axes.",
+                e.gamepad.index, e.gamepad.id,
+                e.gamepad.buttons.length, e.gamepad.axes.length);
+        console.log(e);
+        if (pad01 == undefined) {
+            pad01 = pads[e.gamepad.index];
+        } else {
+            pad02 = pads[e.gamepad.index];
+        }
+    });
+/***********************************************************************************************************************
+* INIT()
+*    Sets up the scene.
+*
+************************************************************************************************************************/
+    function init() {
+
+        // Create the scene and set the scene size.
+        scene = new THREE.Scene();
+        WIDTH = window.innerWidth - 10, HEIGHT = window.innerHeight - 10;
+
+        // Create a renderer and add it to the DOM.
+        renderer = new THREE.WebGLRenderer({antialias:true});
+        renderer.setSize(WIDTH, HEIGHT);
+        renderer.setClearColor(0x404040 , 1);                                    // Set background color of scene
+
+        renderer.autoClear = false;
+        document.body.appendChild(renderer.domElement);
+
+        // Create a camera, zoom it out from the model a bit
+        camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.1, 20000);
+        camera2 = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.1, 20000);
+        
+        scene.add(camera2);
+        
+        // Add OrbitControls so that we can pan around with the mouse.
+//        controls = new THREE.OrbitControls(camera, renderer.domElement);
+//        controls = new THREE.OrbitControls(camera2, renderer.domElement);
+
+
+        // Create an event listener that resizes the renderer with the browser window.
+        window.addEventListener('resize', function() {
+        var WIDTH = window.innerWidth,
+            HEIGHT = window.innerHeight;
+        renderer.setSize(WIDTH, HEIGHT);
+        camera.aspect = WIDTH / HEIGHT;
+        camera.updateProjectionMatrix();
+        });
+        
+        // Set up controls for the keyboard
+        keyboard = new THREEx.KeyboardState();
+
+    console.log(fogIntensity);
+    if (fogOn) {
+        scene.fog = new THREE.Fog(0x333333, fogIntensity *.01, fogIntensity*100);
+        console.log(scene.fog);
+    }
+        setUpLight();
+        loadObjects();
+        powerUPs();
+
+        
+        //The void
+        var g = new THREE.CubeGeometry(.0001,.0001,.0001, 1,1,1);
+        var m = new THREE.MeshBasicMaterial({color:0xffffff});
+        theVoid = new THREE.Mesh(g, m);
+        theVoid.position.set(-100000,-1000000,-100000);
+        scene.add(theVoid);
+        
+                
+        //Powerup  Put this code in another file with the other powerups?
+        var loader = new THREE.TextureLoader();
+        
+        scene.add(brickWall);
+        scene.add(parkingGarage);
+        explosion = explosion();
+        
+        
+        //add ground 
+        var grassTex = THREE.ImageUtils.loadTexture('images/grass.jpg'); 
+        grassTex.wrapS = THREE.RepeatWrapping; 
+        grassTex.wrapT = THREE.RepeatWrapping; 
+        grassTex.repeat.x = 100; 
+        grassTex.repeat.y = 100; 
+        var groundMat = new THREE.MeshLambertMaterial({map:grassTex}); 
+        var groundGeo = new THREE.PlaneGeometry(X_SIZE + 150, Z_SIZE + 150); 
+        var ground = new THREE.Mesh(groundGeo,groundMat); 
+        ground.position.set(X_SIZE / 2, 0, Z_SIZE / 2);
+        ground.rotation.x = -Math.PI/2; //-90 degrees around the xaxis 
+        //IMPORTANT, draw on both sides 
+        ground.doubleSided = true; 
+        scene.add(ground);
+        
+        audio = new Audio('sounds/battle.mp3');
+        audio.volume = .9;
+        audio.play();
+}
+
+/****************************************************************************************************************************
+*ANITMATE  
+*   Renders the scene and updates the render as needed.
+*
+******************************************************************************************************************************/
+function animate() {
+        
+        requestAnimationFrame(animate);
+        controllers();
+        render();
+
+        keypress();
+
+        updateBullet(tank01, tank02);
+        updateBullet(tank02, tank01);
+        advance(tank01);
+        advance(tank02);
+
+    if (healthPackOn) {
+        if (healthPackReload) {
+            healthPackReload = false;
+            healthPack.position.set(Math.random() * X_SIZE, 2.5, Math.random() * Z_SIZE);
+            healthPackBox.setFromObject(healthPack);
+            setTimeout(function () {
+                healthPackReload = true;
+            }, 10000);
+        }
+    }
+
+        //only updates the boxes IF the tanks are still in the scene
+        if (scene.getObjectByName("Tank1")) {
+            tank01.tankBox.setFromObject(tank01);
+        }
+        if (scene.getObjectByName("Tank2")) {
+            tank02.tankBox.setFromObject(tank02);
+        }
+
+        if (scene.getObjectByName("explosion")) {
+            updateExplosion();
+        }
+
+    if (ultPowerOn) {
+        if (goldenSnitchReload) {
+            goldenSnitchReload = false;
+            goldenSnitch.position.set(goldenSnitch.position.x += (Math.random() * (Math.random() * 400) * (Math.round(Math.random()) * 2 - 1)) % X_SIZE,
+                    goldenSnitch.position.y,
+                    goldenSnitch.position.z += (Math.random() * (Math.random() * 400) * (Math.round(Math.random()) * 2 - 1)) % Z_SIZE);
+            goldenSnitchBox.setFromObject(goldenSnitch);
+            setTimeout(function () {
+                goldenSnitchReload = true;
+            }, 1000);
+        }
+    }
+}
+/*******************************************************************************************************************************
+* Render
+*
+*
+*******************************************************************************************************************************/
+function render() {
+        renderer.clear();
+    //controllers();
+    if (audio.ended) {
+        audio.play();
+    }
+
+    material.uniforms[ 'time' ].value = .00025 * ( Date.now() - start );
+        
+    renderer.setViewport( 0, 0, WIDTH / 2, HEIGHT);
+    renderer.render( scene, camera);
+
+    renderer.setViewport( WIDTH / 2, 0, WIDTH / 2, HEIGHT);
+    renderer.render( scene, camera2 );
+}
+
+/*******************************************************************************************************************************
+* Keyboard
+*
+*
+*******************************************************************************************************************************/
+function keypress() {
+    if (scene.getObjectByName("Tank1")) {
+        //Tank01
+        if (keyboard.pressed("a")) {keyboardLeft(tank01, tank01Movement);}
+        if (keyboard.pressed("d")) {keyboardRight(tank01, tank01Movement);}
+        if (keyboard.pressed("w")) {keyboardUp(tank01, tank01Movement, tank02);}
+        if (keyboard.pressed("s")) {keyboardDown(tank01, tank01Movement);}
+        if (keyboard.pressed("f")) {keyboardShoot(tank01, tank01Movement);}
+        if(keyboard.pressed("q")) { keyboardChangeCamera(tank01);}
+        //if(keyboard.pressed("a")) { keyboardA(); }
+        //if(keyboard.pressed("d")) { keyboardD(); }
+        if (pads[0] != undefined) {
+            pad01 = pads[0];
+        }
+        if (pads[1] != undefined) {
+            pad02 = pads[1];
+        }
+
+        if (pad01) {
+            controller(pad01, tank01, tank01Movement, tank02);
+        }
+    }
+    if (scene.getObjectByName("Tank2")) {
+        //Tank02
+        if (keyboard.pressed("left")) {keyboardLeft(tank02, tank02Movement);}
+        if (keyboard.pressed("right")) {keyboardRight(tank02, tank02Movement);}
+        if (keyboard.pressed("up")) {keyboardUp(tank02, tank02Movement, tank01);}
+        if (keyboard.pressed("down")) {keyboardDown(tank02, tank02Movement);}
+        if (keyboard.pressed("shift")) {keyboardShoot(tank02, tank02Movement);}
+        if(keyboard.pressed("space")) { keyboardChangeCamera(tank02);}
+        if (pad02) {
+                controller(pad02, tank02, tank02Movement, tank01);
+        }
+    }
+}
+
+/*******************************************************************************************************************************
+* setUpLight
+*
+*
+*******************************************************************************************************************************/
+function setUpLight() {
+    hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 1 );
+    hemiLight.position.set( X_SIZE / 2, 100, Z_SIZE / 2 );
+    scene.add( hemiLight );
+}
+  </script>
+
+    <script>
+        $('#close').click(function() {
+            $('.howToPlayHolder').addClass("hide");
+            init();
+            animate();
+        });
+    </script>
+
+<!--
+Sources for our project
+https://www.clicktorelease.com/blog/vertex-displacement-noise-3d-webgl-glsl-three-js
+-->
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shadowRunApp.LoadNewController">
+   <children>
+      <Button fx:id="load" layoutX="66.0" layoutY="181.0" mnemonicParsing="false" onAction="#load" prefHeight="40.0" prefWidth="165.0" text="Load" />
+      <Button fx:id="newCharacter" layoutX="355.0" layoutY="180.0" mnemonicParsing="false" onAction="#newCharacter" prefHeight="40.0" prefWidth="165.0" text="New" />
+   </children>
+</AnchorPane>

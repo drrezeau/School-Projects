@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shadowRunApp.MainMenuController">
+    <children>
+      <GridPane layoutX="670.0" layoutY="47.0" prefHeight="562.0" prefWidth="428.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="qualities" onAction="#qualities" prefHeight="40.0" prefWidth="165.0" text="Qualities" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="skills" onAction="#skills" prefHeight="40.0" prefWidth="165.0" text="Skills" GridPane.columnIndex="1" />
+            <Button fx:id="contacts" onAction="#contacts" prefHeight="40.0" prefWidth="165.0" text="Contacts" GridPane.rowIndex="2" />
+            <Button fx:id="rWeapons" onAction="#rangedWeapons" prefHeight="40.0" prefWidth="165.0" text="Ranged Weapons" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="mWeapons" onAction="#meleeWeapons" prefHeight="40.0" prefWidth="165.0" text="Melee Weapons" GridPane.rowIndex="3" />
+            <Button fx:id="armor" onAction="#armor" prefHeight="40.0" prefWidth="165.0" text="Armor" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="gear" onAction="#gear" prefHeight="40.0" prefWidth="165.0" text="Gear" GridPane.rowIndex="5" />
+            <Button fx:id="vehicle" onAction="#vehicle" prefHeight="40.0" prefWidth="165.0" text="Vehicle" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="spells" disable="true" onAction="#spells" prefHeight="40.0" prefWidth="165.0" text="Spells" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="attributes" onAction="#attributes" prefHeight="40.0" prefWidth="165.0" text="Attrbutes" />
+            <Button fx:id="ids" onAction="#ids" prefHeight="40.0" prefWidth="165.0" text="IDs/Currency" GridPane.rowIndex="1" />
+            <Button fx:id="cyberdeck" onAction="#cyberDeck" prefHeight="40.0" prefWidth="165.0" text="Cyberdeck" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="other" disable="true" onAction="#adept" prefHeight="40.0" prefWidth="165.0" text="Adept Powers" GridPane.rowIndex="6" />
+            <Button fx:id="augmentations" onAction="#augmentations" prefHeight="40.0" prefWidth="165.0" text="Augmentations" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <TextArea fx:id="characterDisplay" editable="false" layoutX="43.0" layoutY="30.0" prefHeight="742.0" prefWidth="573.0" wrapText="true" />
+      <Button fx:id="saving" layoutX="692.0" layoutY="680.0" onAction="#saveToDB" prefHeight="40.0" prefWidth="385.0" text="Save to Database" />
+      <Button fx:id="karma" layoutX="808.0" layoutY="622.0" mnemonicParsing="false" onAction="#changeKarma" prefHeight="39.0" prefWidth="154.0" text="Change Karma" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shadowRunApp.LoadNewController">
+   <children>
+      <Button fx:id="load" layoutX="73.0" layoutY="135.0" mnemonicParsing="false" onAction="#load" prefHeight="40.0" prefWidth="165.0" text="Load" />
+      <Button fx:id="newCharacter" layoutX="362.0" layoutY="134.0" mnemonicParsing="false" onAction="#newCharacter" prefHeight="40.0" prefWidth="165.0" text="New" />
+      <Button fx:id="delete" layoutX="218.0" layoutY="227.0" mnemonicParsing="false" onAction="#deleteCharacter" prefHeight="40.0" prefWidth="165.0" text="Delete" />
+      <Label layoutX="136.0" layoutY="14.0" text="Shadowrun Character Manager">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="49.0" text="This application will help you manage your many">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="69.0" text="different characters. You can add new, or load an">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="89.0" text="old character. If you mess up, you are able to delete also.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

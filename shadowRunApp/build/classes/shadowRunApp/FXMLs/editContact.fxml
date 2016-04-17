@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shadowRunApp.EditContactController">
+   <children>
+      <Label layoutX="101.0" layoutY="79.0" text="Contact Name" />
+      <TextField fx:id="name" layoutX="255.0" layoutY="73.0" prefHeight="39.0" prefWidth="251.0" />
+      <Label layoutX="130.0" layoutY="145.0" text="Loyalty" />
+      <TextField fx:id="loyalty" layoutX="255.0" layoutY="139.0" prefHeight="39.0" prefWidth="51.0" />
+      <Label layoutX="330.0" layoutY="145.0" text="Connection" />
+      <TextField fx:id="connection" layoutX="454.0" layoutY="139.0" prefHeight="39.0" prefWidth="51.0" />
+      <Label layoutX="137.0" layoutY="187.0" text="Favor" />
+      <TextArea fx:id="favor" layoutX="255.0" layoutY="201.0" prefHeight="128.0" prefWidth="288.0" />
+      <Button layoutX="107.0" layoutY="329.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="103.0" text="Submit" />
+   </children>
+</AnchorPane>

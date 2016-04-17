@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="bower_components/three.js/build/three.js"></script>
+    <script type="text/javascript" src="bower_components/Physijs/physi.js"></script>
+    
+    <!-- For keyboard controls -->
+    <script src="bower_components/THREEx.KeyboardState.js"></script> 
+</head>
+
+<body>
+    <div id="viewport"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+    'use strict';
+
+    Physijs.scripts.worker = '/bower_components/Physijs/physijs_worker.js';
+    Physijs.scripts.ammo = '/bower_components/Physijs/examples/js/ammo.js';
+
+    var initScene, render, renderer, scene, camera, box;
+    var keyboard, tank;
+    
+    var speed = 3;
+    var turnSpeed = .05;
+    var angle = 0;
+    
+    var MovingCube;
+    var collidableMeshList = [];
+
+    initScene = function() {
+        renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize( window.innerWidth, window.innerHeight );
+        document.getElementById("viewport").appendChild( renderer.domElement );
+
+        // Create the scene
+        scene = new Physijs.Scene;
+        
+        //scene.setGravity(new THREE.Vector3( 0, -30, 0 ));
+
+        camera = new THREE.PerspectiveCamera(
+            35,
+            window.innerWidth / window.innerHeight,
+            1,
+            1000
+        );
+        camera.position.set( 60, 50, 60 );
+        camera.lookAt( scene.position );
+        scene.add( camera );
+        
+        // Set up controls for the keyboard
+        keyboard = new THREEx.KeyboardState();  
+
+        // Box
+        box = new Physijs.BoxMesh(
+            new THREE.CubeGeometry( 5, 5, 5 ),
+            new THREE.MeshBasicMaterial({ color: 0x888888 })
+        );
+        box.position.z = 25;
+        //scene.add( box );
+        
+        
+        
+        
+        
+        
+        var wallGeometry = new THREE.CubeGeometry( 100, 100, 20, 1, 1, 1 );
+	var wallMaterial = new THREE.MeshBasicMaterial( {color: 0x8888ff} );
+	var wireMaterial = new THREE.MeshBasicMaterial( { color: 0x000000, wireframe:true } );
+	
+	var wall = new THREE.Mesh(wallGeometry, wallMaterial);
+	wall.position.set(10, 50, -100);
+	scene.add(wall);
+	collidableMeshList.push(wall);
+	var wall = new THREE.Mesh(wallGeometry, wireMaterial);
+	wall.position.set(0, 0, -25);
+	scene.add(wall);
+        
+
+        
+        var loader = new THREE.ObjectLoader();
+        loader.load("/CS312/objects/tank.json",function ( obj ) {
+            obj.x = 100;
+            //scene.add( obj );
+            tank = obj;
+            
+            //Set the camera relative to this object
+            tank.add( camera );
+            camera.position.set( 0, 5, -25 );
+            
+            camera.lookAt( new THREE.Vector3( 0, 0, 0 ) );
+        });   
+        
+        
+        
+        
+        
+        
+    var cubeGeometry = new THREE.CubeGeometry(10,10,10,1,1,1);
+	var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true } );
+	MovingCube = new THREE.Mesh( cubeGeometry, wireMaterial );
+	MovingCube.position.set(0, 25.1, 0);
+	scene.add( MovingCube );
+        
+        
+        
+        
+        
+        
+        
+
+        requestAnimationFrame( render );
+    };
+
+    render = function() {
+        scene.simulate(); // run physics
+        renderer.render( scene, camera); // render the scene
+        requestAnimationFrame( render );
+        
+        if(keyboard.pressed("left")) { 
+        MovingCube.rotation.y += turnSpeed; 
+        angle -= turnSpeed; 
+    } 
+    if(keyboard.pressed("right")) { 
+        MovingCube.rotation.y -= turnSpeed; 
+        angle += turnSpeed; 
+    } 
+    if(keyboard.pressed("up")) { 
+        MovingCube.position.x += Math.sin(-angle) * speed; 
+        MovingCube.position.z += Math.cos(-angle) * speed; 
+    } 
+    if(keyboard.pressed("down")) { 
+        MovingCube.position.x -= Math.sin(-angle); 
+        MovingCube.position.z -= Math.cos(-angle); 
+    } 
+        
+        
+        var originPoint = MovingCube.position.clone();
+        
+        for (var vertexIndex = 0; vertexIndex < MovingCube.geometry.vertices.length; vertexIndex++) {		
+            var localVertex = MovingCube.geometry.vertices[vertexIndex].clone();
+            var globalVertex = localVertex.applyMatrix4( MovingCube.matrix );
+            var directionVector = globalVertex.sub( MovingCube.position );
+
+            var ray = new THREE.Raycaster( originPoint, directionVector.clone().normalize() );
+            var collisionResults = ray.intersectObjects( collidableMeshList );
+            if ( collisionResults.length > 0 && collisionResults[0].distance < directionVector.length() ) 
+			     console.log("lsdkjfsl");
+        }	
+        
+        
+    };
+
+    window.onload = initScene();
+
+    </script>

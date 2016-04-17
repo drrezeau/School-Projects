@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shadowRunApp.FXMLs.cyberdeck.CyberdeckController">
+   <children>
+      <Label layoutX="59.0" layoutY="40.0" prefHeight="50.0" prefWidth="150.0" text="Model Name" />
+      <TextField fx:id="name" layoutX="188.0" layoutY="46.0" />
+      <Label layoutX="59.0" layoutY="90.0" prefHeight="50.0" prefWidth="150.0" text="Device Rating" />
+      <TextField fx:id="deviceRating" layoutX="223.0" layoutY="97.0" prefHeight="39.0" prefWidth="54.0" />
+      <Label layoutX="323.0" layoutY="90.0" prefHeight="50.0" prefWidth="150.0" text="Attack" />
+      <TextField fx:id="attack" layoutX="466.0" layoutY="96.0" prefHeight="39.0" prefWidth="54.0" />
+      <Label layoutX="59.0" layoutY="140.0" prefHeight="50.0" prefWidth="150.0" text="Sleaze" />
+      <TextField fx:id="sleaze" layoutX="223.0" layoutY="147.0" prefHeight="39.0" prefWidth="54.0" />
+      <Label layoutX="323.0" layoutY="141.0" prefHeight="50.0" prefWidth="150.0" text="Firewall" />
+      <TextField fx:id="firewall" layoutX="466.0" layoutY="146.0" prefHeight="39.0" prefWidth="54.0" />
+      <Label layoutX="59.0" layoutY="191.0" prefHeight="50.0" prefWidth="150.0" text="Data Processing" />
+      <TextField fx:id="dataProcessing" layoutX="223.0" layoutY="197.0" prefHeight="39.0" prefWidth="54.0" />
+      <Label layoutX="323.0" layoutY="191.0" prefHeight="50.0" prefWidth="150.0" text="Matrix Condition" />
+      <TextField fx:id="matrixConditionMonitor" layoutX="466.0" layoutY="196.0" prefHeight="39.0" prefWidth="54.0" />
+      <Button layoutX="14.0" layoutY="298.0" mnemonicParsing="false" onAction="#addProgram" prefHeight="65.0" prefWidth="150.0" text="Add Program" />
+      <Button layoutX="202.0" layoutY="298.0" mnemonicParsing="false" onAction="#deleteProgram" prefHeight="65.0" prefWidth="150.0" text="Delete Program" />
+      <Button layoutX="375.0" layoutY="272.0" mnemonicParsing="false" onAction="#seePrograms" prefHeight="39.0" prefWidth="183.0" text="See Programs" />
+      <Button layoutX="378.0" layoutY="324.0" mnemonicParsing="false" onAction="#submit" prefHeight="39.0" prefWidth="183.0" text="Submit" />
+   </children>
+</AnchorPane>

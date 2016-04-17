@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="268.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shadowRunApp.NewCharacterController">
+   <children>
+      <Label layoutX="43.0" layoutY="33.0" text="Player Name" />
+      <TextField fx:id="player" layoutX="213.0" layoutY="33.0" />
+      <Label layoutX="35.0" layoutY="80.0" text="Character Name" />
+      <TextField fx:id="characterName" layoutX="213.0" layoutY="80.0" />
+      <Label layoutX="37.0" layoutY="123.0" text="Character Alias" />
+      <TextField fx:id="alias" layoutX="213.0" layoutY="123.0" />
+      <Label layoutX="40.0" layoutY="174.0" text="Metatype" />
+      <TextField fx:id="metatype" layoutX="213.0" layoutY="168.0" />
+      <Label layoutX="452.0" layoutY="37.0" text="Age" />
+      <TextField fx:id="age" layoutX="576.0" layoutY="29.0" prefHeight="25.0" prefWidth="44.0" />
+      <Label layoutX="452.0" layoutY="84.0" text="Height" />
+      <Label layoutX="582.0" layoutY="84.0" text="ft" />
+      <TextField fx:id="feet" layoutX="540.0" layoutY="80.0" prefHeight="25.0" prefWidth="36.0" />
+      <Label layoutX="662.0" layoutY="84.0" text="in" />
+      <TextField fx:id="inch" layoutX="617.0" layoutY="80.0" prefHeight="25.0" prefWidth="36.0" />
+      <Label layoutX="452.0" layoutY="127.0" text="Weight" />
+      <Label layoutX="631.0" layoutY="127.0" text="lbs" />
+      <TextField fx:id="weight" layoutX="576.0" layoutY="122.0" prefHeight="25.0" prefWidth="44.0" />
+      <CheckBox fx:id="hasMagic" layoutX="662.0" layoutY="33.0" mnemonicParsing="false" text="Has Magic" />
+      <CheckBox fx:id="male" layoutX="505.0" layoutY="168.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="113.0" text="Male" />
+      <CheckBox fx:id="female" layoutX="502.0" layoutY="212.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="119.0" text="Female" />
+      <Button layoutX="652.0" layoutY="181.0" mnemonicParsing="false" onAction="#submit" prefHeight="63.0" prefWidth="113.0" text="Submit" />
+   </children>
+</AnchorPane>

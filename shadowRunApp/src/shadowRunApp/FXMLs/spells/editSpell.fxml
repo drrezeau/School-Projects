@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="306.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shadowRunApp.FXMLs.spells.EditSpellController">
+   <children>
+      <Label layoutX="27.0" layoutY="47.0" text="Name" />
+      <TextField fx:id="name" layoutX="102.0" layoutY="41.0" />
+      <Label layoutX="361.0" layoutY="47.0" text="Type" />
+      <TextField fx:id="type" layoutX="431.0" layoutY="41.0" />
+      <Label layoutX="26.0" layoutY="98.0" text="Range" />
+      <TextField fx:id="duration" layoutX="431.0" layoutY="92.0" />
+      <Label layoutX="346.0" layoutY="98.0" text="Duration" />
+      <TextField fx:id="range" layoutX="102.0" layoutY="92.0" />
+      <Label layoutX="244.0" layoutY="167.0" text="Drain" />
+      <TextField fx:id="drain" layoutX="319.0" layoutY="161.0" prefHeight="39.0" prefWidth="130.0" />
+      <Button layoutX="275.0" layoutY="233.0" mnemonicParsing="false" onAction="#submit" prefHeight="39.0" prefWidth="124.0" text="Submit" />
+   </children>
+</AnchorPane>

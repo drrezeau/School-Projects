@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shadowRunApp.FXMLs.armor.EditArmorController">
+   <children>
+      <Label layoutX="60.0" layoutY="76.0" text="Armor name" />
+      <TextField fx:id="name" layoutX="188.0" layoutY="70.0" prefHeight="39.0" prefWidth="308.0" />
+      <Label layoutX="160.0" layoutY="140.0" text="Armor Rating" />
+      <TextField fx:id="rating" layoutX="290.0" layoutY="134.0" prefHeight="39.0" prefWidth="80.0" />
+      <Label layoutX="53.0" layoutY="235.0" text="Notes" />
+      <TextArea fx:id="notes" layoutX="126.0" layoutY="197.0" prefHeight="104.0" prefWidth="408.0" />
+      <Button layoutX="279.0" layoutY="329.0" mnemonicParsing="false" onAction="#submit" prefHeight="39.0" prefWidth="102.0" text="Submit" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Fi Fy Fo Fum</title>
+</head>
+<body>
+    <script src="bower_components/three.js/build/three.js"></script>
+    <script src="bower_components/three.js/examples/js/loaders/OBJLoader.js"></script>
+    <script src="bower_components/three.js/examples/js/loaders/MTLLoader.js"></script>
+    <script src="bower_components/three.js/examples/js/loaders/OBJMTLLoader.js"></script>
+    <script src="bower_components/OrbitControls.js"></script>   
+    <script src="bower_components/THREEx.KeyboardState.js"></script> 
+    
+    <script src="js/loadObjects.js"></script>
+    <script src="js/keyboard.js"></script>
+    
+    
+  <script>
+    
+    var tank01, tank01Box, tank01BoxDisplay;    
+    var tank01Movement = {speed: 4, turnSpeed: .02, driveAngle: 0, shootAngle: 0};  
+
+    var scene, camera, renderer, keyboard;
+    var camera2;
+      
+      
+    var wall, wallBox; 
+
+    var bullet = null;
+    var bulletBox = null;
+    var bulletAngle = 0;
+
+    var theVoid;
+
+    init();
+    animate();
+
+/***********************************************************************************************************************
+* INIT()
+*    Sets up the scene.
+*
+************************************************************************************************************************/
+    function init() {
+
+        // Create the scene and set the scene size.
+        scene = new THREE.Scene();
+        var WIDTH = window.innerWidth - 5, HEIGHT = window.innerHeight - 5;
+
+        // Create a renderer and add it to the DOM.
+        renderer = new THREE.WebGLRenderer({antialias:true});
+        renderer.setSize(WIDTH, HEIGHT);
+        renderer.setClearColor(0x333F47, 1);                                    // Set background color of scene
+        document.body.appendChild(renderer.domElement);
+
+        // Create a camera, zoom it out from the model a bit
+        camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.1, 20000);
+        camera.position.set(0,6,0);
+        
+        
+        // Add OrbitControls so that we can pan around with the mouse.
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+        // Create an event listener that resizes the renderer with the browser window.
+        window.addEventListener('resize', function() {
+        var WIDTH = window.innerWidth,
+            HEIGHT = window.innerHeight;
+        renderer.setSize(WIDTH, HEIGHT);
+        camera.aspect = WIDTH / HEIGHT;
+        camera.updateProjectionMatrix();
+        });
+        
+        // Set up controls for the keyboard
+        keyboard = new THREEx.KeyboardState(); 
+        
+        setUpLight();   
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        var building = new THREE.Object3D();
+        
+        var texture = THREE.ImageUtils.loadTexture('images/brick.jpg', {}, function() {console.log("image loaded"), {}});
+        var material = new THREE.MeshBasicMaterial( {map: texture} );
+        
+        
+        for (var i = 0; i < 35; i++) {
+            geometry = new THREE.BoxGeometry( Math.random() * 20, 60, Math.random() * 120 );
+            var brick = new THREE.Mesh( geometry, material );
+            brick.position.set(Math.random() * 400, 0, Math.random() * 400);
+            brick.rotation.y = (Math.floor(Math.random() * 4)) * 90 * Math.PI/190;
+            building.add(brick);
+        }
+        scene.add(building);
+        
+        /*
+            var geometry;
+        
+            geometry = new THREE.BoxGeometry( 20, 60, 120 );
+       
+            var brick = new THREE.Mesh( geometry, material );
+            brick.position.set(0, 0, 0);
+            building.add(brick);
+        
+            geometry = new THREE.BoxGeometry( 20, 60, 200 );
+        
+            var brick2 = new THREE.Mesh( geometry, material );
+            brick2.position.set(110, 0, 50);
+            brick2.rotation.y = 90 * Math.PI/180;
+            building.add(brick2);
+        
+            var brick3 = new THREE.Mesh( geometry, material );
+            brick3.position.set(170, 0, -50);
+            brick3.rotation.y = 90 * Math.PI/180;
+            building.add(brick3);
+            
+            geometry = new THREE.BoxGeometry( 20, 60, 120 );
+        
+            var brick3 = new THREE.Mesh( geometry, material );
+            brick3.position.set(280, 0, 0);
+            building.add(brick3);
+        */
+
+        
+        
+        
+            
+
+        
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////        
+
+        camera.position.set( 0, 25, -50 ); 
+        building.add(camera);   
+            
+    }
+
+/****************************************************************************************************************************
+*ANITMATE  
+*   Renders the scene and updates the render as needed.
+*
+******************************************************************************************************************************/
+    function animate() {
+
+    requestAnimationFrame(animate);
+    render();
+  
+
+    }      
+      
+/*******************************************************************************************************************************
+* Render
+*
+*
+*******************************************************************************************************************************/
+    function render() {   
+
+	renderer.render( scene, camera );
+    }
+ 
+/*******************************************************************************************************************************
+* setUpLight
+*
+*
+*******************************************************************************************************************************/
+    function setUpLight() {
+        //var light = new THREE.PointLight(0xffffff);
+        var light = new THREE.AmbientLight(0xffffff);
+        light.position.set(-100,200,100);
+        scene.add(light);   
+    }
+
+  </script>
+
+</body>
+</html>

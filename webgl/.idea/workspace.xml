@@ -1,0 +1,1342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b3b47892-4d0d-414e-a8ca-996c9d82547f" name="Default" comment="">
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 53bf1fa79f0f6331a16aa0235d38ab63ff1cf3d3
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controls.js" afterPath="$PROJECT_DIR$/js/controls.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.html" afterPath="$PROJECT_DIR$/project.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/loadObjects.js" afterPath="$PROJECT_DIR$/js/loadObjects.js" />
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+    </list>
+    <ignored path="webgl.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="webgl" />
+  </component>
+  <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+<<<<<<< HEAD
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+      <file leaf-file-name="default.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/default.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+              <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+=======
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+=======
+      <file leaf-file-name="loadBullet.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/loadBullet.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="project.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project.html">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="0.98622274">
+              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+              <folding />
+=======
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="0.0930851">
+              <caret line="501" column="30" selection-start-line="501" selection-start-column="30" selection-end-line="501" selection-end-column="30" />
+=======
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="0.79020333">
+              <caret line="467" column="19" selection-start-line="467" selection-start-column="19" selection-end-line="467" selection-end-column="19" />
+=======
+            <state vertical-scroll-proportion="0.90850276">
+              <caret line="513" column="41" selection-start-line="513" selection-start-column="41" selection-end-line="513" selection-end-column="41" />
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+>>>>>>> 53bf1fa79f0f6331a16aa0235d38ab63ff1cf3d3
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name="keyboard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <folding />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="controls.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controls.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+              </folding>
+=======
+      <file leaf-file-name="default.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/default.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.0">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+              <folding />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+      <file leaf-file-name="explosion.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/explosion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+                <marker date="1457646799905" expanded="true" signature="1133:1135" placeholder="{...}" />
+                <marker date="1457646799905" expanded="true" signature="1326:1363" placeholder="{...}" />
+              </folding>
+=======
+      <file leaf-file-name="bullet.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/bullet.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.84615386">
+              <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+              <folding />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="keyboard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+=======
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+<<<<<<< HEAD
+              <folding>
+                <marker date="1457974441690" expanded="true" signature="32:106" placeholder="{...}" />
+                <marker date="1457974441690" expanded="true" signature="84:106" placeholder="{...}" />
+                <marker date="1457974441690" expanded="true" signature="5363:5372" placeholder="{...}" />
+                <marker date="1457974441690" expanded="true" signature="5363:5562" placeholder="{...}" />
+                <marker date="1457974441690" expanded="true" signature="5564:5832" placeholder="/** Down ...*/" />
+                <marker date="1457974441690" expanded="true" signature="6265:6533" placeholder="/** Left ...*/" />
+                <marker date="1457974441690" expanded="true" signature="6767:7036" placeholder="/** Right ...*/" />
+                <marker date="1457974441690" expanded="true" signature="7268:7545" placeholder="/** Change Camera ...*/" />
+                <marker date="1457974441690" expanded="true" signature="8683:9037" placeholder="/** a ...*/" />
+                <marker date="1457974441690" expanded="true" signature="9328:9682" placeholder="/** d ...*/" />
+                <marker date="1457974441690" expanded="true" signature="9969:10242" placeholder="/** updateHealth ...*/" />
+                <marker date="1457974441690" expanded="true" signature="11732:12012" placeholder="/** Extra Code Snippets ...*/" />
+              </folding>
+=======
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+              <folding />
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+=======
+      <file leaf-file-name="loadObjects.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/loadObjects.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+              <folding>
+                <marker date="1456162213699" expanded="true" signature="134:322" placeholder="{...}" />
+              </folding>
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="loadObjects.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/loadObjects.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+              <folding />
+=======
+      <file leaf-file-name="project.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.785715">
+              <caret line="423" column="45" selection-start-line="423" selection-start-column="45" selection-end-line="423" selection-end-column="45" />
+              <folding>
+                <element signature="n#script#13;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#14;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="brickWalls.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/brickWalls.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+=======
+      <file leaf-file-name="explosion.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/explosion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+              </folding>
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cs312/quere.js" />
+        <option value="$PROJECT_DIR$/cs312/queue.js" />
+        <option value="$PROJECT_DIR$/cs312/advance.js" />
+        <option value="$PROJECT_DIR$/cs312/js/loadObjects.js" />
+        <option value="$PROJECT_DIR$/cs312/loadBullet.js" />
+        <option value="$PROJECT_DIR$/cs312/bullet.js" />
+        <option value="$PROJECT_DIR$/cs312/project.html" />
+        <option value="$PROJECT_DIR$/cs312/js/keyboard.js" />
+        <option value="$PROJECT_DIR$/js/loadBullet.js" />
+        <option value="$PROJECT_DIR$/explosion.html" />
+        <option value="$PROJECT_DIR$/js/keyboard.js" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/js/bullet.js" />
+        <option value="$PROJECT_DIR$/js/loadObjects.js" />
+        <option value="$PROJECT_DIR$/js/explosion.js" />
+        <option value="$PROJECT_DIR$/default.css" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/js/controls.js" />
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+        <option value="$PROJECT_DIR$/project.html" />
+=======
+        <option value="$PROJECT_DIR$/default.css" />
+        <option value="$PROJECT_DIR$/project.html" />
+        <option value="$PROJECT_DIR$/js/explosion.js" />
+        <option value="$PROJECT_DIR$/js/loadObjects.js" />
+        <option value="$PROJECT_DIR$/js/bullet.js" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+<<<<<<< HEAD
+      <pane id="Scope" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53bf1fa79f0f6331a16aa0235d38ab63ff1cf3d3
+      <pane id="Scratches" />
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+=======
+      <pane id="Scope" />
+<<<<<<< HEAD
+      <pane id="Scratches" />
+=======
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webgl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webgl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webgl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+=======
+=======
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webgl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webgl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+      <pane id="Scope" />
+=======
+      <pane id="Scratches" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+>>>>>>> 53bf1fa79f0f6331a16aa0235d38ab63ff1cf3d3
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\david_000\Documents\webgl\cs312\js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3b47892-4d0d-414e-a8ca-996c9d82547f" name="Default" comment="" />
+      <created>1454949075595</created>
+      <option name="number" value="Default" />
+      <updated>1454949075595</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="false" />
+    <layout>
+<<<<<<< HEAD
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18071654" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+=======
+<<<<<<< HEAD
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18109125" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919767" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24976481" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18203199" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+    <entry file="file://$PROJECT_DIR$/js/loadBullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+=======
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+=======
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+    <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <folding>
+            <marker date="1457974441690" expanded="true" signature="32:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="84:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5372" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5562" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5564:5832" placeholder="/** Down ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6265:6533" placeholder="/** Left ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6767:7036" placeholder="/** Right ...*/" />
+            <marker date="1457974441690" expanded="true" signature="7268:7545" placeholder="/** Change Camera ...*/" />
+            <marker date="1457974441690" expanded="true" signature="8683:9037" placeholder="/** a ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9328:9682" placeholder="/** d ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9969:10242" placeholder="/** updateHealth ...*/" />
+            <marker date="1457974441690" expanded="true" signature="11732:12012" placeholder="/** Extra Code Snippets ...*/" />
+          </folding>
+=======
+          <folding />
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadObjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="423" column="45" selection-start-line="423" selection-start-column="45" selection-end-line="423" selection-end-column="45" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/explosion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+            <marker date="1457646799905" expanded="true" signature="1133:1135" placeholder="{...}" />
+            <marker date="1457646799905" expanded="true" signature="1326:1363" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadBullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+<<<<<<< HEAD
+          <folding>
+            <marker date="1457974441690" expanded="true" signature="32:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="84:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5372" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5562" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5564:5832" placeholder="/** Down ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6265:6533" placeholder="/** Left ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6767:7036" placeholder="/** Right ...*/" />
+            <marker date="1457974441690" expanded="true" signature="7268:7545" placeholder="/** Change Camera ...*/" />
+            <marker date="1457974441690" expanded="true" signature="8683:9037" placeholder="/** a ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9328:9682" placeholder="/** d ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9969:10242" placeholder="/** updateHealth ...*/" />
+            <marker date="1457974441690" expanded="true" signature="11732:12012" placeholder="/** Extra Code Snippets ...*/" />
+          </folding>
+=======
+          <folding />
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+=======
+          <folding />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadObjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+            <marker date="1456162213699" expanded="true" signature="134:322" placeholder="{...}" />
+          </folding>
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+<<<<<<< HEAD
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+            <element signature="n#script#13;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#14;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+          </folding>
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/explosion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+            <marker date="1457646799905" expanded="true" signature="1133:1135" placeholder="{...}" />
+            <marker date="1457646799905" expanded="true" signature="1326:1363" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadBullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <folding>
+            <marker date="1457974441690" expanded="true" signature="32:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="84:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5372" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5562" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5564:5832" placeholder="/** Down ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6265:6533" placeholder="/** Left ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6767:7036" placeholder="/** Right ...*/" />
+            <marker date="1457974441690" expanded="true" signature="7268:7545" placeholder="/** Change Camera ...*/" />
+            <marker date="1457974441690" expanded="true" signature="8683:9037" placeholder="/** a ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9328:9682" placeholder="/** d ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9969:10242" placeholder="/** updateHealth ...*/" />
+            <marker date="1457974441690" expanded="true" signature="11732:12012" placeholder="/** Extra Code Snippets ...*/" />
+          </folding>
+=======
+          <folding />
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+=======
+          <folding />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadObjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+            <marker date="1456162213699" expanded="true" signature="134:322" placeholder="{...}" />
+          </folding>
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="277" column="6" selection-start-line="277" selection-start-column="6" selection-end-line="277" selection-end-column="6" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+<<<<<<< HEAD
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+            <element signature="n#script#13;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#14;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+          </folding>
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/explosion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+            <marker date="1457646799905" expanded="true" signature="1133:1135" placeholder="{...}" />
+            <marker date="1457646799905" expanded="true" signature="1326:1363" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadBullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <folding>
+            <marker date="1457974441690" expanded="true" signature="32:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="84:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5372" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5562" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5564:5832" placeholder="/** Down ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6265:6533" placeholder="/** Left ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6767:7036" placeholder="/** Right ...*/" />
+            <marker date="1457974441690" expanded="true" signature="7268:7545" placeholder="/** Change Camera ...*/" />
+            <marker date="1457974441690" expanded="true" signature="8683:9037" placeholder="/** a ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9328:9682" placeholder="/** d ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9969:10242" placeholder="/** updateHealth ...*/" />
+            <marker date="1457974441690" expanded="true" signature="11732:12012" placeholder="/** Extra Code Snippets ...*/" />
+          </folding>
+=======
+          <folding />
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+=======
+          <folding />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="338" column="4" selection-start-line="338" selection-start-column="4" selection-end-line="338" selection-end-column="4" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+<<<<<<< HEAD
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+            <element signature="n#script#13;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#14;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+          </folding>
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/explosion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+            <marker date="1457646799905" expanded="true" signature="1133:1135" placeholder="{...}" />
+            <marker date="1457646799905" expanded="true" signature="1326:1363" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadBullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <folding>
+            <marker date="1457974441690" expanded="true" signature="32:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="84:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5372" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5562" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5564:5832" placeholder="/** Down ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6265:6533" placeholder="/** Left ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6767:7036" placeholder="/** Right ...*/" />
+            <marker date="1457974441690" expanded="true" signature="7268:7545" placeholder="/** Change Camera ...*/" />
+            <marker date="1457974441690" expanded="true" signature="8683:9037" placeholder="/** a ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9328:9682" placeholder="/** d ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9969:10242" placeholder="/** updateHealth ...*/" />
+            <marker date="1457974441690" expanded="true" signature="11732:12012" placeholder="/** Extra Code Snippets ...*/" />
+          </folding>
+=======
+          <folding />
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+=======
+          <folding />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+<<<<<<< HEAD
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+            <element signature="n#script#13;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#14;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+          </folding>
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadObjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+            <marker date="1456162213699" expanded="true" signature="134:322" placeholder="{...}" />
+          </folding>
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadBullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="9" selection-start-line="43" selection-start-column="8" selection-end-line="48" selection-end-column="9" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <folding>
+            <marker date="1457974441690" expanded="true" signature="32:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="84:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5372" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5562" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5564:5832" placeholder="/** Down ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6265:6533" placeholder="/** Left ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6767:7036" placeholder="/** Right ...*/" />
+            <marker date="1457974441690" expanded="true" signature="7268:7545" placeholder="/** Change Camera ...*/" />
+            <marker date="1457974441690" expanded="true" signature="8683:9037" placeholder="/** a ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9328:9682" placeholder="/** d ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9969:10242" placeholder="/** updateHealth ...*/" />
+            <marker date="1457974441690" expanded="true" signature="11732:12012" placeholder="/** Extra Code Snippets ...*/" />
+          </folding>
+=======
+          <folding />
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+=======
+          <folding />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+<<<<<<< HEAD
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+            <element signature="n#script#13;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#14;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+          </folding>
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadObjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+            <marker date="1456162213699" expanded="true" signature="134:322" placeholder="{...}" />
+          </folding>
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadBullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="9" selection-start-line="43" selection-start-column="8" selection-end-line="48" selection-end-column="9" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <folding>
+            <marker date="1457974441690" expanded="true" signature="32:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="84:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5372" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5562" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5564:5832" placeholder="/** Down ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6265:6533" placeholder="/** Left ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6767:7036" placeholder="/** Right ...*/" />
+            <marker date="1457974441690" expanded="true" signature="7268:7545" placeholder="/** Change Camera ...*/" />
+            <marker date="1457974441690" expanded="true" signature="8683:9037" placeholder="/** a ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9328:9682" placeholder="/** d ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9969:10242" placeholder="/** updateHealth ...*/" />
+            <marker date="1457974441690" expanded="true" signature="11732:12012" placeholder="/** Extra Code Snippets ...*/" />
+          </folding>
+=======
+          <folding />
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+=======
+          <folding />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+<<<<<<< HEAD
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+            <element signature="n#script#13;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#14;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+          </folding>
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadObjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+            <marker date="1456162213699" expanded="true" signature="134:322" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/brickWalls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/parkingGarage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/building.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5345745">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadBullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/explosion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38031915">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/js/bullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+<<<<<<< HEAD
+=======
+=======
+    <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+          <folding />
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/js/brickWalls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.0">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+=======
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <marker date="1457974441690" expanded="true" signature="32:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="84:106" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5372" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5363:5562" placeholder="{...}" />
+            <marker date="1457974441690" expanded="true" signature="5564:5832" placeholder="/** Down ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6265:6533" placeholder="/** Left ...*/" />
+            <marker date="1457974441690" expanded="true" signature="6767:7036" placeholder="/** Right ...*/" />
+            <marker date="1457974441690" expanded="true" signature="7268:7545" placeholder="/** Change Camera ...*/" />
+            <marker date="1457974441690" expanded="true" signature="8683:9037" placeholder="/** a ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9328:9682" placeholder="/** d ...*/" />
+            <marker date="1457974441690" expanded="true" signature="9969:10242" placeholder="/** updateHealth ...*/" />
+            <marker date="1457974441690" expanded="true" signature="11732:12012" placeholder="/** Extra Code Snippets ...*/" />
+=======
+    <entry file="file://$PROJECT_DIR$/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.785715">
+          <caret line="423" column="45" selection-start-line="423" selection-start-column="45" selection-end-line="423" selection-end-column="45" />
+          <folding>
+            <element signature="n#script#13;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#14;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+          </folding>
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+=======
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+    <entry file="file://$PROJECT_DIR$/js/explosion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+=======
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+=======
+    <entry file="file://$PROJECT_DIR$/js/explosion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+            <marker date="1457646799905" expanded="true" signature="1133:1135" placeholder="{...}" />
+            <marker date="1457646799905" expanded="true" signature="1326:1363" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loadObjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+=======
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79020333">
+          <caret line="467" column="19" selection-start-line="467" selection-start-column="19" selection-end-line="467" selection-end-column="19" />
+=======
+    <entry file="file://$PROJECT_DIR$/js/controls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+=======
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+          <folding>
+            <marker date="1456162213699" expanded="true" signature="134:322" placeholder="{...}" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/js/keyboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/js/bullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84615386">
+          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+          <folding />
+>>>>>>> 53bf1fa79f0f6331a16aa0235d38ab63ff1cf3d3
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.98622274">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+=======
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0930851">
+          <caret line="501" column="30" selection-start-line="501" selection-start-column="30" selection-end-line="501" selection-end-column="30" />
+=======
+        <state vertical-scroll-proportion="0.90850276">
+          <caret line="513" column="41" selection-start-line="513" selection-start-column="41" selection-end-line="513" selection-end-column="41" />
+>>>>>>> 033fb5fdfaf4d802f2ece864c243bfd3494cf382
+>>>>>>> 53bf1fa79f0f6331a16aa0235d38ab63ff1cf3d3
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+>>>>>>> 27f6db9d584ec1564d478f185e6083381c767b49
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 58a2928c29ef42b40373a66fdb74b34a469654c8
+  </component>
+</project>

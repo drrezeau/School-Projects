@@ -72,7 +72,59 @@ function keyboardShoot(tank, tankMovement) {
         if(tank.tankBox.intersectsBox(brickWalls[b])){return;}
     }
 
-    if(tank.tankBox.intersectsBox(otherTank.tankBox)){return;}
+    if(tank.tankBox.intersectsBox(otherTank.tankBox)){
+        if(tank01Movement.speed == 3 || tank01Movement.speed == 4){
+            if(tank.name == "Tank1"){
+                tank02.health -= 1;
+                updateHealth(tank02);
+                if(tank02.health < 1){  //THIS WHOLE STATEMENT SHOULD BE ITS OWN FUNCTION TO AVOID DUPLICATE CODE
+                    if(!tank02.isThirdPerson){keyboardChangeCamera(tank02);}
+
+                    var audio = new Audio('sounds/explode.mp3');
+                        audio.volume = .75;
+                        audio.play();
+
+                        setTimeout(function(){
+                            console.log(tank02.name + "Died");
+                            scene.remove(tank02);
+                            tank02.tankBox.setFromObject(theVoid);
+
+                            explosion.position.set(tank02.position.x, tank02.position.y, tank02.position.z);
+                            explosion.scale.set(.25,.25,.25);
+                            scene.add(explosion);
+                        }, 50);
+                }else {
+                    tank02.position.set(Math.random() * X_SIZE ,0, Math.random() * Z_SIZE);
+                }
+            }
+        }else if(tank02Movement.speed == 3 || tank02Movement.speed == 4){
+            if(tank.name == "Tank2"){
+                tank01.health -= 1;
+                updateHealth(tank01);
+                if(tank01.health < 1){
+                    if(!tank01.isThirdPerson){keyboardChangeCamera(tank01);}
+
+                    var audio = new Audio('sounds/explode.mp3');
+                        audio.volume = .75;
+                        audio.play();
+
+                        setTimeout(function(){
+                            console.log(tank01.name + "Died");
+                            scene.remove(tank01);
+                            tank01.tankBox.setFromObject(theVoid);
+
+                            explosion.position.set(tank01.position.x, tank01.position.y, tank01.position.z);
+                            explosion.scale.set(.25,.25,.25);
+                            scene.add(explosion);
+                        }, 50);
+                }else {
+                    tank01.position.set(Math.random() * X_SIZE ,0, Math.random() * Z_SIZE);
+                }
+            }
+        }
+        return;
+    
+    }
 
 
     if(isOutOfBounds(tank)){

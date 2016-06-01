@@ -127,7 +127,7 @@ function updateBullet(tank, otherTank) {
             }
 
             //If bullet distance is farther than 1000, remove it from the scene
-            if (tank.bullets[i].distance > 1000) {
+            if (tank.bullets[i].distance > 10000) {
                 var tmp = tank.bullets[i];
                 //increment my bulletsRemoved to know where to start next time in the array.
                 tank.bulletsRemoved++;

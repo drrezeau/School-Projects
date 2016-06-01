@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Ship</title>
+  <meta charset="utf-8">
+</head>
+<body style="margin: 0;">
+
+ <canvas id="radar" height="200" width="200" style="position: absolute; bottom: 0px;"> Your Browser doesn't support canvas </canvas>
+
+  <script src="three.js-master/build/three.min.js"></script>
+ <script src="js/radar.js"></script>
+ <script src="three.js-master/src/loaders/ObjectLoader.js"></script>
+  <script src="three.js-master/src/loaders/JSONLoader.js"></script>
+
+  <script src="js/OrbitControls.js"></script>
+  <script src="ship.js"></script>
+  <script src="arwing.js"></script>
+  <script src="asteroid.js"></script>
+  <script src="asteroidClone.js"></script>
+  <script src="medAsteroidClone.js"></script>
+  <script src="smallAsteroidClone.js"></script>
+  <script src="particle_explosion.js"></script>
+  <script src="laser.js"></script>
+  <script src="bolt.js"></script>
+  <script src="draw.js"></script>
+  <script src="advance.js"></script>
+  <script src="control.js"></script>
+  <script src="velocity.js"></script>
+  <script src="js/shaderCode.js"></script>
+  <script src="js/keyboardstate.js"></script>
+  <script src="OBJLoader.js"></script>
+  <script src="MTLLoader.js"></script>
+
+  <script>
+
+    // Set up the scene, camera, and renderer as global variables.
+    var scene, camera, camera2, renderer;
+
+    // 1-4 players?
+    var numPlayers = 1;
+
+    // Hack for switching from 2 player to 1
+    var refreshPageOnChange = false;
+
+    // Controls
+    var pads;
+
+    // variables for loaded objects
+    var tieBomber, xwing, arwing, asteroid, laser, laser2, bullet, temp, skyBox, skyBoxSpace, skyBoxLand, medRock = null;
+
+    // used for logic determining controls and asteroids in different worlds
+    var SKYVAL = 0;
+
+    // speed of asteroids and ships
+    var ROCKSPEED = 2;
+    var HALFSPEED = 1;
+    var maxShipSpeed = 1;
+    var WORLDSPACE = 500;
+    var HALFWORLD = 250;
+
+    // array for cloned objects
+    var asteroids = [];
+
+    // flag for cloning asteroids once parent has loaded
+    var needToClone = orientLaser2 = true;
+
+    // for sound
+    var audio = null;
+    var goodLuck = false;
+    var music = false;
+
+    // https://stemkoski.github.io/Three.js/Keyboard.html
+    var keyboard = new KeyboardState();
+    var clock = new THREE.Clock();
+
+    // set up radar
+    var canvas = document.getElementById("radar");
+    var ctx = canvas.getContext("2d");
+    var maxBounds = 350.0;
+    var radius = 100;
+    var counter = 0;
+
+    init();
+    gameLoop();
+
+    // Sets up the scene.
+    function init() {
+
+        // Create the scene and set the scene size.
+      scene = new THREE.Scene();
+      var WIDTH = window.innerWidth,
+          HEIGHT = window.innerHeight;
+
+      // Create a renderer and add it to the DOM.
+      renderer = new THREE.WebGLRenderer({antialias:true});
+      renderer.setSize(WIDTH, HEIGHT);
+      renderer.autoClear = false;
+      document.body.appendChild(renderer.domElement);
+
+      // Create a camera, zoom it out from the model a bit, and add it to the scene.
+      camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.1, 20000);
+      camera.position.set(0,6,0);
+      scene.add(camera);
+
+      camera2 = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.1, 20000);
+      camera.position.set(0, 6, 0);
+      scene.add(camera2);
+ 
+      // Create an event listener that resizes the renderer with the browser window.
+      window.addEventListener('resize', function() {
+        var WIDTH = window.innerWidth,
+            HEIGHT = window.innerHeight;
+        renderer.setSize(WIDTH, HEIGHT);
+        camera.aspect = WIDTH / HEIGHT;
+        camera.updateProjectionMatrix();
+      });
+
+      // Set the background color of the scene.
+      renderer.setClearColor(0x333F47, 1);
+
+      // Create a light, set its position, and add it to the scene.
+      var light = new THREE.PointLight(0xffffff);
+      light.position.set(-100,200,100);
+      scene.add(light);
+
+      tieBomber = new Ship("models/tie_fighter.json", scene);
+      asteroid = new Asteroid("models/Asteroid.obj", scene);
+      laser = new Laser("models/lasers.json", scene);
+
+      arwing = new Arwing("models/arwing.json", scene);
+      laser2 = new Laser("models/lasers.json", scene);
+    
+      var geo = new THREE.SphereGeometry(.1, 10, 8);
+      var mesh = new THREE.MeshLambertMaterial({color: 0xff0000});
+      temp = new THREE.Mesh(geo, mesh);
+      temp.material.visible = false;
+      scene.add(temp);
+
+
+      var loader = new THREE.ObjectLoader();
+      loader.load("models/bullet.json", function ( obj ) {
+        obj.traverse( function ( child ) {
+              if ( child instanceof THREE.Mesh ) {
+                child.material.color.setHex(0xff0000);
+              }
+            });
+        obj.scale.set(.1, .1, .1);
+        bullet = obj;
+      });
+      
+      // build the skybox Mesh
+      var imagePrefix = "images/nebula_";
+
+      var directions  = ["right1", "left2", "top3", "bottom4", "front5", "back6" ];  // Use this for skybox with dif side images
+      var imageSuffix = ".png";
+      var skyGeometry = new THREE.CubeGeometry( 5000, 5000, 5000 ); 
+      
+      var materialArray = [];
+      for (var i = 0; i < 6; i++)
+        materialArray.push( new THREE.MeshBasicMaterial({
+          map: THREE.ImageUtils.loadTexture( imagePrefix + directions[i] + imageSuffix ), // Use this for skybox with dif side images
+          side: THREE.BackSide
+        }));
+      var skyMaterial = new THREE.MeshFaceMaterial( materialArray );
+      skyBoxSpace = new THREE.Mesh( skyGeometry, skyMaterial );
+      scene.add( skyBoxSpace );
+
+
+
+
+      // build the skybox Mesh for Land
+      imagePrefix = "images/land_";
+      var directions  = ["right1", "left2", "top3", "bottom4", "front5", "back6" ];  // Use this for skybox with dif side images
+      skyGeometry = new THREE.CubeGeometry( 1500, 300, 1500 ); 
+      
+      materialArray = [];
+      for (var i = 0; i < 6; i++)
+        materialArray.push( new THREE.MeshBasicMaterial({
+          map: THREE.ImageUtils.loadTexture( imagePrefix + directions[i] + imageSuffix ), // Use this for skybox with dif side images
+          side: THREE.BackSide
+        }));
+      var skyMaterial = new THREE.MeshFaceMaterial( materialArray );
+      skyBoxLand = new THREE.Mesh( skyGeometry, skyMaterial );
+      // scene.add( skyBoxLand );
+      skyBox = skyBoxLand;
+
+
+
+
+
+
+      // Add OrbitControls so that we can pan around with the mouse.
+      controls = new THREE.OrbitControls(camera, renderer.domElement);
+    }
+
+
+    // Renders the scene and updates the render as needed.
+    function gameLoop() {
+
+      // Read more about requestAnimationFrame at http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+      requestAnimationFrame(gameLoop);
+
+
+      draw();
+      control();
+      advance();
+
+			  
+      
+      // Render the scene.  These lines will mess things up if put in a different function
+
+      if (numPlayers == 2) {
+
+          // radar
+          var x = tieBomber.model.position.x;
+          var y = -tieBomber.model.position.z;
+          var x2 = arwing.model.position.x;
+          var y2 = -arwing.model.position.z;
+          x *= 100.0/maxBounds;
+          y *= 100.0/maxBounds;
+          x2 *= 100.0/maxBounds;
+          y2 *= 100.0/maxBounds;
+          counter = counter % radius;
+        twoRadar(x, y, x2, y2, ctx, canvas, counter, radius, asteroids, maxBounds);
+          counter++;
+
+        if (refreshPageOnChange == false)
+          scene.add(arwing.model);
+
+        //Hack to refresh page
+        refreshPageOnChange = true;
+
+        // rez the dead ships if killed
+        if (arwing.alive == false && (Math.floor(Math.random() * 300)) == 1 ) {
+          scene.add(arwing.model);
+          arwing.alive = true;
+        }
+        if (tieBomber.alive == false && (Math.floor(Math.random() * 300)) == 1 ) {
+          scene.add(tieBomber.model);
+          tieBomber.alive = true;
+        }
+
+	      renderer.autoClear = false;
+        var SCREEN_WIDTH = window.innerWidth, SCREEN_HEIGHT = window.innerHeight;
+        camera.aspect = 0.5 * SCREEN_WIDTH / SCREEN_HEIGHT;
+        camera2.aspect = 0.5 * SCREEN_WIDTH / SCREEN_HEIGHT;
+        camera.updateProjectionMatrix();
+        camera2.updateProjectionMatrix();
+        
+        renderer.setViewport( 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT );
+        renderer.clear();
+        
+        // left side
+        renderer.setViewport( 1, 1,   0.5 * SCREEN_WIDTH - 2, SCREEN_HEIGHT - 2 );
+        renderer.render( scene, camera );
+        
+        // right side
+        renderer.setViewport( 0.5 * SCREEN_WIDTH + 1, 1,   0.5 * SCREEN_WIDTH - 2, SCREEN_HEIGHT - 2 );
+        renderer.render( scene, camera2 );  
+      }
+      else {
+
+          var x = tieBomber.model.position.x;
+          var y = -tieBomber.model.position.z;
+          x *= 100.0/maxBounds;
+          y *= 100.0/maxBounds;
+          counter = counter % radius;
+
+          radar(x, y, ctx, canvas, counter, radius, asteroids, maxBounds);
+
+
+          counter++;
+
+        // rez the ship if it dies
+        if (tieBomber.alive == false && (Math.floor(Math.random() * 300)) == 1 ) {
+          scene.add(tieBomber.model);
+          laser.model.position.set(tieBomber.model.position.x, tieBomber.model.position.y, tieBomber.model.position.z);
+          laser.model.rotation.set(tieBomber.model.rotation.x, tieBomber.model.rotation.y, tieBomber.model.rotation.z)
+          tieBomber.alive = true;
+        }
+
+        // Hacks :P
+        if (refreshPageOnChange == true) {
+          location.reload();
+        }
+
+        // scene.remove(arwing.model);
+      	renderer.autoClear = true;
+      	renderer.render(scene, camera);
+      }      
+
+      controls.update();
+
+    }
+
+  </script>
+  
+  <!-- A little background music... -->
+  <audio autoplay id="good_luck">
+    <source src="goodLuck.mp3" type="audio/mpeg"> 
+  </audio>
+
+</body>
+</html>

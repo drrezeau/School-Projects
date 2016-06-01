@@ -5,11 +5,6 @@
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="default.css">
-    <script>
-        //Map variable
-        var X_SIZE = 600; //600
-        var Z_SIZE = 600; //600
-    </script>
 
 </head>
 <body>
@@ -23,6 +18,10 @@
         var speedBoostOn = false;
         var bulletBoostOn = false;
         var ultPowerOn = false;
+        var numWalls = 10;
+        
+        var X_SIZE = 600;
+        var Z_SIZE = 600;
     </script>
     <script src="js/userSettings.js"></script>
     <script src="js/jquery-1.11.3.min.js"></script>
@@ -48,13 +47,13 @@
                         <p>Right: D</p>
                         <p>Backwards: S</p>
                         <p>Shoot: F</p>
-                        <p>first Person: Q</p>
+                        <p>First Person: Q</p>
                     </div>
                 </div>
                     <div class="controlsLeft">
                         <p class="userInput">
                             <span class="checkboxText">Fog On</span>
-                            <input id="FogOn" type="checkbox" value="true">
+                            <input id="FogOn" type="checkbox" value="true" checked>
                         </p>
                         <p class="userInput">
                             <span class="checkboxText">Fog Intensity</span>
@@ -62,23 +61,31 @@
                         </p>
                         <p class="userInput">
                             <span class="checkboxText">Light Intensity</span>
-                            <input id="lightInt" type="text" value="3" min="0" max="1">
+                            <input id="lightInt" type="text" value="7" min="0" max="1">
                         </p>
                         <p class="userInput">
                             <span class="checkboxText">Health Power Up On</span>
-                            <input id="health" type="checkbox">
+                            <input id="health" type="checkbox" checked>
                         </p>
                         <p class="userInput">
                             <span class="checkboxText">Speed Power Up On</span>
-                            <input id="speed" type="checkbox">
+                            <input id="speed" type="checkbox" checked>
                         </p>
                         <p class="userInput">
                             <span class="checkboxText">Bullet Power Up On</span>
-                            <input id="bullet" type="checkbox">
+                            <input id="bullet" type="checkbox" checked>
                         </p>
                         <p class="userInput">
                             <span class="checkboxText">Ultimate Power Up On</span>
-                            <input id="ult" type="checkbox">
+                            <input id="ult" type="checkbox" checked>
+                        </p>
+                        <p class="userInput">
+                            <span class="checkboxText">Number of Walls</span>
+                            <input id="numWalls" type="text" value="5" min="0" max="1">
+                        </p>
+                        <p class="userInput">
+                            <span class="checkboxText">Size of Arena</span>
+                            <input id="arenaSize" type="text" value="400" min="0" max="1">
                         </p>
                         <button onclick="gameSettings()" id="close">Ready!</button>
 
@@ -91,7 +98,7 @@
                         <p>Right: Right Arrow</p>
                         <p>Backwards: Down Arrow</p>
                         <p>Shoot: Shift</p>
-                        <p>first Person: Space Bar</p>
+                        <p>First Person: Space Bar</p>
                     </div>
                 </div>
             </div>
@@ -435,6 +442,7 @@
         setUpLight();
         loadObjects();
         powerUPs();
+        createBrickWalls();
 
         
         //The void
@@ -460,7 +468,8 @@
         grassTex.repeat.x = 100; 
         grassTex.repeat.y = 100; 
         var groundMat = new THREE.MeshLambertMaterial({map:grassTex}); 
-        var groundGeo = new THREE.PlaneGeometry(X_SIZE + 150, Z_SIZE + 150); 
+        console.log(X_SIZE);
+        var groundGeo = new THREE.PlaneGeometry(X_SIZE+150, Z_SIZE+150); 
         var ground = new THREE.Mesh(groundGeo,groundMat); 
         ground.position.set(X_SIZE / 2, 0, Z_SIZE / 2);
         ground.rotation.x = -Math.PI/2; //-90 degrees around the xaxis 
@@ -479,7 +488,7 @@
 *
 ******************************************************************************************************************************/
 function animate() {
-        
+    
         requestAnimationFrame(animate);
         controllers();
         render();
@@ -505,9 +514,11 @@ function animate() {
         //only updates the boxes IF the tanks are still in the scene
         if (scene.getObjectByName("Tank1")) {
             tank01.tankBox.setFromObject(tank01);
+//            tank01BoxDisplay.update();
         }
         if (scene.getObjectByName("Tank2")) {
             tank02.tankBox.setFromObject(tank02);
+//            tank02.tank02BoxDisplay.update();
         }
 
         if (scene.getObjectByName("explosion")) {
@@ -567,9 +578,6 @@ function keypress() {
         if (pads[0] != undefined) {
             pad01 = pads[0];
         }
-        if (pads[1] != undefined) {
-            pad02 = pads[1];
-        }
 
         if (pad01) {
             controller(pad01, tank01, tank01Movement, tank02);
@@ -583,8 +591,13 @@ function keypress() {
         if (keyboard.pressed("down")) {keyboardDown(tank02, tank02Movement);}
         if (keyboard.pressed("shift")) {keyboardShoot(tank02, tank02Movement);}
         if(keyboard.pressed("space")) { keyboardChangeCamera(tank02);}
+        
+        if (pads[1] != undefined) {
+            pad02 = pads[1];
+        }
+        
         if (pad02) {
-                controller(pad02, tank02, tank02Movement, tank01);
+            controller(pad02, tank02, tank02Movement, tank01);
         }
     }
 }
@@ -595,7 +608,7 @@ function keypress() {
 *
 *******************************************************************************************************************************/
 function setUpLight() {
-    hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 1 );
+    hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, lightIntensity * .2 );
     hemiLight.position.set( X_SIZE / 2, 100, Z_SIZE / 2 );
     scene.add( hemiLight );
 }
@@ -604,8 +617,6 @@ function setUpLight() {
     <script>
         $('#close').click(function() {
             $('.howToPlayHolder').addClass("hide");
-            init();
-            animate();
         });
     </script>
 

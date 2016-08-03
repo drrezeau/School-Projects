@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PeerTest</title>
+    <script src="bower_components/peer.js"></script>
+    <script>
+        var peer = new Peer('MyUserName', {key:'mm63227qa567ds4i'})
+        peer.on('open', function(id) {
+            console.log('My peer ID is: ' + id);
+        });
+    </script>
+</head>
+<body>
+<p>This is a peerJS test</p>
+
+</body>
+</html>
